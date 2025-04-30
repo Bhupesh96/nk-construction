@@ -29,7 +29,7 @@ const CompanyNews = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        STRNIX IS IMPORTANT
+                        NK Construction IS IMPORTANT
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Latest Company News</h2>

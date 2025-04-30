@@ -30,7 +30,7 @@ const ClientSection = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        WHO ARE STRNIX
+                        WHO ARE NK Construction
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Client’s Reviews</h2>

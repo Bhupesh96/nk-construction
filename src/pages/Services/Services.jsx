@@ -63,11 +63,11 @@ const Services = () => {
                   <Link
                     property="item"
                     typeof="WebPage"
-                    title="Go to Strnix World's Energy."
+                    title="Go to NK Construction."
                     to="../index.html"
                     className="home"
                   >
-                    <span property="name">Strnix World's Energy</span>
+                    <span property="name">NK Construction</span>
                   </Link>
                   <meta property="position" content={1} />
                 </span>{" "}
@@ -128,22 +128,31 @@ const Services = () => {
                               className="text"
                               style={{ textAlign: "center" }}
                             >
-                              Nunc quam arcu, pretium quis quam sed, laoreet
-                              efficitur leo. Aliquam era volutpat. Integer
-                              lobortis
+                              With NK Construction's advanced solutions, you can
+                              monitor your energy production across multiple
+                              locations in real-time. Our systems offer you a
+                              seamless way to track energy generation, ensuring
+                              you have full visibility into your consumption and
+                              production patterns worldwide.
                             </div>
                             <p className="text" style={{ textAlign: "center" }}>
-                              sem consequat imperdiet. In nulla sed viverra
-                              lorem dapibus consectetur diam. Nunc bibendum
-                              imperdiet
+                              Our technologies allow you to optimize energy
+                              production, ensuring that every resource is used
+                              effectively. By managing your energy output, you
+                              can minimize waste and maximize savings, helping
+                              you stay on top of your energy costs while
+                              promoting sustainability.
                             </p>
                             <div
                               className="text"
                               style={{ textAlign: "center" }}
                             >
-                              condimentum. Duis lacinia pulvinar turpis lacinia
-                              feugiat. Vivamus tellus enim, euismod euismod
-                              laoreet nec, aliquet ut metus.
+                              We believe in the power of clean, renewable
+                              energy. Our solutions help you take control of
+                              your energy production and make environmentally
+                              conscious decisions that not only benefit your
+                              operations but also contribute to a greener
+                              planet.
                             </div>
                             <div>&nbsp;</div>
                             <div>&nbsp;</div>
@@ -168,9 +177,10 @@ const Services = () => {
                                     <div className="hover-inner">
                                       <div className="content">
                                         <div className="text">
-                                          Aliquam sed era volutpat teger lobort
-                                          consequat imperdiet nulla ipsum sedvie
-                                          consectetur bibenydum.
+                                          NK Construction ensures top-tier
+                                          quality through rigorous assessments,
+                                          guaranteeing reliable, efficient, and
+                                          long-lasting energy solutions.
                                         </div>
                                         <div className="link-box">
                                           <Link
@@ -224,9 +234,11 @@ const Services = () => {
                                     <div className="hover-inner">
                                       <div className="content">
                                         <div className="text">
-                                          Aliquam sed era volutpat teger lobort
-                                          consequat imperdiet nulla ipsum sedvie
-                                          consectetur bibenydum.
+                                          NK Construction provides advanced
+                                          energy storage solutions, enabling
+                                          efficient storage of solar energy for
+                                          reliable use during non-sunny hours or
+                                          peak demand times.
                                         </div>
                                         <div className="link-box">
                                           <Link
@@ -280,9 +292,11 @@ const Services = () => {
                                     <div className="hover-inner">
                                       <div className="content">
                                         <div className="text">
-                                          Aliquam sed era volutpat teger lobort
-                                          consequat imperdiet nulla ipsum sedvie
-                                          consectetur bibenydum.
+                                          NK Construction specializes in
+                                          renewable energy solutions, harnessing
+                                          sustainable power sources like solar
+                                          to reduce environmental impact and
+                                          promote energy independence.
                                         </div>
                                         <div className="link-box">
                                           <Link
@@ -336,9 +350,11 @@ const Services = () => {
                                     <div className="hover-inner">
                                       <div className="content">
                                         <div className="text">
-                                          Aliquam sed era volutpat teger lobort
-                                          consequat imperdiet nulla ipsum sedvie
-                                          consectetur bibenydum.
+                                          NK Construction specializes in the
+                                          design and construction of large-scale
+                                          dams, providing sustainable solutions
+                                          for water management and
+                                          infrastructure development.
                                         </div>
                                         <div className="link-box">
                                           <Link
@@ -392,9 +408,12 @@ const Services = () => {
                                     <div className="hover-inner">
                                       <div className="content">
                                         <div className="text">
-                                          Aliquam sed era volutpat teger lobort
-                                          consequat imperdiet nulla ipsum sedvie
-                                          consectetur bibenydum.
+                                          NK Construction promotes a powerful
+                                          ecology by integrating sustainable
+                                          practices and renewable energy
+                                          solutions that support environmental
+                                          preservation and reduce carbon
+                                          footprints.
                                         </div>
                                         <div className="link-box">
                                           <Link
@@ -448,9 +467,11 @@ const Services = () => {
                                     <div className="hover-inner">
                                       <div className="content">
                                         <div className="text">
-                                          Aliquam sed era volutpat teger lobort
-                                          consequat imperdiet nulla ipsum sedvie
-                                          consectetur bibenydum.
+                                          NK Construction excels in plant
+                                          construction, delivering efficient and
+                                          sustainable solutions for industrial
+                                          facilities, ensuring optimal
+                                          performance and long-term reliability.
                                         </div>
                                         <div className="link-box">
                                           <Link
@@ -574,14 +595,14 @@ const Services = () => {
                                     <div className="image">
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/featured-image-3.jpg"
-                                        alt="services"
+                                        src="wp-content/uploads/2020/06/featured-image-3.jpg"
+                                        alt="service"
                                       />
                                     </div>
                                     <div className="icon-box">
                                       <i
                                         aria-hidden="true"
-                                        className=" flaticon-power-7"
+                                        className="flaticon-power-7"
                                       />
                                     </div>
                                   </div>
@@ -603,24 +624,28 @@ const Services = () => {
                                         </div>
                                       </div>
                                       <div className="text">
-                                        Aenean volutpat, sem sit amet
-                                        ullamcorper gravida, tortor arcu
-                                        molestie risus, ut bibendum urna enim
-                                        nulla. Pellentesque porta arcu velit,
-                                        faucibus kodales dolor rhoncus sed.
-                                        Curabitur lacinia massa vitae efficitur
-                                        porttitor. Sed scelerisque vestibulum
-                                        lectus, at egestas erat varius.
+                                        At NK Construction, we specialize in
+                                        installing high-efficiency solar panels
+                                        that maximize sunlight conversion to
+                                        help you reduce energy costs and
+                                        contribute to a greener planet. Our
+                                        expert team ensures a seamless
+                                        installation process, providing
+                                        reliable, long-lasting solutions that
+                                        harness the full potential of solar
+                                        energy. From start to finish, we
+                                        prioritize quality, sustainability, and
+                                        customer satisfaction.
                                       </div>
                                       <div className="link-box">
                                         <Link
-                                          to="http://asasas.com/"
+                                          href="http://asasas.com/"
                                           target="_blank"
                                           rel="nofollow"
                                         >
                                           <span className="txt">
                                             GET STARTED
-                                          </span>{" "}
+                                          </span>
                                           <span className="icon flaticon-arrows-11" />
                                         </Link>
                                       </div>
@@ -649,24 +674,27 @@ const Services = () => {
                                         </div>
                                       </div>
                                       <div className="text">
-                                        Aenean volutpat, sem sit amet
-                                        ullamcorper gravida, tortor arcu
-                                        molestie risus, ut bibendum urna enim
-                                        nulla. Pellentesque porta arcu velit,
-                                        faucibus kodales dolor rhoncus sed.
-                                        Curabitur lacinia massa vitae efficitur
-                                        porttitor. Sed scelerisque vestibulum
-                                        lectus, at egestas erat varius.
+                                        At NK Construction, we offer
+                                        comprehensive preventative maintenance
+                                        services designed to keep your systems
+                                        running smoothly and avoid costly
+                                        emergency repairs. Our expert team
+                                        performs thorough inspections,
+                                        identifying potential issues before they
+                                        become problems, ensuring long-term
+                                        efficiency and reliability. Trust us to
+                                        help you maintain optimal performance
+                                        and extend the lifespan of your systems.
                                       </div>
                                       <div className="link-box">
                                         <Link
-                                          to="http://asasas.com/"
+                                          href="http://asasas.com/"
                                           target="_blank"
                                           rel="nofollow"
                                         >
                                           <span className="txt">
                                             GET STARTED
-                                          </span>{" "}
+                                          </span>
                                           <span className="icon flaticon-arrows-11" />
                                         </Link>
                                       </div>
@@ -682,14 +710,14 @@ const Services = () => {
                                     <div className="image">
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/featured-image-4.jpg"
-                                        alt="services"
+                                        src="wp-content/uploads/2020/06/featured-image-4.jpg"
+                                        alt="service"
                                       />
                                     </div>
                                     <div className="icon-box">
                                       <i
                                         aria-hidden="true"
-                                        className=" flaticon-power-1"
+                                        className="flaticon-power-1"
                                       />
                                     </div>
                                   </div>
@@ -707,14 +735,14 @@ const Services = () => {
                                     <div className="image">
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/featured-image-5.jpg"
-                                        alt="services"
+                                        src="wp-content/uploads/2020/06/featured-image-5.jpg"
+                                        alt="service"
                                       />
                                     </div>
                                     <div className="icon-box">
                                       <i
                                         aria-hidden="true"
-                                        className=" flaticon-energy-1"
+                                        className="flaticon-energy-1"
                                       />
                                     </div>
                                   </div>
@@ -736,24 +764,26 @@ const Services = () => {
                                         </div>
                                       </div>
                                       <div className="text">
-                                        Aenean volutpat, sem sit amet
-                                        ullamcorper gravida, tortor arcu
-                                        molestie risus, ut bibendum urna enim
-                                        nulla. Pellentesque porta arcu velit,
-                                        faucibus kodales dolor rhoncus sed.
-                                        Curabitur lacinia massa vitae efficitur
-                                        porttitor. Sed scelerisque vestibulum
-                                        lectus, at egestas erat varius.
+                                        At NK Construction, we recommend regular
+                                        maintenance to keep your solar panels
+                                        operating at their peak efficiency. Our
+                                        team ensures your panels remain clean,
+                                        free from damage, and optimized for
+                                        maximum energy production. Regular
+                                        upkeep not only extends the lifespan of
+                                        your system but also helps you achieve
+                                        consistent, reliable performance
+                                        year-round.
                                       </div>
                                       <div className="link-box">
                                         <Link
-                                          to="http://asasas.com/"
+                                          href="http://asasas.com/"
                                           target="_blank"
                                           rel="nofollow"
                                         >
                                           <span className="txt">
                                             GET STARTED
-                                          </span>{" "}
+                                          </span>
                                           <span className="icon flaticon-arrows-11" />
                                         </Link>
                                       </div>
@@ -798,7 +828,7 @@ const Services = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              WHO ARE STRNIX{" "}
+                              WHO ARE NK Construction{" "}
                               <span className="icon flaticon-flash" />
                             </div>
                             <h2>Get Free Consultation</h2>

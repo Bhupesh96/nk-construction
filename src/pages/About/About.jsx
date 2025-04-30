@@ -62,21 +62,21 @@ const About = () => {
                   <Link
                     property="item"
                     typeof="WebPage"
-                    title="Go to Strnix World's Energy."
+                    title="Go to NK Construction World's Energy."
                     to="/index.html"
                     className="home"
                   >
-                    <span property="name">Strnix World's Energy</span>
+                    <span property="name">NK Construction World's Energy</span>
                   </Link>
                   <meta property="position" content={1} />
                 </span>
                 →
                 <span className="post post-page current-item">
-                  About Strnix
+                  About NK Construction
                 </span>
               </div>
             </div>
-            <h1>About Strnix</h1>
+            <h1>About NK Construction</h1>
           </div>
         </section>
         <div
@@ -133,7 +133,7 @@ const About = () => {
                                   data-wow-duration="1000ms"
                                 >
                                   <div className="upper-text">
-                                    WHO ARE STRNIX
+                                    WHO ARE NK Construction
                                     <span className="icon flaticon-flash" />
                                   </div>
                                   <h2>
@@ -161,21 +161,25 @@ const About = () => {
                               >
                                 <div className="text-content">
                                   <p>
-                                    Nunc quam arcu, pretium quis quam sed,
-                                    laoreet efficitur leo. Aliquam era volutpat.
-                                    Integer lobortis sem consequat consequat
-                                    imperdiet. In nulla sed viverra ut lorem ut
-                                    dapibus consectetur diam. Nunc bibendum
-                                    imperdiet condimentum. Duis lacinia pulvinar
-                                    turpis lacinia feugiat tellus euismod.
+                                    NK Construction is a forward-thinking solar
+                                    energy provider dedicated to powering a
+                                    sustainable future. Specializing in the
+                                    design, installation, and maintenance of
+                                    solar power systems, NK Construction helps
+                                    residential, commercial, and industrial
+                                    clients reduce their energy costs while
+                                    minimizing their carbon footprint. With a
+                                    strong focus on quality, innovation, and
+                                    customer satisfaction, NK Construction
+                                    delivers end-to-end renewable energy
+                                    solutions that are both reliable and
+                                    environmentally friendly.
                                   </p>
                                   <p>
-                                    Laoreet nec aliquet ut metus. Cras feugiat
-                                    turpis varius pellentesque eleifend ullamco
-                                    laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum
-                                    dolore eu fugiat nulla pariatur.
+                                    Driven by a vision of cleaner energy and a
+                                    greener planet, NK Construction is committed
+                                    to making solar power accessible, efficient,
+                                    and affordable for everyone.
                                   </p>
                                 </div>
                                 <div className="signature">Tunders daumoty</div>
@@ -210,8 +214,10 @@ const About = () => {
                                       </Link>
                                     </h3>
                                     <div className="text">
-                                      Pellentesque porta velit faucibs kodales
-                                      dolor rhoncus sed curabitur
+                                      NK Construction provides reliable
+                                      residential solar solutions to lower
+                                      energy costs and promote sustainable
+                                      living.
                                     </div>
                                   </div>
                                 </div>
@@ -242,8 +248,9 @@ const About = () => {
                                       </Link>
                                     </h3>
                                     <div className="text">
-                                      Pellentesque porta velit faucibs kodales
-                                      dolor rhoncus sed curabitur
+                                      NK Construction provides solar thermal
+                                      systems that efficiently harness sunlight
+                                      for water and space heating.
                                     </div>
                                   </div>
                                 </div>
@@ -274,8 +281,10 @@ const About = () => {
                                       </Link>
                                     </h3>
                                     <div className="text">
-                                      Pellentesque porta velit faucibs kodales
-                                      dolor rhoncus sed curabitur
+                                      NK Construction offers tailored commercial
+                                      solar solutions that reduce energy costs,
+                                      improve sustainability, and enhance
+                                      long-term profitability for businesses.
                                     </div>
                                   </div>
                                 </div>
@@ -331,11 +340,12 @@ const About = () => {
                                   <h2>Works That Matters</h2>
                                 </div>
                                 <div className="text">
-                                  Integer lobortis sem consequat consequat
-                                  imperdiet In nulla viverra ut lorem ut,
-                                  dapibus consectetur diam. Nun bibendum diet
-                                  condiment sed ipsum duis lacinia pulvinar
-                                  dolar turpis.
+                                  At NK Construction, we focus on projects that
+                                  drive positive change and sustainable growth.
+                                  Our innovative solutions aim to create a
+                                  lasting impact on communities and the
+                                  environment. We are committed to delivering
+                                  results that matter for a better future.
                                 </div>
                                 <div className="features">
                                   <ul>
@@ -501,12 +511,12 @@ const About = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              STRNIX IS IMPORTANT
+                              NK Construction IS IMPORTANT
                               <span className="icon flaticon-flash" />
                             </div>
-                            <h2>Strnix Company History</h2>
+                            <h2>NK Construction Company History</h2>
                             <div className="subtitle">
-                              Strnix Company History
+                              NK Construction Company History
                             </div>
                             <div className="bottom-dots clearfix">
                               <span className="dot line-dot" />

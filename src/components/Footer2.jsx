@@ -110,7 +110,7 @@ const Footer2 = () => {
                           <ul>
                             <li>
                               <Link to="#" target="_blank" rel="nofollow">
-                                About Strnix
+                                About NK Construction
                               </Link>
                             </li>
                             <li>
@@ -217,12 +217,12 @@ const Footer2 = () => {
                         <div className="footer-logo-box">
                           <a
                             href="index.html"
-                            title="Strnix - Green Energy HTML Template"
+                            title="NK Construction - Green Energy HTML Template"
                           >
                             <img
                               src="wp-content/uploads/2020/06/foorer-logo-1.svg"
-                              alt="Strnix - Green Energy HTML Template"
-                              title="Strnix - Green Energy HTML Template"
+                              alt="NK Construction - Green Energy HTML Template"
+                              title="NK Construction - Green Energy HTML Template"
                             />
                           </a>
                         </div>
@@ -299,7 +299,7 @@ const Footer2 = () => {
                 <span className="flaticon-arrows" />
               </div>
               <div className="copyright">
-                © Copyright 2019 By <Link to="#">Strnix</Link>
+                © Copyright 2025 By <Link to="#">NK Construction</Link>
               </div>
               <div className="footer-nav">
                 <ul className="clearfix">

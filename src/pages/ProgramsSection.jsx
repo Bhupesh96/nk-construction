@@ -31,7 +31,7 @@ const ProgramsSection = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        STRNIX IS IMPORTANT
+                        NK Construction IS IMPORTANT
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Comprehensive Programs</h2>
@@ -69,8 +69,9 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    Integer lobortisy consequat consequat
-                                    imperdiet sed nulla sed viverra ut lorem.
+                                    NK Construction provides solar thermal
+                                    systems that efficiently harness sunlight
+                                    for water and space heating.
                                   </div>
                                 </div>
                               </div>
@@ -104,8 +105,9 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    Integer lobortisy consequat consequat
-                                    imperdiet sed nulla sed viverra ut lorem.
+                                    NK Construction provides solar thermal
+                                    systems that efficiently harness sunlight
+                                    for water and space heating.
                                   </div>
                                 </div>
                               </div>
@@ -138,8 +140,10 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    Integer lobortisy consequat consequat
-                                    imperdiet sed nulla sed viverra ut lorem.
+                                    NK Construction offers efficient residential
+                                    EV chargers, providing homeowners with a
+                                    convenient and sustainable solution for
+                                    electric vehicle charging.
                                   </div>
                                 </div>
                               </div>
@@ -172,8 +176,10 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    Integer lobortisy consequat consequat
-                                    imperdiet sed nulla sed viverra ut lorem.
+                                    NK Construction offers tailored commercial
+                                    solar solutions that reduce energy costs,
+                                    improve sustainability, and enhance
+                                    long-term profitability for businesses.
                                   </div>
                                 </div>
                               </div>
@@ -206,8 +212,9 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    Integer lobortisy consequat consequat
-                                    imperdiet sed nulla sed viverra ut lorem.
+                                    NK Construction provides solar thermal
+                                    systems that efficiently harness sunlight
+                                    for water and space heating.
                                   </div>
                                 </div>
                               </div>
@@ -240,8 +247,9 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    Integer lobortisy consequat consequat
-                                    imperdiet sed nulla sed viverra ut lorem.
+                                    NK Construction provides solar thermal
+                                    systems that efficiently harness sunlight
+                                    for water and space heating.
                                   </div>
                                 </div>
                               </div>
@@ -274,8 +282,10 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    Integer lobortisy consequat consequat
-                                    imperdiet sed nulla sed viverra ut lorem.
+                                    NK Construction offers efficient residential
+                                    EV chargers, providing homeowners with a
+                                    convenient and sustainable solution for
+                                    electric vehicle charging.
                                   </div>
                                 </div>
                               </div>
@@ -308,8 +318,10 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    Integer lobortisy consequat consequat
-                                    imperdiet sed nulla sed viverra ut lorem.
+                                    NK Construction offers tailored commercial
+                                    solar solutions that reduce energy costs,
+                                    improve sustainability, and enhance
+                                    long-term profitability for businesses.
                                   </div>
                                 </div>
                               </div>

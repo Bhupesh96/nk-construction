@@ -33,7 +33,7 @@ const AboutSection = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              WHO ARE STRNIX
+                              WHO ARE NK Construction
                               <span className="icon flaticon-flash" />
                             </div>
                             <h2>Integrated Solar Solutions</h2>
@@ -49,12 +49,17 @@ const AboutSection = () => {
                           </div>
                           <div className="text">
                             <p>
-                              Nunc quam arcu, pretium quis quam sed, laoreet
-                              efficitur leo. Aliquam era volutpat. Integer
-                              lobortis sem consequat consequat imperdiet. In
-                              nulla sed viverra ut lorem ut, dapibus consectetur
-                              diam. Nunc bibendum imperdiet condimentum. Duis
-                              lacinia pulvinar turpis lacinia feugiat.
+                              NK Construction is a forward-thinking solar energy
+                              provider dedicated to powering a sustainable
+                              future. Specializing in the design, installation,
+                              and maintenance of solar power systems, NK
+                              Construction helps residential, commercial, and
+                              industrial clients reduce their energy costs while
+                              minimizing their carbon footprint. With a strong
+                              focus on quality, innovation, and customer
+                              satisfaction, NK Construction delivers end-to-end
+                              renewable energy solutions that are both reliable
+                              and environmentally friendly.
                             </p>
                             <div
                               className="text-content wow fadeInLeft animated"
@@ -62,11 +67,10 @@ const AboutSection = () => {
                               data-wow-duration="1000ms"
                             >
                               <p>
-                                Vivamus tellus enim, euismod euismod laoreet
-                                nec, aliquet ut metus. Cras feugiat turpis
-                                varius pellentesque eleifend. Vivamus porta
-                                ipsum diamy ac congue felis imperdiet vitae duis
-                                porttitor.
+                                Driven by a vision of cleaner energy and a
+                                greener planet, NK Construction is committed to
+                                making solar power accessible, efficient, and
+                                affordable for everyone.
                               </p>
                             </div>
                             <div className="featured-list">

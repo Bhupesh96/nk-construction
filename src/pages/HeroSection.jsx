@@ -43,7 +43,9 @@ const HeroSection = () => {
                                   aria-hidden="true"
                                   className="fas fa-solar-panel"
                                 />
-                                <span className="txt">welcome to strnix</span>
+                                <span className="txt">
+                                  welcome to NK Construction
+                                </span>
                                 <i
                                   aria-hidden="true"
                                   className="fas fa-solar-panel"
@@ -75,7 +77,9 @@ const HeroSection = () => {
                                   aria-hidden="true"
                                   className="fas fa-solar-panel"
                                 />
-                                <span className="txt">welcome to strnix</span>
+                                <span className="txt">
+                                  welcome to NK Construction
+                                </span>
                                 <i
                                   aria-hidden="true"
                                   className="fas fa-solar-panel"
@@ -107,7 +111,9 @@ const HeroSection = () => {
                                   aria-hidden="true"
                                   className="fas fa-solar-panel"
                                 />
-                                <span className="txt">welcome to strnix</span>
+                                <span className="txt">
+                                  welcome to NK Construction
+                                </span>
                                 <i
                                   aria-hidden="true"
                                   className="fas fa-solar-panel"

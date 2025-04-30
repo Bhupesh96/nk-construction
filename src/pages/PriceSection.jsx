@@ -34,7 +34,7 @@ const PriceSection = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              WHO ARE STRNIX
+                              WHO ARE NK Construction
                               <span className="icon flaticon-flash" />
                             </div>
                             <h2>Pricing Structure</h2>
@@ -118,7 +118,7 @@ const PriceSection = () => {
                                                   </div>
                                                   <div className="price">
                                                     <span className="currency">
-                                                      $
+                                                      ₹
                                                     </span>
                                                     <span className="amount">
                                                       14.30
@@ -188,7 +188,7 @@ const PriceSection = () => {
                                                   </div>
                                                   <div className="price">
                                                     <span className="currency">
-                                                      $
+                                                      ₹
                                                     </span>
                                                     <span className="amount">
                                                       25.08
@@ -258,7 +258,7 @@ const PriceSection = () => {
                                                   </div>
                                                   <div className="price">
                                                     <span className="currency">
-                                                      $
+                                                      ₹
                                                     </span>
                                                     <span className="amount">
                                                       14.30
@@ -365,7 +365,7 @@ const PriceSection = () => {
                                                   </div>
                                                   <div className="price">
                                                     <span className="currency">
-                                                      $
+                                                      ₹
                                                     </span>
                                                     <span className="amount">
                                                       14.30
@@ -435,7 +435,7 @@ const PriceSection = () => {
                                                   </div>
                                                   <div className="price">
                                                     <span className="currency">
-                                                      $
+                                                      ₹
                                                     </span>
                                                     <span className="amount">
                                                       25.08
@@ -505,7 +505,7 @@ const PriceSection = () => {
                                                   </div>
                                                   <div className="price">
                                                     <span className="currency">
-                                                      $
+                                                      ₹
                                                     </span>
                                                     <span className="amount">
                                                       14.30

@@ -65,7 +65,7 @@ const Contact = () => {
                     href="/index.html"
                     className="home"
                   >
-                    <span property="name">Strnix World's Energy</span>
+                    <span property="name">NK Construction World's Energy</span>
                   </a>
                   <meta property="position" content={1} />
                 </span>{" "}
@@ -513,12 +513,12 @@ const Contact = () => {
                           <div className="footer-logo-box">
                             <a
                               href="/index.html"
-                              title="Strnix - Green Energy HTML Template"
+                              title="NK Construction - Green Energy HTML Template"
                             >
                               <img
                                 src="/wp-content/uploads/2020/06/home2.svg"
-                                alt="Strnix - Green Energy HTML Template"
-                                title="Strnix - Green Energy HTML Template"
+                                alt="NK Construction - Green Energy HTML Template"
+                                title="NK Construction - Green Energy HTML Template"
                               />
                             </a>
                           </div>
@@ -599,7 +599,7 @@ const Contact = () => {
                             <ul>
                               <li>
                                 <Link to="#" target="_blank" rel="nofollow">
-                                  About Strnix{" "}
+                                  About NK Construction{" "}
                                 </Link>
                               </li>
                               <li>
@@ -780,7 +780,7 @@ const Contact = () => {
                   <span className="flaticon-arrows" />
                 </div>
                 <div className="copyright">
-                  © Copyright 2019 By <Link to="#">Strnix</Link>{" "}
+                  © Copyright 2025 By <Link to="#">NK Construction</Link>{" "}
                 </div>
                 <div className="footer-nav">
                   <ul className="clearfix">

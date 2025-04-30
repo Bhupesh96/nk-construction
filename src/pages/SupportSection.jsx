@@ -30,7 +30,7 @@ const SupportSection = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        WHO ARE STRNIX
+                        WHO ARE NK Construction
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Get Free Consultation</h2>
@@ -65,7 +65,7 @@ const SupportSection = () => {
                             <ul />
                           </div>
                           <form
-                            action="https://strnix.smartdemowp.com/#wpcf7-f5-p6-o2"
+                            action="https://NK Construction.smartdemowp.com/#wpcf7-f5-p6-o2"
                             method="post"
                             className="wpcf7-form init"
                             aria-label="Contact form"

@@ -94,13 +94,16 @@ const OurServices = () => {
                                   </div>
                                 </div>
                                 <div className="text">
-                                  Aenean volutpat, sem sit amet ullamcorper
-                                  gravida, tortor arcu molestie risus, ut
-                                  bibendum urna enim nulla. Pellentesque porta
-                                  arcu velit, faucibus kodales dolor rhoncus
-                                  sed. Curabitur lacinia massa vitae efficitur
-                                  porttitor. Sed scelerisque vestibulum lectus,
-                                  at egestas erat varius.
+                                  At NK Construction, we specialize in
+                                  installing high-efficiency solar panels that
+                                  maximize sunlight conversion to help you
+                                  reduce energy costs and contribute to a
+                                  greener planet. Our expert team ensures a
+                                  seamless installation process, providing
+                                  reliable, long-lasting solutions that harness
+                                  the full potential of solar energy. From start
+                                  to finish, we prioritize quality,
+                                  sustainability, and customer satisfaction.
                                 </div>
                                 <div className="link-box">
                                   <Link
@@ -135,13 +138,16 @@ const OurServices = () => {
                                   </div>
                                 </div>
                                 <div className="text">
-                                  Aenean volutpat, sem sit amet ullamcorper
-                                  gravida, tortor arcu molestie risus, ut
-                                  bibendum urna enim nulla. Pellentesque porta
-                                  arcu velit, faucibus kodales dolor rhoncus
-                                  sed. Curabitur lacinia massa vitae efficitur
-                                  porttitor. Sed scelerisque vestibulum lectus,
-                                  at egestas erat varius.
+                                  At NK Construction, we offer comprehensive
+                                  preventative maintenance services designed to
+                                  keep your systems running smoothly and avoid
+                                  costly emergency repairs. Our expert team
+                                  performs thorough inspections, identifying
+                                  potential issues before they become problems,
+                                  ensuring long-term efficiency and reliability.
+                                  Trust us to help you maintain optimal
+                                  performance and extend the lifespan of your
+                                  systems.
                                 </div>
                                 <div className="link-box">
                                   <Link
@@ -218,13 +224,15 @@ const OurServices = () => {
                                   </div>
                                 </div>
                                 <div className="text">
-                                  Aenean volutpat, sem sit amet ullamcorper
-                                  gravida, tortor arcu molestie risus, ut
-                                  bibendum urna enim nulla. Pellentesque porta
-                                  arcu velit, faucibus kodales dolor rhoncus
-                                  sed. Curabitur lacinia massa vitae efficitur
-                                  porttitor. Sed scelerisque vestibulum lectus,
-                                  at egestas erat varius.
+                                  At NK Construction, we recommend regular
+                                  maintenance to keep your solar panels
+                                  operating at their peak efficiency. Our team
+                                  ensures your panels remain clean, free from
+                                  damage, and optimized for maximum energy
+                                  production. Regular upkeep not only extends
+                                  the lifespan of your system but also helps you
+                                  achieve consistent, reliable performance
+                                  year-round.
                                 </div>
                                 <div className="link-box">
                                   <Link
