@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
+import { Link } from "react-router-dom";
+import $ from "jquery";
 
 const Contact = () => {
+  useEffect(() => {
+    const handlePreloader = () => {
+      if ($(".preloader").length) {
+        $("body").addClass("page-loaded");
+        $(".preloader").delay(1000).fadeOut(0);
+      }
+    };
+
+    // Trigger preloader logic on mount
+    handlePreloader();
+  }, []);
   return (
     <div className="page-template page-template-elementor_header_footer page page-id-555 elementor-default elementor-template-full-width elementor-kit-722 elementor-page elementor-page-555">
       <div className="page-wrapper">
@@ -109,7 +122,7 @@ const Contact = () => {
                                     <img
                                       decoding="async"
                                       src="/wp-content/uploads/2020/06/icon-message-1.png"
-                                      alt
+                                      alt="contact"
                                     />
                                   </div>
                                   <strong>Visit The Office</strong>
@@ -139,18 +152,20 @@ const Contact = () => {
                                     <img
                                       decoding="async"
                                       src="/wp-content/uploads/2020/06/icon-call-1.png"
-                                      alt
+                                      alt="contact"
                                     />
                                   </div>
                                   <strong>Visit The Office</strong>
                                   <ul className="info">
                                     <li>
-                                      <a href="tel:+1-(222)-303-4500">
+                                      <Link to="tel:+1-(222)-303-4500">
                                         +1 (222) 303 4500
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="tel:0800-12345">0800 12345</a>
+                                      <Link to="tel:0800-12345">
+                                        0800 12345
+                                      </Link>
                                     </li>{" "}
                                   </ul>
                                 </div>
@@ -171,30 +186,24 @@ const Contact = () => {
                                     <img
                                       decoding="async"
                                       src="/wp-content/uploads/2020/06/icon-mail-1.png"
-                                      alt
+                                      alt="contact"
                                     />
                                   </div>
                                   <strong>Send Email</strong>
                                   <ul className="info">
                                     <li>
-                                      <a href="/cdn-cgi/l/email-protection.html#51383f373e11353e3c30383f7f323e3c">
-                                        <span
-                                          className="__cf_email__"
-                                          data-cfemail="bcd5d2dad3fcd8d3d1ddd5d292dfd3d1"
-                                        >
-                                          [email&nbsp;protected]
-                                        </span>
-                                      </a>
+                                      <div className="email">
+                                        <a href="mailto:example@email.com">
+                                          Email: example@email.com
+                                        </a>
+                                      </div>
                                     </li>
                                     <li>
-                                      <a href="/cdn-cgi/l/email-protection.html#0a597f7a7a65787e4a797e7864637224696567">
-                                        <span
-                                          className="__cf_email__"
-                                          data-cfemail="ffac8a8f8f908d8bbf8c8b8d919687d19c9092"
-                                        >
-                                          [email&nbsp;protected]
-                                        </span>
-                                      </a>
+                                      <div className="email">
+                                        <a href="mailto:example@email.com">
+                                          Email: example@email.com
+                                        </a>
+                                      </div>
                                     </li>{" "}
                                   </ul>
                                 </div>
@@ -424,12 +433,12 @@ const Contact = () => {
                                     <img
                                       decoding="async"
                                       src="/wp-content/themes/strnix/assets/images/icons/icon-call-1.png"
-                                      alt
+                                      alt="contact"
                                     />
                                   </span>
-                                  <a href="tel:(222)-303-4500">
+                                  <Link to="tel:(222)-303-4500">
                                     (222) 303 4500
-                                  </a>{" "}
+                                  </Link>{" "}
                                 </div>
                               </div>
                             </div>
@@ -462,6 +471,7 @@ const Contact = () => {
                   >
                     <div className="elementor-widget-container">
                       <iframe
+                        title="Google Map showing Covanta Essex location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734.2655638357738!2d-74.12491711357168!3d40.73728092000734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253ff752b7f07%3A0xdb70c6057600452b!2sCovanta%20Essex!5e0!3m2!1sen!2sbd!4v1576403085085!5m2!1sen!2sbd"
                         width={600}
                         height={650}
@@ -520,44 +530,44 @@ const Contact = () => {
                           <div className="footer-social">
                             <ul className="footer-social-two clearfix">
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-facebook-f"
                                   />{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-twitter"
                                   />{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-instagram"
                                   />{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-linkedin-in"
                                   />{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-pinterest-p"
                                   />{" "}
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -588,34 +598,34 @@ const Contact = () => {
                           <div className="widget-content">
                             <ul>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   About Strnix{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   News Blog{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   Careers{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   Case Studies{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   Meet Our Team{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   Testimonials{" "}
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -646,29 +656,29 @@ const Contact = () => {
                           <div className="widget-content">
                             <ul>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   Installation &amp; Monitoring{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   After Sales Service{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   Free Replacemrnt{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   Warrenty Claims{" "}
-                                </a>
+                                </Link>
                               </li>
                               <li>
-                                <a href="#" target="_blank" rel="nofollow">
+                                <Link to="#" target="_blank" rel="nofollow">
                                   Energy Equipments{" "}
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -702,7 +712,7 @@ const Contact = () => {
                                 <span className="icon">
                                   <img
                                     src="/wp-content/uploads/2020/06/icon-message-1.png"
-                                    alt="image"
+                                    alt="contact"
                                   />
                                 </span>
                               </div>
@@ -716,13 +726,15 @@ const Contact = () => {
                                 <span className="icon">
                                   <img
                                     src="/wp-content/uploads/2020/06/icon-call-1.png"
-                                    alt="image"
+                                    alt="contact"
                                   />
                                 </span>
                               </div>
                               <strong>Phone Inquiry</strong>
                               <div className="info-text">
-                                <a href="tel:(222)-303-4500">(222) 303 4500</a>
+                                <Link to="tel:(222)-303-4500">
+                                  (222) 303 4500
+                                </Link>
                               </div>
                             </div>
                             <div className="info-block">
@@ -730,20 +742,17 @@ const Contact = () => {
                                 <span className="icon">
                                   <img
                                     src="/wp-content/uploads/2020/06/icon-mail-1.png"
-                                    alt="image"
+                                    alt="contact"
                                   />
                                 </span>
                               </div>
                               <strong>Send Email</strong>
                               <div className="info-text">
-                                <a href="/cdn-cgi/l/email-protection.html#e48d8a828ba4808b89858d8aca878b89">
-                                  <span
-                                    className="__cf_email__"
-                                    data-cfemail="bfd6d1d9d0ffdbd0d2ded6d191dcd0d2"
-                                  >
-                                    [email&nbsp;protected]
-                                  </span>
-                                </a>
+                                <div className="email">
+                                  <a href="mailto:example@email.com">
+                                    Email: example@email.com
+                                  </a>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -762,23 +771,27 @@ const Contact = () => {
               <div className="inner clearfix">
                 <div
                   className="scroll-top-footer scroll-to-target"
-                  data-target="html"
+                  onClick={() => {
+                    document
+                      .querySelector("html")
+                      .scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   <span className="flaticon-arrows" />
                 </div>
                 <div className="copyright">
-                  © Copyright 2019 By <a href="#">Strnix</a>{" "}
+                  © Copyright 2019 By <Link to="#">Strnix</Link>{" "}
                 </div>
                 <div className="footer-nav">
                   <ul className="clearfix">
                     <li>
-                      <a href="#">Privacy Policy</a>
+                      <Link to="#">Privacy Policy</Link>
                     </li>
                     <li>
-                      <a href="#">Sitemap</a>
+                      <Link to="#">Sitemap</Link>
                     </li>
                     <li>
-                      <a href="#">Terms &amp; Conditions</a>
+                      <Link to="#">Terms &amp; Conditions</Link>
                     </li>
                   </ul>
                 </div>

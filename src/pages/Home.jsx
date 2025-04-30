@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import ProgramsSection from "./ProgramsSection";
@@ -12,8 +12,20 @@ import CompanyNews from "./CompanyNews";
 import Footer from "../components/Footer";
 import Footer2 from "../components/Footer2";
 import Header from "../components/Header";
+import $ from "jquery";
 
 const Home = () => {
+  useEffect(() => {
+    const handlePreloader = () => {
+      if ($(".preloader").length) {
+        $("body").addClass("page-loaded");
+        $(".preloader").delay(1000).fadeOut(0);
+      }
+    };
+
+    // Trigger preloader logic on mount
+    handlePreloader();
+  }, []);
   return (
     <div className="home page-template page-template-elementor_header_footer page page-id-6 elementor-default elementor-template-full-width elementor-kit-722 elementor-page elementor-page-6">
       <div className="page-wrapper">

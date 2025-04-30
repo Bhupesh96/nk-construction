@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -39,7 +40,7 @@ const Footer = () => {
                                 />
                               </div>
                               <div className="service-title">
-                                <a href="#">Energy Efficiency Solutions</a>
+                                <Link to="#">Energy Efficiency Solutions</Link>
                               </div>
                             </div>
                           </div>
@@ -52,46 +53,46 @@ const Footer = () => {
                                 />
                               </div>
                               <div className="service-title">
-                                <a href="#">Solar panel Commissioning</a>
+                                <Link to="#">Solar panel Commissioning</Link>
                               </div>
                             </div>
                           </div>
                           <div className="service-block-two logo-block">
                             <div className="inner-box">
                               <div className="logo">
-                                <a href="#" className>
+                                <Link to="#">
                                   <img
                                     src="wp-content/uploads/2020/06/foorer-logo-1.svg"
-                                    alt
+                                    alt="footer"
                                   />
-                                </a>
+                                </Link>
                               </div>
                               <div className="social-links">
                                 <ul className="clearfix">
                                   <li>
-                                    <a href="#">
+                                    <Link to="#">
                                       <span className="fab fa-twitter" />
-                                    </a>
+                                    </Link>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <Link to="#">
                                       <span className="fab fa-facebook-f" />
-                                    </a>
+                                    </Link>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <Link to="#">
                                       <span className="fab fa-instagram" />
-                                    </a>
+                                    </Link>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <Link to="#">
                                       <span className="fab fa-linkedin-in" />
-                                    </a>
+                                    </Link>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <Link to="#">
                                       <span className="fab fa-pinterest-p" />
-                                    </a>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>
@@ -106,10 +107,10 @@ const Footer = () => {
                                 />
                               </div>
                               <div className="service-title">
-                                <a href="#">
+                                <Link to="#">
                                   Battery backup <br />
                                   Generator
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -122,7 +123,7 @@ const Footer = () => {
                                 />
                               </div>
                               <div className="service-title">
-                                <a href="#">Whole House Surge Protection</a>
+                                <Link to="#">Whole House Surge Protection</Link>
                               </div>
                             </div>
                           </div>

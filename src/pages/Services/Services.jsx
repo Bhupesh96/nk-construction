@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
+import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
+import Footer2 from "../../components/Footer2";
+import $ from "jquery";
 
 const Services = () => {
+  useEffect(() => {
+    const handlePreloader = () => {
+      if ($(".preloader").length) {
+        $("body").addClass("page-loaded");
+        $(".preloader").delay(1000).fadeOut(0);
+      }
+    };
+
+    // Trigger preloader logic on mount
+    handlePreloader();
+  }, []);
   return (
     <div>
       <div className="page-wrapper">
@@ -45,15 +60,15 @@ const Services = () => {
               <div className="auto-container">
                 {/* Breadcrumb NavXT 7.2.0 */}
                 <span property="itemListElement" typeof="ListItem">
-                  <a
+                  <Link
                     property="item"
                     typeof="WebPage"
                     title="Go to Strnix World's Energy."
-                    href="../index.html"
+                    to="../index.html"
                     className="home"
                   >
                     <span property="name">Strnix World's Energy</span>
-                  </a>
+                  </Link>
                   <meta property="position" content={1} />
                 </span>{" "}
                 →{" "}
@@ -145,8 +160,8 @@ const Services = () => {
                                   <figure className="image">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/featured-image-18.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/featured-image-18.jpg"
+                                      alt="services"
                                     />
                                   </figure>
                                   <div className="hover-box">
@@ -158,16 +173,16 @@ const Services = () => {
                                           consectetur bibenydum.
                                         </div>
                                         <div className="link-box">
-                                          <a
+                                          <Link
                                             target="_blank"
                                             rel="nofollow"
-                                            href="#"
+                                            to="#"
                                           >
                                             <span className="txt">
                                               Read More{" "}
                                             </span>{" "}
                                             <span className="icon flaticon-arrows-11" />
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
@@ -179,13 +194,13 @@ const Services = () => {
                                       <span className="flaticon-settings" />
                                     </div>
                                     <h3>
-                                      <a
+                                      <Link
                                         target="_blank"
                                         rel="nofollow"
-                                        href="#"
+                                        to="#"
                                       >
                                         Quality Assessment
-                                      </a>
+                                      </Link>
                                     </h3>
                                   </div>
                                 </div>
@@ -201,8 +216,8 @@ const Services = () => {
                                   <figure className="image">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/featured-image-19.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/featured-image-19.jpg"
+                                      alt="services"
                                     />
                                   </figure>
                                   <div className="hover-box">
@@ -214,16 +229,16 @@ const Services = () => {
                                           consectetur bibenydum.
                                         </div>
                                         <div className="link-box">
-                                          <a
+                                          <Link
                                             target="_blank"
                                             rel="nofollow"
-                                            href="#"
+                                            to="#"
                                           >
                                             <span className="txt">
                                               Read More{" "}
                                             </span>{" "}
                                             <span className="icon flaticon-arrows-11" />
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
@@ -235,13 +250,13 @@ const Services = () => {
                                       <span className="flaticon-settings" />
                                     </div>
                                     <h3>
-                                      <a
+                                      <Link
                                         target="_blank"
                                         rel="nofollow"
-                                        href="#"
+                                        to="#"
                                       >
                                         Energy Storage
-                                      </a>
+                                      </Link>
                                     </h3>
                                   </div>
                                 </div>
@@ -257,8 +272,8 @@ const Services = () => {
                                   <figure className="image">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/featured-image-20.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/featured-image-20.jpg"
+                                      alt="services"
                                     />
                                   </figure>
                                   <div className="hover-box">
@@ -270,16 +285,16 @@ const Services = () => {
                                           consectetur bibenydum.
                                         </div>
                                         <div className="link-box">
-                                          <a
+                                          <Link
                                             target="_blank"
                                             rel="nofollow"
-                                            href="#"
+                                            to="#"
                                           >
                                             <span className="txt">
                                               Read More{" "}
                                             </span>{" "}
                                             <span className="icon flaticon-arrows-11" />
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
@@ -291,13 +306,13 @@ const Services = () => {
                                       <span className="flaticon-settings" />
                                     </div>
                                     <h3>
-                                      <a
+                                      <Link
                                         target="_blank"
                                         rel="nofollow"
-                                        href="#"
+                                        to="#"
                                       >
                                         Renewable Energy
-                                      </a>
+                                      </Link>
                                     </h3>
                                   </div>
                                 </div>
@@ -313,8 +328,8 @@ const Services = () => {
                                   <figure className="image">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/featured-image-21.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/featured-image-21.jpg"
+                                      alt="services"
                                     />
                                   </figure>
                                   <div className="hover-box">
@@ -326,16 +341,16 @@ const Services = () => {
                                           consectetur bibenydum.
                                         </div>
                                         <div className="link-box">
-                                          <a
+                                          <Link
                                             target="_blank"
                                             rel="nofollow"
-                                            href="#"
+                                            to="#"
                                           >
                                             <span className="txt">
                                               Read More{" "}
                                             </span>{" "}
                                             <span className="icon flaticon-arrows-11" />
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
@@ -347,13 +362,13 @@ const Services = () => {
                                       <span className="flaticon-settings" />
                                     </div>
                                     <h3>
-                                      <a
+                                      <Link
                                         target="_blank"
                                         rel="nofollow"
-                                        href="#"
+                                        to="#"
                                       >
                                         Large Scale Dams
-                                      </a>
+                                      </Link>
                                     </h3>
                                   </div>
                                 </div>
@@ -369,8 +384,8 @@ const Services = () => {
                                   <figure className="image">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/featured-image-22.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/featured-image-22.jpg"
+                                      alt="services"
                                     />
                                   </figure>
                                   <div className="hover-box">
@@ -382,16 +397,16 @@ const Services = () => {
                                           consectetur bibenydum.
                                         </div>
                                         <div className="link-box">
-                                          <a
+                                          <Link
                                             target="_blank"
                                             rel="nofollow"
-                                            href="#"
+                                            to="#"
                                           >
                                             <span className="txt">
                                               Read More{" "}
                                             </span>{" "}
                                             <span className="icon flaticon-arrows-11" />
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
@@ -403,13 +418,13 @@ const Services = () => {
                                       <span className="flaticon-settings" />
                                     </div>
                                     <h3>
-                                      <a
+                                      <Link
                                         target="_blank"
                                         rel="nofollow"
-                                        href="#"
+                                        to="#"
                                       >
                                         Powerful Ecology
-                                      </a>
+                                      </Link>
                                     </h3>
                                   </div>
                                 </div>
@@ -425,8 +440,8 @@ const Services = () => {
                                   <figure className="image">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/featured-image-23.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/featured-image-23.jpg"
+                                      alt="services"
                                     />
                                   </figure>
                                   <div className="hover-box">
@@ -438,16 +453,16 @@ const Services = () => {
                                           consectetur bibenydum.
                                         </div>
                                         <div className="link-box">
-                                          <a
+                                          <Link
                                             target="_blank"
                                             rel="nofollow"
-                                            href="#"
+                                            to="#"
                                           >
                                             <span className="txt">
                                               Read More{" "}
                                             </span>{" "}
                                             <span className="icon flaticon-arrows-11" />
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
@@ -459,13 +474,13 @@ const Services = () => {
                                       <span className="flaticon-settings" />
                                     </div>
                                     <h3>
-                                      <a
+                                      <Link
                                         target="_blank"
                                         rel="nofollow"
-                                        href="#"
+                                        to="#"
                                       >
                                         Plant Construction
-                                      </a>
+                                      </Link>
                                     </h3>
                                   </div>
                                 </div>
@@ -482,9 +497,9 @@ const Services = () => {
                               Emergency Help? <br />
                               Call or email us 24/7 support team at{" "}
                               <span className="phone">
-                                <a href="tel:+1-(222)-303-4500">
+                                <Link to="tel:+1-(222)-303-4500">
                                   +1 (222) 303 4500
-                                </a>
+                                </Link>
                               </span>
                             </div>
                           </div>
@@ -527,8 +542,8 @@ const Services = () => {
                         >
                           <img
                             decoding="async"
-                            src="../wp-content/themes/strnix/assets/images/background/pattern-image-1.png"
-                            alt
+                            src="/wp-content/themes/strnix/assets/images/background/pattern-image-1.png"
+                            alt="services"
                           />
                         </div>
                         <div
@@ -542,8 +557,8 @@ const Services = () => {
                         >
                           <img
                             decoding="async"
-                            src="../wp-content/themes/strnix/assets/images/background/pattern-image-2.png"
-                            alt
+                            src="/wp-content/themes/strnix/assets/images/background/pattern-image-2.png"
+                            alt="services"
                           />
                         </div>
                         <div className="auto-container">
@@ -559,8 +574,8 @@ const Services = () => {
                                     <div className="image">
                                       <img
                                         decoding="async"
-                                        src="../wp-content/uploads/2020/06/featured-image-3.jpg"
-                                        alt
+                                        src="/wp-content/uploads/2020/06/featured-image-3.jpg"
+                                        alt="services"
                                       />
                                     </div>
                                     <div className="icon-box">
@@ -598,8 +613,8 @@ const Services = () => {
                                         lectus, at egestas erat varius.
                                       </div>
                                       <div className="link-box">
-                                        <a
-                                          href="http://asasas.com/"
+                                        <Link
+                                          to="http://asasas.com/"
                                           target="_blank"
                                           rel="nofollow"
                                         >
@@ -607,7 +622,7 @@ const Services = () => {
                                             GET STARTED
                                           </span>{" "}
                                           <span className="icon flaticon-arrows-11" />
-                                        </a>
+                                        </Link>
                                       </div>
                                     </div>
                                   </div>
@@ -644,8 +659,8 @@ const Services = () => {
                                         lectus, at egestas erat varius.
                                       </div>
                                       <div className="link-box">
-                                        <a
-                                          href="http://asasas.com/"
+                                        <Link
+                                          to="http://asasas.com/"
                                           target="_blank"
                                           rel="nofollow"
                                         >
@@ -653,7 +668,7 @@ const Services = () => {
                                             GET STARTED
                                           </span>{" "}
                                           <span className="icon flaticon-arrows-11" />
-                                        </a>
+                                        </Link>
                                       </div>
                                     </div>
                                   </div>
@@ -667,8 +682,8 @@ const Services = () => {
                                     <div className="image">
                                       <img
                                         decoding="async"
-                                        src="../wp-content/uploads/2020/06/featured-image-4.jpg"
-                                        alt
+                                        src="/wp-content/uploads/2020/06/featured-image-4.jpg"
+                                        alt="services"
                                       />
                                     </div>
                                     <div className="icon-box">
@@ -692,8 +707,8 @@ const Services = () => {
                                     <div className="image">
                                       <img
                                         decoding="async"
-                                        src="../wp-content/uploads/2020/06/featured-image-5.jpg"
-                                        alt
+                                        src="/wp-content/uploads/2020/06/featured-image-5.jpg"
+                                        alt="services"
                                       />
                                     </div>
                                     <div className="icon-box">
@@ -731,8 +746,8 @@ const Services = () => {
                                         lectus, at egestas erat varius.
                                       </div>
                                       <div className="link-box">
-                                        <a
-                                          href="http://asasas.com/"
+                                        <Link
+                                          to="http://asasas.com/"
                                           target="_blank"
                                           rel="nofollow"
                                         >
@@ -740,7 +755,7 @@ const Services = () => {
                                             GET STARTED
                                           </span>{" "}
                                           <span className="icon flaticon-arrows-11" />
-                                        </a>
+                                        </Link>
                                       </div>
                                     </div>
                                   </div>
@@ -976,7 +991,9 @@ const Services = () => {
                               <div className="info">
                                 Call Us 24/7 For Customer Support At{" "}
                                 <span className="icon" />{" "}
-                                <a href="tel:(222)-303-4500">(222)-303-4500</a>
+                                <Link to="tel:(222)-303-4500">
+                                  (222)-303-4500
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -1031,8 +1048,8 @@ const Services = () => {
                                   <div className="testi-thumb">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/author-thumb-6.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/author-thumb-6.jpg"
+                                      alt="services"
                                     />
                                     <span className="quote-icon left flaticon-blocks-with-angled-cuts" />
                                     <span className="quote-icon right flaticon-straight-quotes" />
@@ -1059,8 +1076,8 @@ const Services = () => {
                                   <div className="testi-thumb">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/author-thumb-6.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/author-thumb-6.jpg"
+                                      alt="services"
                                     />
                                     <span className="quote-icon left flaticon-blocks-with-angled-cuts" />
                                     <span className="quote-icon right flaticon-straight-quotes" />
@@ -1087,8 +1104,8 @@ const Services = () => {
                                   <div className="testi-thumb">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/author-thumb-6.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/author-thumb-6.jpg"
+                                      alt="services"
                                     />
                                     <span className="quote-icon left flaticon-blocks-with-angled-cuts" />
                                     <span className="quote-icon right flaticon-straight-quotes" />
@@ -1115,8 +1132,8 @@ const Services = () => {
                                   <div className="testi-thumb">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/author-thumb-6.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/author-thumb-6.jpg"
+                                      alt="services"
                                     />
                                     <span className="quote-icon left flaticon-blocks-with-angled-cuts" />
                                     <span className="quote-icon right flaticon-straight-quotes" />
@@ -1143,8 +1160,8 @@ const Services = () => {
                                   <div className="testi-thumb">
                                     <img
                                       decoding="async"
-                                      src="../wp-content/uploads/2020/06/author-thumb-6.jpg"
-                                      alt
+                                      src="/wp-content/uploads/2020/06/author-thumb-6.jpg"
+                                      alt="services"
                                     />
                                     <span className="quote-icon left flaticon-blocks-with-angled-cuts" />
                                     <span className="quote-icon right flaticon-straight-quotes" />
@@ -1204,37 +1221,57 @@ const Services = () => {
                           >
                             <div className="slide-item">
                               <figure className="image-box">
-                                <a href="#">
-                                  <img decoding="async" src="#" alt />
-                                </a>
+                                <Link to="#">
+                                  <img
+                                    decoding="async"
+                                    src="#"
+                                    alt="services"
+                                  />
+                                </Link>
                               </figure>
                             </div>
                             <div className="slide-item">
                               <figure className="image-box">
-                                <a href="#">
-                                  <img decoding="async" src="#" alt />
-                                </a>
+                                <Link to="#">
+                                  <img
+                                    decoding="async"
+                                    src="#"
+                                    alt="services"
+                                  />
+                                </Link>
                               </figure>
                             </div>
                             <div className="slide-item">
                               <figure className="image-box">
-                                <a href="#">
-                                  <img decoding="async" src="#" alt />
-                                </a>
+                                <Link to="#">
+                                  <img
+                                    decoding="async"
+                                    src="#"
+                                    alt="services"
+                                  />
+                                </Link>
                               </figure>
                             </div>
                             <div className="slide-item">
                               <figure className="image-box">
-                                <a href="#">
-                                  <img decoding="async" src="#" alt />
-                                </a>
+                                <Link to="#">
+                                  <img
+                                    decoding="async"
+                                    src="#"
+                                    alt="services"
+                                  />
+                                </Link>
                               </figure>
                             </div>
                             <div className="slide-item">
                               <figure className="image-box">
-                                <a href="#">
-                                  <img decoding="async" src="#" alt />
-                                </a>
+                                <Link to="#">
+                                  <img
+                                    decoding="async"
+                                    src="#"
+                                    alt="services"
+                                  />
+                                </Link>
                               </figure>
                             </div>
                           </div>
@@ -1247,479 +1284,34 @@ const Services = () => {
             </div>
           </section>
         </div>
-        <div
-          data-elementor-type="page"
-          data-elementor-id={351}
-          className="elementor elementor-351"
-        >
-          <section
-            className="elementor-section elementor-top-section elementor-element elementor-element-9d701f3 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-            data-id="9d701f3"
-            data-element_type="section"
-          >
-            <div className="elementor-container elementor-column-gap-default">
-              <div
-                className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-09c04ac"
-                data-id="09c04ac"
-                data-element_type="column"
-              >
-                <div className="elementor-widget-wrap elementor-element-populated">
-                  <div
-                    className="elementor-element elementor-element-4f0f27b elementor-widget elementor-widget-brand_info_area__o"
-                    data-id="4f0f27b"
-                    data-element_type="widget"
-                    data-widget_type="brand_info_area__o.default"
-                  >
-                    <div className="elementor-widget-container">
-                      <div className="main-footer footer-style-one">
-                        <div className="upper-section">
-                          <div className="auto-container">
-                            <div className="outer clearfix">
-                              <div className="service-block-two">
-                                <div className="inner-box">
-                                  <div className="icon-box">
-                                    <i
-                                      aria-hidden="true"
-                                      className=" flaticon-renewable-energy"
-                                    />
-                                  </div>
-                                  <div className="service-title">
-                                    <a href="#">Energy Efficiency Solutions</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="service-block-two">
-                                <div className="inner-box">
-                                  <div className="icon-box">
-                                    <i
-                                      aria-hidden="true"
-                                      className=" flaticon-power-7"
-                                    />
-                                  </div>
-                                  <div className="service-title">
-                                    <a href="#">Solar panel Commissioning</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="service-block-two logo-block">
-                                <div className="inner-box">
-                                  <div className="logo">
-                                    <a href="#" className>
-                                      <img
-                                        src="../wp-content/uploads/2020/06/foorer-logo-1.svg"
-                                        alt
-                                      />
-                                    </a>
-                                  </div>
-                                  <div className="social-links">
-                                    <ul className="clearfix">
-                                      <li>
-                                        <a href="#">
-                                          <span className="fab fa-twitter" />
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <span className="fab fa-facebook-f" />
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <span className="fab fa-instagram" />
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <span className="fab fa-linkedin-in" />
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a href="#">
-                                          <span className="fab fa-pinterest-p" />
-                                        </a>
-                                      </li>{" "}
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="service-block-two">
-                                <div className="inner-box">
-                                  <div className="icon-box">
-                                    <i
-                                      aria-hidden="true"
-                                      className=" flaticon-car-battery"
-                                    />
-                                  </div>
-                                  <div className="service-title">
-                                    <a href="#">
-                                      Battery backup <br />
-                                      Generator
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="service-block-two">
-                                <div className="inner-box">
-                                  <div className="icon-box">
-                                    <i
-                                      aria-hidden="true"
-                                      className=" flaticon-solar-energy-2"
-                                    />
-                                  </div>
-                                  <div className="service-title">
-                                    <a href="#">Whole House Surge Protection</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div
-          data-elementor-type="page"
-          data-elementor-id={360}
-          className="elementor elementor-360"
-        >
-          <section
-            className="elementor-section elementor-top-section elementor-element elementor-element-0ce2313 main-footer elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-            data-id="0ce2313"
-            data-element_type="section"
-          >
-            <div className="elementor-container elementor-column-gap-default">
-              <div
-                className="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-e00fc10 widgets-section"
-                data-id="e00fc10"
-                data-element_type="column"
-              >
-                <div className="elementor-widget-wrap elementor-element-populated">
-                  <div
-                    className="elementor-element elementor-element-97a09e3 elementor-widget elementor-widget-contact_info"
-                    data-id="97a09e3"
-                    data-element_type="widget"
-                    data-widget_type="contact_info.default"
-                  >
-                    <div className="elementor-widget-container">
-                      <div className="footer-column">
-                        <div className="footer-widget info-widget">
-                          <div className="widget-title">
-                            <h3>Contact Us</h3>
-                          </div>
-                          <div className="info">
-                            <div className="info-block">
-                              <div className="icon-box">
-                                <span className="icon">
-                                  <img
-                                    src="../wp-content/uploads/2020/06/icon-message-1.png"
-                                    alt="image"
-                                  />
-                                </span>
-                              </div>
-                              <strong>Visit The Office</strong>
-                              <div className="info-text">
-                                102 Taily End Rd, NY
-                              </div>
-                            </div>
-                            <div className="info-block">
-                              <div className="icon-box">
-                                <span className="icon">
-                                  <img
-                                    src="../wp-content/uploads/2020/06/icon-call-1.png"
-                                    alt="image"
-                                  />
-                                </span>
-                              </div>
-                              <strong>Phone Inquiry</strong>
-                              <div className="info-text">
-                                <a href="tel:(222)-303-4500">(222) 303 4500</a>
-                              </div>
-                            </div>
-                            <div className="info-block">
-                              <div className="icon-box">
-                                <span className="icon">
-                                  <img
-                                    src="../wp-content/uploads/2020/06/icon-mail-1.png"
-                                    alt="image"
-                                  />
-                                </span>
-                              </div>
-                              <strong>Send Email</strong>
-                              <div className="info-text">
-                                <a href="../cdn-cgi/l/email-protection.html#87eee9e1e8c7e3e8eae6eee9a9e4e8ea">
-                                  <span
-                                    className="__cf_email__"
-                                    data-cfemail="046d6a626b44606b69656d6a2a676b69"
-                                  >
-                                    [email&nbsp;protected]
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-583d776 widgets-section"
-                data-id="583d776"
-                data-element_type="column"
-              >
-                <div className="elementor-widget-wrap elementor-element-populated">
-                  <div
-                    className="elementor-element elementor-element-8108bc8 elementor-widget elementor-widget-menu_area__o"
-                    data-id="8108bc8"
-                    data-element_type="widget"
-                    data-widget_type="menu_area__o.default"
-                  >
-                    <div className="elementor-widget-container">
-                      <div className="footer-column">
-                        <div className="footer-widget links-widget">
-                          <div className="widget-title">
-                            <h3>Quick Links</h3>
-                          </div>
-                          <div className="widget-content">
-                            <ul>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  About Strnix{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  News Blog{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  Careers{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  Case Studies{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  Meet Our Team{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  Testimonials{" "}
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-468a35f widgets-section"
-                data-id="468a35f"
-                data-element_type="column"
-              >
-                <div className="elementor-widget-wrap elementor-element-populated">
-                  <div
-                    className="elementor-element elementor-element-5d5b297 elementor-widget elementor-widget-menu_area__o"
-                    data-id="5d5b297"
-                    data-element_type="widget"
-                    data-widget_type="menu_area__o.default"
-                  >
-                    <div className="elementor-widget-container">
-                      <div className="footer-column">
-                        <div className="footer-widget links-widget">
-                          <div className="widget-title">
-                            <h3>Our Services</h3>
-                          </div>
-                          <div className="widget-content">
-                            <ul>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  Installation &amp; Monitoring{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  After Sales Service{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  Free Replacemrnt{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  Warrenty Claims{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  Energy Equipments{" "}
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-976a59d widgets-section"
-                data-id="976a59d"
-                data-element_type="column"
-              >
-                <div className="elementor-widget-wrap elementor-element-populated">
-                  <div
-                    className="elementor-element elementor-element-bf1d3e8 elementor-widget elementor-widget-site_info"
-                    data-id="bf1d3e8"
-                    data-element_type="widget"
-                    data-widget_type="site_info.default"
-                  >
-                    <div className="elementor-widget-container">
-                      <div className="footer-column">
-                        <div className="footer-widget about-widget">
-                          <div className="footer-logo-box">
-                            <a
-                              href="../index.html"
-                              title="Strnix - Green Energy HTML Template"
-                            >
-                              <img
-                                src="../wp-content/uploads/2020/06/foorer-logo-1.svg"
-                                alt="Strnix - Green Energy HTML Template"
-                                title="Strnix - Green Energy HTML Template"
-                              />
-                            </a>
-                          </div>
-                          <div className="about-text">
-                            Integer lobortis sem consequat imperdiet In nulla
-                            viverra ut lorem ut, dapibus conse etur diam. Nun
-                            bibendum diet condiment sed ipsum duis lacinia.
-                          </div>
-                          <div className="footer-social">
-                            <ul className="footer-social-two clearfix">
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fab fa-facebook-f"
-                                  />{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fab fa-twitter"
-                                  />{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fab fa-instagram"
-                                  />{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fab fa-linkedin-in"
-                                  />{" "}
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#" target="_blank" rel="nofollow">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fab fa-pinterest-p"
-                                  />{" "}
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <footer className="main-footer 1">
-          <div className="footer-bottom">
-            <div className="auto-container">
-              <div className="inner clearfix">
-                <div
-                  className="scroll-top-footer scroll-to-target"
-                  data-target="html"
-                >
-                  <span className="flaticon-arrows" />
-                </div>
-                <div className="copyright">
-                  © Copyright 2019 By <a href="#">Strnix</a>{" "}
-                </div>
-                <div className="footer-nav">
-                  <ul className="clearfix">
-                    <li>
-                      <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="#">Sitemap</a>
-                    </li>
-                    <li>
-                      <a href="#">Terms &amp; Conditions</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
+        <Footer2 />
       </div>
       <link
         rel="stylesheet"
         id="elementor-post-360-css"
-        href="../wp-content/uploads/elementor/css/post-36060e4.css?ver=1724841869"
+        to="../wp-content/uploads/elementor/css/post-36060e4.css?ver=1724841869"
         type="text/css"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-post-351-css"
-        href="../wp-content/uploads/elementor/css/post-35160e4.css?ver=1724841869"
+        to="../wp-content/uploads/elementor/css/post-35160e4.css?ver=1724841869"
         type="text/css"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-icons-shared-0-css"
-        href="../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css?ver=5.15.3"
+        to="../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css?ver=5.15.3"
         type="text/css"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-icons-fa-brands-css"
-        href="../wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min52d5.css?ver=5.15.3"
+        to="../wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min52d5.css?ver=5.15.3"
         type="text/css"
         media="all"
       />

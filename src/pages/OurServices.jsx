@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OurServices = () => {
   return (
@@ -34,7 +35,7 @@ const OurServices = () => {
                     <img
                       decoding="async"
                       src="wp-content/themes/strnix/assets/images/background/pattern-image-1.png"
-                      alt
+                      alt="service"
                     />
                   </div>
                   <div
@@ -49,7 +50,7 @@ const OurServices = () => {
                     <img
                       decoding="async"
                       src="wp-content/themes/strnix/assets/images/background/pattern-image-2.png"
-                      alt
+                      alt="service"
                     />
                   </div>
                   <div className="auto-container">
@@ -66,7 +67,7 @@ const OurServices = () => {
                                 <img
                                   decoding="async"
                                   src="wp-content/uploads/2020/06/featured-image-3.jpg"
-                                  alt
+                                  alt="service"
                                 />
                               </div>
                               <div className="icon-box">
@@ -102,14 +103,14 @@ const OurServices = () => {
                                   at egestas erat varius.
                                 </div>
                                 <div className="link-box">
-                                  <a
+                                  <Link
                                     href="http://asasas.com/"
                                     target="_blank"
                                     rel="nofollow"
                                   >
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -143,14 +144,14 @@ const OurServices = () => {
                                   at egestas erat varius.
                                 </div>
                                 <div className="link-box">
-                                  <a
+                                  <Link
                                     href="http://asasas.com/"
                                     target="_blank"
                                     rel="nofollow"
                                   >
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -165,7 +166,7 @@ const OurServices = () => {
                                 <img
                                   decoding="async"
                                   src="wp-content/uploads/2020/06/featured-image-4.jpg"
-                                  alt
+                                  alt="service"
                                 />
                               </div>
                               <div className="icon-box">
@@ -190,7 +191,7 @@ const OurServices = () => {
                                 <img
                                   decoding="async"
                                   src="wp-content/uploads/2020/06/featured-image-5.jpg"
-                                  alt
+                                  alt="service"
                                 />
                               </div>
                               <div className="icon-box">
@@ -226,14 +227,14 @@ const OurServices = () => {
                                   at egestas erat varius.
                                 </div>
                                 <div className="link-box">
-                                  <a
+                                  <Link
                                     href="http://asasas.com/"
                                     target="_blank"
                                     rel="nofollow"
                                   >
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>

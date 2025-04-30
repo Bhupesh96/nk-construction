@@ -61,13 +61,13 @@ const CompanyNews = () => {
                               <a href="avoid-solar-panels-damage-your-top-roof-copy-3-copy/index.html">
                                 <div className="post-thumbnail">
                                   <img
-                                    fetchpriority="high"
+                                    fetchPriority="high"
                                     decoding="async"
                                     width={773}
                                     height={451}
                                     src="/wp-content/uploads/2020/06/Artboard-–-1-4.png"
                                     className="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                    alt
+                                    alt="company"
                                     sizes="(max-width: 773px) 100vw, 773px"
                                   />
                                 </div>
@@ -133,7 +133,7 @@ const CompanyNews = () => {
                                     height={451}
                                     src="/wp-content/uploads/2020/06/Artboard-–-1-3.png"
                                     className="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                    alt
+                                    alt="company"
                                     sizes="(max-width: 773px) 100vw, 773px"
                                   />
                                 </div>
@@ -199,7 +199,7 @@ const CompanyNews = () => {
                                     height={451}
                                     src="/wp-content/uploads/2020/06/Artboard-%e2%80%93-1-2.png"
                                     className="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                    alt
+                                    alt="company"
                                     sizes="(max-width: 779px) 100vw, 779px"
                                   />
                                 </div>

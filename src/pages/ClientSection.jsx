@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const ClientSection = () => {
   return (
     <section
@@ -74,7 +74,7 @@ const ClientSection = () => {
                                 <img
                                   decoding="async"
                                   src="/wp-content/uploads/2020/06/author-thumb-1.jpg"
-                                  alt
+                                  alt="about"
                                 />
                               </div>
                               <div className="name">Erina soulasd</div>
@@ -109,7 +109,7 @@ const ClientSection = () => {
                                 <img
                                   decoding="async"
                                   src="/wp-content/uploads/2020/06/author-thumb-2.jpg"
-                                  alt
+                                  alt="about"
                                 />
                               </div>
                               <div className="name">Noal hsuat</div>
@@ -144,7 +144,7 @@ const ClientSection = () => {
                                 <img
                                   decoding="async"
                                   src="/wp-content/uploads/2020/06/author-thumb-1.jpg"
-                                  alt
+                                  alt="about"
                                 />
                               </div>
                               <div className="name">Erina soulasd</div>
@@ -179,7 +179,7 @@ const ClientSection = () => {
                                 <img
                                   decoding="async"
                                   src="/wp-content/uploads/2020/06/author-thumb-2.jpg"
-                                  alt
+                                  alt="about"
                                 />
                               </div>
                               <div className="name">Noal hsuat</div>
@@ -199,37 +199,37 @@ const ClientSection = () => {
                       >
                         <div className="slide-item">
                           <figure className="image-box">
-                            <a href="JavaScript:void(0);">
-                              {/* <img decoding="async" src="#" alt /> */}
-                            </a>
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
+                              {/* <img decoding="async" src="#" alt="about" /> */}
+                            </Link>
                           </figure>
                         </div>
                         <div className="slide-item">
                           <figure className="image-box">
-                            <a href="JavaScript:void(0);">
-                              {/* <img decoding="async" src="#" alt /> */}
-                            </a>
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
+                              {/* <img decoding="async" src="#" alt="about" /> */}
+                            </Link>
                           </figure>
                         </div>
                         <div className="slide-item">
                           <figure className="image-box">
-                            <a href="JavaScript:void(0);">
-                              {/* <img decoding="async" src="#" alt /> */}
-                            </a>
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
+                              {/* <img decoding="async" src="#" alt="about" /> */}
+                            </Link>
                           </figure>
                         </div>
                         <div className="slide-item">
                           <figure className="image-box">
-                            <a href="JavaScript:void(0);">
-                              {/* <img decoding="async" src="#" alt /> */}
-                            </a>
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
+                              {/* <img decoding="async" src="#" alt="about" /> */}
+                            </Link>
                           </figure>
                         </div>
                         <div className="slide-item">
                           <figure className="image-box">
-                            <a href="JavaScript:void(0);">
-                              {/* <img decoding="async" src="#" alt /> */}
-                            </a>
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
+                              {/* <img decoding="async" src="#" alt="about" /> */}
+                            </Link>
                           </figure>
                         </div>
                       </div>

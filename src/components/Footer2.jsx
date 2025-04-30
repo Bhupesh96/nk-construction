@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer2 = () => {
   return (
     <>
@@ -38,7 +38,7 @@ const Footer2 = () => {
                               <span className="icon">
                                 <img
                                   src="wp-content/uploads/2020/06/icon-message-1.png"
-                                  alt="image"
+                                  alt="footer"
                                 />
                               </span>
                             </div>
@@ -52,13 +52,15 @@ const Footer2 = () => {
                               <span className="icon">
                                 <img
                                   src="wp-content/uploads/2020/06/icon-call-1.png"
-                                  alt="image"
+                                  alt="footer"
                                 />
                               </span>
                             </div>
                             <strong>Phone Inquiry</strong>
                             <div className="info-text">
-                              <a href="tel:(222)-303-4500">(222) 303 4500</a>
+                              <Link to="tel:(222)-303-4500">
+                                (222) 303 4500
+                              </Link>
                             </div>
                           </div>
                           <div className="info-block">
@@ -66,20 +68,17 @@ const Footer2 = () => {
                               <span className="icon">
                                 <img
                                   src="wp-content/uploads/2020/06/icon-mail-1.png"
-                                  alt="image"
+                                  alt="footer"
                                 />
                               </span>
                             </div>
                             <strong>Send Email</strong>
                             <div className="info-text">
-                              <a href="cdn-cgi/l/email-protection.html#1871767e77587c7775797176367b7775">
-                                <span
-                                  className="__cf_email__"
-                                  data-cfemail="d5bcbbb3ba95b1bab8b4bcbbfbb6bab8"
-                                >
-                                  [email&nbsp;protected]
-                                </span>
-                              </a>
+                              <div className="email">
+                                <a href="mailto:example@email.com">
+                                  Email: example@email.com
+                                </a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -110,34 +109,34 @@ const Footer2 = () => {
                         <div className="widget-content">
                           <ul>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 About Strnix
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 News Blog
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Careers
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Case Studies
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Meet Our Team
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Testimonials
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
@@ -168,29 +167,29 @@ const Footer2 = () => {
                         <div className="widget-content">
                           <ul>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Installation &amp; Monitoring
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 After Sales Service
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Free Replacemrnt
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Warrenty Claims
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Energy Equipments
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
@@ -235,44 +234,44 @@ const Footer2 = () => {
                         <div className="footer-social">
                           <ul className="footer-social-two clearfix">
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-facebook-f"
                                 />
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-twitter"
                                 />
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-instagram"
                                 />
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-linkedin-in"
                                 />
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#" target="_blank" rel="nofollow">
+                              <Link to="#" target="_blank" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-pinterest-p"
                                 />
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
@@ -291,23 +290,27 @@ const Footer2 = () => {
             <div className="inner clearfix">
               <div
                 className="scroll-top-footer scroll-to-target"
-                data-target="html"
+                onClick={() => {
+                  document
+                    .querySelector("html")
+                    .scrollTo({ top: 0, behavior: "smooth" });
+                }}
               >
                 <span className="flaticon-arrows" />
               </div>
               <div className="copyright">
-                © Copyright 2019 By <a href="#">Strnix</a>
+                © Copyright 2019 By <Link to="#">Strnix</Link>
               </div>
               <div className="footer-nav">
                 <ul className="clearfix">
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <Link to="#">Privacy Policy</Link>
                   </li>
                   <li>
-                    <a href="#">Sitemap</a>
+                    <Link to="#">Sitemap</Link>
                   </li>
                   <li>
-                    <a href="#">Terms &amp; Conditions</a>
+                    <Link to="#">Terms &amp; Conditions</Link>
                   </li>
                 </ul>
               </div>

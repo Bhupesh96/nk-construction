@@ -152,7 +152,7 @@ const AboutSection = () => {
                               <img
                                 decoding="async"
                                 src="wp-content/uploads/2020/06/featured-image-1.jpg"
-                                alt
+                                alt="about"
                               />
                             </figure>
                             <figure
@@ -163,7 +163,7 @@ const AboutSection = () => {
                               <img
                                 decoding="async"
                                 src="wp-content/uploads/2020/06/featured-image-2.jpg"
-                                alt
+                                alt="about"
                               />
                             </figure>
                           </div>

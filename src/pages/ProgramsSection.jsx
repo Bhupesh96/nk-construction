@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProgramsSection = () => {
   return (
@@ -55,7 +56,7 @@ const ProgramsSection = () => {
                               <img
                                 decoding="async"
                                 src="/wp-content/uploads/2020/06/program-image-1.jpg"
-                                alt="Program Image"
+                                alt="Program"
                               />
                             </figure>
                             <div className="hover-box">
@@ -76,9 +77,10 @@ const ProgramsSection = () => {
                             </div>
                           </div>
                           <h3>
-                            <a href="JavaScript:void(0);">
+                            {/* JavaScript:void(0); */}
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
                               Solar Thermal Systems
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -89,7 +91,7 @@ const ProgramsSection = () => {
                               <img
                                 decoding="async"
                                 src="/wp-content/uploads/2020/06/program-image-3.jpg"
-                                alt="Program Image"
+                                alt="Program"
                               />
                             </figure>
                             <div className="hover-box">
@@ -110,9 +112,9 @@ const ProgramsSection = () => {
                             </div>
                           </div>
                           <h3>
-                            <a href="JavaScript:void(0);">
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
                               Solar Thermal Systems
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -123,7 +125,7 @@ const ProgramsSection = () => {
                               <img
                                 decoding="async"
                                 src="/wp-content/uploads/2020/06/program-image-4.jpg"
-                                alt="Program Image"
+                                alt="Program"
                               />
                             </figure>
                             <div className="hover-box">
@@ -144,9 +146,9 @@ const ProgramsSection = () => {
                             </div>
                           </div>
                           <h3>
-                            <a href="JavaScript:void(0);">
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
                               Residential EV Chargers
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -157,7 +159,7 @@ const ProgramsSection = () => {
                               <img
                                 decoding="async"
                                 src="/wp-content/uploads/2020/06/program-image-2.jpg"
-                                alt="Program Image"
+                                alt="Program"
                               />
                             </figure>
                             <div className="hover-box">
@@ -178,9 +180,9 @@ const ProgramsSection = () => {
                             </div>
                           </div>
                           <h3>
-                            <a href="JavaScript:void(0);">
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
                               Commercial solutions
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -191,7 +193,7 @@ const ProgramsSection = () => {
                               <img
                                 decoding="async"
                                 src="/wp-content/uploads/2020/06/program-image-1.jpg"
-                                alt="Program Image"
+                                alt="Program"
                               />
                             </figure>
                             <div className="hover-box">
@@ -212,9 +214,9 @@ const ProgramsSection = () => {
                             </div>
                           </div>
                           <h3>
-                            <a href="JavaScript:void(0);">
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
                               Solar Thermal Systems
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -225,7 +227,7 @@ const ProgramsSection = () => {
                               <img
                                 decoding="async"
                                 src="/wp-content/uploads/2020/06/program-image-3.jpg"
-                                alt="Program Image"
+                                alt="Program"
                               />
                             </figure>
                             <div className="hover-box">
@@ -246,9 +248,9 @@ const ProgramsSection = () => {
                             </div>
                           </div>
                           <h3>
-                            <a href="JavaScript:void(0);">
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
                               Solar Thermal Systems
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -259,7 +261,7 @@ const ProgramsSection = () => {
                               <img
                                 decoding="async"
                                 src="/wp-content/uploads/2020/06/program-image-4.jpg"
-                                alt="Program Image"
+                                alt="Program"
                               />
                             </figure>
                             <div className="hover-box">
@@ -280,9 +282,9 @@ const ProgramsSection = () => {
                             </div>
                           </div>
                           <h3>
-                            <a href="JavaScript:void(0);">
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
                               Residential EV Chargers
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>
@@ -293,7 +295,7 @@ const ProgramsSection = () => {
                               <img
                                 decoding="async"
                                 src="/wp-content/uploads/2020/06/program-image-2.jpg"
-                                alt="Program Image"
+                                alt="Program"
                               />
                             </figure>
                             <div className="hover-box">
@@ -314,9 +316,9 @@ const ProgramsSection = () => {
                             </div>
                           </div>
                           <h3>
-                            <a href="JavaScript:void(0);">
+                            <Link to="#" onClick={(e) => e.preventDefault()}>
                               Commercial solutions
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </div>

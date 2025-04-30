@@ -109,7 +109,7 @@ const ProjectsSection = () => {
                                     <img
                                       decoding="async"
                                       src="wp-content/uploads/2020/06/featured-image-6.jpg"
-                                      alt
+                                      alt="program"
                                     />
                                   </figure>
                                   <div className="cat-info">COMMERCIAL</div>
@@ -121,7 +121,7 @@ const ProjectsSection = () => {
                                     <img
                                       decoding="async"
                                       src="wp-content/uploads/2020/06/featured-image-7.jpg"
-                                      alt
+                                      alt="program"
                                     />
                                   </figure>
                                   <div className="cat-info">COMMERCIAL</div>
@@ -133,7 +133,7 @@ const ProjectsSection = () => {
                                     <img
                                       decoding="async"
                                       src="wp-content/uploads/2020/06/featured-image-8.jpg"
-                                      alt
+                                      alt="program"
                                     />
                                   </figure>
                                   <div className="cat-info">COMMERCIAL</div>

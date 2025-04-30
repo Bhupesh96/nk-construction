@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PriceSection = () => {
   return (
@@ -144,8 +145,8 @@ const PriceSection = () => {
                                                   </ul>
                                                 </div>
                                                 <div className="links-box">
-                                                  <a
-                                                    href="#"
+                                                  <Link
+                                                    to="#"
                                                     target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
@@ -158,7 +159,7 @@ const PriceSection = () => {
                                                         <span className="icon flaticon-arrows-11" />
                                                       </span>
                                                     </div>
-                                                  </a>
+                                                  </Link>
                                                 </div>
                                               </div>
                                             </div>
@@ -214,8 +215,8 @@ const PriceSection = () => {
                                                   </ul>
                                                 </div>
                                                 <div className="links-box">
-                                                  <a
-                                                    href="#"
+                                                  <Link
+                                                    to="#"
                                                     target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
@@ -228,7 +229,7 @@ const PriceSection = () => {
                                                         <span className="icon flaticon-arrows-11" />
                                                       </span>
                                                     </div>
-                                                  </a>
+                                                  </Link>
                                                 </div>
                                               </div>
                                             </div>
@@ -284,8 +285,8 @@ const PriceSection = () => {
                                                   </ul>
                                                 </div>
                                                 <div className="links-box">
-                                                  <a
-                                                    href="#"
+                                                  <Link
+                                                    to="#"
                                                     target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
@@ -298,7 +299,7 @@ const PriceSection = () => {
                                                         <span className="icon flaticon-arrows-11" />
                                                       </span>
                                                     </div>
-                                                  </a>
+                                                  </Link>
                                                 </div>
                                               </div>
                                             </div>
@@ -391,8 +392,8 @@ const PriceSection = () => {
                                                   </ul>
                                                 </div>
                                                 <div className="links-box">
-                                                  <a
-                                                    href="#"
+                                                  <Link
+                                                    to="#"
                                                     target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
@@ -405,7 +406,7 @@ const PriceSection = () => {
                                                         <span className="icon flaticon-arrows-11" />
                                                       </span>
                                                     </div>
-                                                  </a>
+                                                  </Link>
                                                 </div>
                                               </div>
                                             </div>
@@ -461,8 +462,8 @@ const PriceSection = () => {
                                                   </ul>
                                                 </div>
                                                 <div className="links-box">
-                                                  <a
-                                                    href="#"
+                                                  <Link
+                                                    to="#"
                                                     target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
@@ -475,7 +476,7 @@ const PriceSection = () => {
                                                         <span className="icon flaticon-arrows-11" />
                                                       </span>
                                                     </div>
-                                                  </a>
+                                                  </Link>
                                                 </div>
                                               </div>
                                             </div>
@@ -531,8 +532,8 @@ const PriceSection = () => {
                                                   </ul>
                                                 </div>
                                                 <div className="links-box">
-                                                  <a
-                                                    href="#"
+                                                  <Link
+                                                    to="#"
                                                     target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
@@ -545,7 +546,7 @@ const PriceSection = () => {
                                                         <span className="icon flaticon-arrows-11" />
                                                       </span>
                                                     </div>
-                                                  </a>
+                                                  </Link>
                                                 </div>
                                               </div>
                                             </div>
