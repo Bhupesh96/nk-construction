@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Footer2 from "../../components/Footer2";
 import Footer from "../../components/Footer";
 import $ from "jquery";
+import NewsLetter from "../NewsLetter";
 const About = () => {
   useEffect(() => {
     const handlePreloader = () => {
@@ -62,21 +63,21 @@ const About = () => {
                   <Link
                     property="item"
                     typeof="WebPage"
-                    title="Go to NK Construction World's Energy."
+                    title="Go to Bhartiya Solars World's Energy."
                     to="/index.html"
                     className="home"
                   >
-                    <span property="name">NK Construction World's Energy</span>
+                    <span property="name">Bhartiya Solars World's Energy</span>
                   </Link>
                   <meta property="position" content={1} />
                 </span>
                 →
                 <span className="post post-page current-item">
-                  About NK Construction
+                  About Bhartiya Solars
                 </span>
               </div>
             </div>
-            <h1>About NK Construction</h1>
+            <h1>About Bhartiya Solars</h1>
           </div>
         </section>
         <div
@@ -133,7 +134,7 @@ const About = () => {
                                   data-wow-duration="1000ms"
                                 >
                                   <div className="upper-text">
-                                    WHO ARE NK Construction
+                                    WHO ARE Bhartiya Solars
                                     <span className="icon flaticon-flash" />
                                   </div>
                                   <h2>
@@ -161,23 +162,23 @@ const About = () => {
                               >
                                 <div className="text-content">
                                   <p>
-                                    NK Construction is a forward-thinking solar
+                                    Bhartiya Solars is a forward-thinking solar
                                     energy provider dedicated to powering a
                                     sustainable future. Specializing in the
                                     design, installation, and maintenance of
-                                    solar power systems, NK Construction helps
+                                    solar power systems, Bhartiya Solars helps
                                     residential, commercial, and industrial
                                     clients reduce their energy costs while
                                     minimizing their carbon footprint. With a
                                     strong focus on quality, innovation, and
-                                    customer satisfaction, NK Construction
+                                    customer satisfaction, Bhartiya Solars
                                     delivers end-to-end renewable energy
                                     solutions that are both reliable and
                                     environmentally friendly.
                                   </p>
                                   <p>
                                     Driven by a vision of cleaner energy and a
-                                    greener planet, NK Construction is committed
+                                    greener planet, Bhartiya Solars is committed
                                     to making solar power accessible, efficient,
                                     and affordable for everyone.
                                   </p>
@@ -214,7 +215,7 @@ const About = () => {
                                       </Link>
                                     </h3>
                                     <div className="text">
-                                      NK Construction provides reliable
+                                      Bhartiya Solars provides reliable
                                       residential solar solutions to lower
                                       energy costs and promote sustainable
                                       living.
@@ -248,7 +249,7 @@ const About = () => {
                                       </Link>
                                     </h3>
                                     <div className="text">
-                                      NK Construction provides solar thermal
+                                      Bhartiya Solars provides solar thermal
                                       systems that efficiently harness sunlight
                                       for water and space heating.
                                     </div>
@@ -281,7 +282,7 @@ const About = () => {
                                       </Link>
                                     </h3>
                                     <div className="text">
-                                      NK Construction offers tailored commercial
+                                      Bhartiya Solars offers tailored commercial
                                       solar solutions that reduce energy costs,
                                       improve sustainability, and enhance
                                       long-term profitability for businesses.
@@ -340,7 +341,7 @@ const About = () => {
                                   <h2>Works That Matters</h2>
                                 </div>
                                 <div className="text">
-                                  At NK Construction, we focus on projects that
+                                  At Bhartiya Solars, we focus on projects that
                                   drive positive change and sustainable growth.
                                   Our innovative solutions aim to create a
                                   lasting impact on communities and the
@@ -511,12 +512,12 @@ const About = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              NK Construction IS IMPORTANT
+                              Bhartiya Solars IS IMPORTANT
                               <span className="icon flaticon-flash" />
                             </div>
-                            <h2>NK Construction Company History</h2>
+                            <h2>Bhartiya Solars Company History</h2>
                             <div className="subtitle">
-                              NK Construction Company History
+                              Bhartiya Solars Company History
                             </div>
                             <div className="bottom-dots clearfix">
                               <span className="dot line-dot" />
@@ -648,190 +649,7 @@ const About = () => {
               </div>
             </div>
           </section>
-          <section
-            className="elementor-section elementor-top-section elementor-element elementor-element-f67aa51 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-            data-id="f67aa51"
-            data-element_type="section"
-            data-settings='{"stretch_section":"section-stretched"}'
-          >
-            <div className="elementor-container elementor-column-gap-default">
-              <div
-                className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6dd3438"
-                data-id="6dd3438"
-                data-element_type="column"
-              >
-                <div className="elementor-widget-wrap elementor-element-populated">
-                  <div
-                    className="elementor-element elementor-element-5252ef9 elementor-widget elementor-widget-forms_area__o"
-                    data-id="5252ef9"
-                    data-element_type="widget"
-                    data-widget_type="forms_area__o.default"
-                  >
-                    <div className="elementor-widget-container">
-                      <section className="newsletter-section">
-                        <div className="auto-container">
-                          {/*Big Icon*/}
-                          <div className="big-icon">
-                            <span className="flaticon-solar-panel" />
-                          </div>
-                          <div className="row clearfix">
-                            <div className="title-column col-xl-4 col-lg-12 col-md-12">
-                              <div
-                                className="inner wow fadeInLeft"
-                                data-wow-delay="0ms"
-                                data-wow-duration="2000ms"
-                              >
-                                <h2>
-                                  We’re Dedicated To <br />
-                                  Build A Cleaner Future
-                                </h2>
-                              </div>
-                            </div>
-                            <div className="form-column col-xl-8 col-lg-12 col-md-12">
-                              <div className="inner">
-                                <div className="newsletter-form">
-                                  <div
-                                    className="wpcf7 no-js"
-                                    id="wpcf7-f282-p587-o1"
-                                    lang="en-US"
-                                    dir="ltr"
-                                  >
-                                    <div className="screen-reader-response">
-                                      <p
-                                        role="status"
-                                        aria-live="polite"
-                                        aria-atomic="true"
-                                      />
-                                      <ul />
-                                    </div>
-                                    <form
-                                      action="https://strnix.smartdemowp.com/about-strnix/#wpcf7-f282-p587-o1"
-                                      method="post"
-                                      className="wpcf7-form init"
-                                      aria-label="Contact form"
-                                      noValidate="novalidate"
-                                      data-status="init"
-                                    >
-                                      <div style={{ display: "none" }}>
-                                        <input
-                                          type="hidden"
-                                          name="_wpcf7"
-                                          defaultValue={282}
-                                        />
-                                        <input
-                                          type="hidden"
-                                          name="_wpcf7_version"
-                                          defaultValue="5.8.3"
-                                        />
-                                        <input
-                                          type="hidden"
-                                          name="_wpcf7_locale"
-                                          defaultValue="en_US"
-                                        />
-                                        <input
-                                          type="hidden"
-                                          name="_wpcf7_unit_tag"
-                                          defaultValue="wpcf7-f282-p587-o1"
-                                        />
-                                        <input
-                                          type="hidden"
-                                          name="_wpcf7_container_post"
-                                          defaultValue={587}
-                                        />
-                                        <input
-                                          type="hidden"
-                                          name="_wpcf7_posted_data_hash"
-                                          defaultValue
-                                        />
-                                      </div>
-                                      <div className="row clearfix">
-                                        <div className="form-group col-lg-4 col-md-6 col-sm-12">
-                                          <div className="field-inner">
-                                            <p>
-                                              <span
-                                                className="wpcf7-form-control-wrap"
-                                                data-name="your-name"
-                                              >
-                                                <input
-                                                  size={40}
-                                                  className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                  id="field-1"
-                                                  aria-required="true"
-                                                  aria-invalid="false"
-                                                  placeholder="Your Name"
-                                                  defaultValue
-                                                  type="text"
-                                                  name="your-name"
-                                                />
-                                              </span>
-                                              <label htmlFor="field-1">
-                                                <span className="far fa-user" />
-                                              </label>
-                                            </p>
-                                          </div>
-                                        </div>
-                                        <div className="form-group col-lg-4 col-md-6 col-sm-12">
-                                          <div className="field-inner">
-                                            <p>
-                                              <span
-                                                className="wpcf7-form-control-wrap"
-                                                data-name="your-email"
-                                              >
-                                                <input
-                                                  size={40}
-                                                  className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
-                                                  id="field-2"
-                                                  aria-invalid="false"
-                                                  placeholder="Your Email"
-                                                  defaultValue
-                                                  type="email"
-                                                  name="your-email"
-                                                />
-                                              </span>
-                                              <label htmlFor="field-2">
-                                                <span className="far fa-envelope-open" />
-                                              </label>
-                                            </p>
-                                          </div>
-                                        </div>
-                                        <div className="form-group col-lg-4 col-md-6 col-sm-12">
-                                          <div className="field-inner">
-                                            <p>
-                                              <button
-                                                type="submit"
-                                                className="theme-btn btn-style-one wpcf7-form-control wpcf7-submit"
-                                              >
-                                                <span className="btn-title">
-                                                  <span className="btn-txt">
-                                                    Get More Info
-                                                  </span>
-                                                  <span className="btn-icon">
-                                                    <span className="icon flaticon-arrows-11" />{" "}
-                                                  </span>
-                                                </span>
-                                              </button>
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div
-                                        className="wpcf7-response-output"
-                                        aria-hidden="true"
-                                      />
-                                    </form>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <NewsLetter />
           <section
             className="elementor-section elementor-top-section elementor-element elementor-element-d17bb0a elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
             data-id="d17bb0a"

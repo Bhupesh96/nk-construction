@@ -92,8 +92,11 @@ const Header = () => {
             <div className="upper-row clearfix">
               <div className="logo-box">
                 <div className="logo">
-                  <Link to="index.html">
-                    <img src="wp-content/uploads/2020/06/logo.svg" alt="Logo" />
+                  <Link to="/">
+                    <img
+                      src="wp-content/themes/strnix/assets/images/logo.PNG"
+                      alt="Logo"
+                    />
                   </Link>
                 </div>
               </div>
@@ -166,9 +169,9 @@ const Header = () => {
         <div className="auto-container clearfix">
           {/*Logo*/}
           <div className="logo pull-left">
-            <Link to="index.html">
+            <Link to="/">
               <img
-                src="wp-content/themes/strnix/assets/images/sticky-logo.png"
+                src="wp-content/themes/strnix/assets/images/logo.PNG"
                 alt="Logo"
               />
             </Link>
@@ -190,8 +193,11 @@ const Header = () => {
         </div>
         <nav className="menu-box">
           <div className="nav-logo">
-            <Link to="index.html">
-              <img src="wp-content/uploads/2020/06/logo-3.png" alt="logo" />
+            <Link to="/">
+              <img
+                src="wp-content/themes/strnix/assets/images/logo.PNG"
+                alt="logo"
+              />
             </Link>
           </div>
           <div className="menu-outer">

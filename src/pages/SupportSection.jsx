@@ -30,7 +30,7 @@ const SupportSection = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        WHO ARE NK Construction
+                        WHO ARE Bhartiya Solars
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Get Free Consultation</h2>
@@ -65,7 +65,7 @@ const SupportSection = () => {
                             <ul />
                           </div>
                           <form
-                            action="https://NK Construction.smartdemowp.com/#wpcf7-f5-p6-o2"
+                            action="https://Bhartiya Solars.smartdemowp.com/#wpcf7-f5-p6-o2"
                             method="post"
                             className="wpcf7-form init"
                             aria-label="Contact form"
@@ -101,7 +101,6 @@ const SupportSection = () => {
                               <input
                                 type="hidden"
                                 name="_wpcf7_posted_data_hash"
-                                defaultValue
                               />
                             </div>
                             <div className="row clearfix">
@@ -117,7 +116,6 @@ const SupportSection = () => {
                                       aria-required="true"
                                       aria-invalid="false"
                                       placeholder="Your Name"
-                                      defaultValue
                                       type="text"
                                       name="your-name"
                                     />
@@ -135,7 +133,6 @@ const SupportSection = () => {
                                       className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
                                       aria-invalid="false"
                                       placeholder="Email"
-                                      defaultValue
                                       type="email"
                                       name="your-email"
                                     />
@@ -154,7 +151,6 @@ const SupportSection = () => {
                                       aria-required="true"
                                       aria-invalid="false"
                                       placeholder="Phone"
-                                      defaultValue
                                       type="text"
                                       name="phone"
                                     />

@@ -29,7 +29,7 @@ const CompanyNews = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        NK Construction IS IMPORTANT
+                        Bhartiya Solars IS IMPORTANT
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Latest Company News</h2>

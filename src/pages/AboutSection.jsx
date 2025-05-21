@@ -33,7 +33,7 @@ const AboutSection = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              WHO ARE NK Construction
+                              WHO ARE Bhartiya Solars
                               <span className="icon flaticon-flash" />
                             </div>
                             <h2>Integrated Solar Solutions</h2>
@@ -49,7 +49,7 @@ const AboutSection = () => {
                           </div>
                           <div className="text">
                             <p>
-                              NK Construction is a forward-thinking solar energy
+                              Bhartiya Solars is a forward-thinking solar energy
                               provider dedicated to powering a sustainable
                               future. Specializing in the design, installation,
                               and maintenance of solar power systems, NK
@@ -57,7 +57,7 @@ const AboutSection = () => {
                               industrial clients reduce their energy costs while
                               minimizing their carbon footprint. With a strong
                               focus on quality, innovation, and customer
-                              satisfaction, NK Construction delivers end-to-end
+                              satisfaction, Bhartiya Solars delivers end-to-end
                               renewable energy solutions that are both reliable
                               and environmentally friendly.
                             </p>
@@ -68,7 +68,7 @@ const AboutSection = () => {
                             >
                               <p>
                                 Driven by a vision of cleaner energy and a
-                                greener planet, NK Construction is committed to
+                                greener planet, Bhartiya Solars is committed to
                                 making solar power accessible, efficient, and
                                 affordable for everyone.
                               </p>
@@ -116,7 +116,7 @@ const AboutSection = () => {
                                 <div className="icon">
                                   <i
                                     aria-hidden="true"
-                                    className="flaticon-solar-panel"
+                                    className="flaticon-power-7"
                                   />
                                 </div>
                                 <div className="title">
@@ -136,8 +136,8 @@ const AboutSection = () => {
                                   />
                                 </div>
                                 <div className="title">
-                                  GET ENERGY <br />
-                                  FORESTS
+                                  COMMERCIAL <br />
+                                  SOLUTIONS
                                 </div>
                               </li>
                             </ul>

@@ -1,0 +1,183 @@
+/* Slider container */
+.custom-reviews-slider {
+  position: relative;
+  max-width: 100%; /* Ensure slider stays within container */
+  margin: 0 auto;
+  padding: 0 20px; /* Reduced padding to prevent overflow */
+  box-sizing: border-box;
+}
+
+/* Testimonial item */
+.custom-testimonial-item {
+  padding: 0 10px; /* Reduced padding to keep slides in view */
+  outline: none; /* Prevent outline on focus */
+  box-sizing: border-box;
+}
+
+.custom-testimonial-inner {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%; /* Ensure item takes full slide width */
+  max-width: 500px; /* Cap width to prevent overflow */
+  margin: 0 auto; /* Center item within slide */
+}
+
+.custom-testimonial-inner:hover {
+  transform: translateY(-5px);
+}
+
+/* Quote icon */
+.custom-quote-icon {
+  font-size: 36px;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+/* Rating stars */
+.custom-rating {
+  margin-bottom: 15px;
+}
+
+.custom-rating .fa-star {
+  color: #f39c12;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+/* Testimonial text */
+.custom-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  overflow: hidden; /* Prevent text overflow */
+  text-overflow: ellipsis; /* Handle long text gracefully */
+}
+
+/* Testimonial info */
+.custom-testi-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.custom-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.custom-designation {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Slick navigation arrows */
+.custom-reviews-slider .slick-prev,
+.custom-reviews-slider .slick-next {
+  width: 35px;
+  height: 35px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.custom-reviews-slider .slick-prev:hover,
+.custom-reviews-slider .slick-next:hover {
+  background: #e55a5a;
+}
+
+.custom-reviews-slider .slick-prev {
+  left: 10px; /* Adjusted to keep arrows in view */
+}
+
+.custom-reviews-slider .slick-next {
+  right: 10px; /* Adjusted to keep arrows in view */
+}
+
+.custom-reviews-slider .slick-prev:before,
+.custom-reviews-slider .slick-next:before {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Slick dots */
+.custom-reviews-slider .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.custom-reviews-slider .slick-dots li {
+  margin: 0 5px;
+}
+
+.custom-reviews-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  border: none;
+  text-indent: -9999px; /* Hide default text */
+}
+
+.custom-reviews-slider .slick-dots li.slick-active button {
+  background: #ff6b6b;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .custom-reviews-slider .slick-prev {
+    left: 5px;
+  }
+  .custom-reviews-slider .slick-next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-testimonial-inner {
+    padding: 15px;
+  }
+  .custom-text {
+    font-size: 14px;
+  }
+  .custom-reviews-slider .slick-prev,
+  .custom-reviews-slider .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+  .custom-reviews-slider .slick-prev:before,
+  .custom-reviews-slider .slick-next:before {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .custom-reviews-slider {
+    padding: 0 10px;
+  }
+  .custom-testimonial-inner {
+    padding: 12px;
+  }
+  .custom-quote-icon {
+    font-size: 30px;
+  }
+}

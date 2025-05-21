@@ -94,7 +94,7 @@ const OurServices = () => {
                                   </div>
                                 </div>
                                 <div className="text">
-                                  At NK Construction, we specialize in
+                                  At Bhartiya Solars, we specialize in
                                   installing high-efficiency solar panels that
                                   maximize sunlight conversion to help you
                                   reduce energy costs and contribute to a
@@ -138,7 +138,7 @@ const OurServices = () => {
                                   </div>
                                 </div>
                                 <div className="text">
-                                  At NK Construction, we offer comprehensive
+                                  At Bhartiya Solars, we offer comprehensive
                                   preventative maintenance services designed to
                                   keep your systems running smoothly and avoid
                                   costly emergency repairs. Our expert team
@@ -224,7 +224,7 @@ const OurServices = () => {
                                   </div>
                                 </div>
                                 <div className="text">
-                                  At NK Construction, we recommend regular
+                                  At Bhartiya Solars, we recommend regular
                                   maintenance to keep your solar panels
                                   operating at their peak efficiency. Our team
                                   ensures your panels remain clean, free from

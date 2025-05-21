@@ -1,9 +1,69 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    mobile: "",
+    email: "",
+    phone: "",
+    address: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("");
+
+    const payload = {
+      istype: "contact",
+      name: formData.name,
+      mobile: formData.mobile,
+      email: formData.email,
+      address: formData.address,
+      message: formData.message,
+      created_by: "1",
+    };
+
+    try {
+      const response = await fetch(
+        "https://rjtechx.fun/solar/api/post/submit_activity_api.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const result = await response.json();
+      if (result.success === true) {
+        setStatus("Form submitted successfully!");
+        setFormData({
+          name: "",
+          mobile: "",
+          email: "",
+          phone: "",
+          address: "",
+          message: "",
+        });
+      } else {
+        setStatus(`Error: ${result.message || "Submission failed"}`);
+      }
+    } catch (error) {
+      setStatus("Error: Failed to submit form. Please try again.");
+      console.error("Submission error:", error);
+    }
+  };
   useEffect(() => {
     const handlePreloader = () => {
       if ($(".preloader").length) {
@@ -36,7 +96,6 @@ const Contact = () => {
                       type="search"
                       className="form-control"
                       name="s"
-                      defaultValue
                       placeholder="Search Here"
                       required
                     />
@@ -65,7 +124,7 @@ const Contact = () => {
                     href="/index.html"
                     className="home"
                   >
-                    <span property="name">NK Construction World's Energy</span>
+                    <span property="name">Bhartiya Solars World's Energy</span>
                   </a>
                   <meta property="position" content={1} />
                 </span>{" "}
@@ -278,8 +337,7 @@ const Contact = () => {
                                     <ul />
                                   </div>
                                   <form
-                                    action="https://strnix.smartdemowp.com/get-in-touch/#wpcf7-f443-p555-o1"
-                                    method="post"
+                                    onSubmit={handleSubmit}
                                     className="wpcf7-form init"
                                     aria-label="Contact form"
                                     noValidate="novalidate"
@@ -314,7 +372,6 @@ const Contact = () => {
                                       <input
                                         type="hidden"
                                         name="_wpcf7_posted_data_hash"
-                                        defaultValue
                                       />
                                     </div>
                                     <div className="row clearfix">
@@ -330,9 +387,11 @@ const Contact = () => {
                                               aria-required="true"
                                               aria-invalid="false"
                                               placeholder="Your Name"
-                                              defaultValue
                                               type="text"
-                                              name="your-name"
+                                              name="name"
+                                              value={formData.name}
+                                              onChange={handleChange}
+                                              required
                                             />
                                           </span>
                                         </p>
@@ -348,10 +407,12 @@ const Contact = () => {
                                               className="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
                                               aria-required="true"
                                               aria-invalid="false"
-                                              placeholder="Email"
-                                              defaultValue
-                                              type="email"
-                                              name="your-email"
+                                              placeholder="Mobile"
+                                              type="number"
+                                              name="mobile"
+                                              value={formData.mobile}
+                                              onChange={handleChange}
+                                              required
                                             />
                                           </span>
                                         </p>
@@ -367,10 +428,32 @@ const Contact = () => {
                                               className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                               aria-required="true"
                                               aria-invalid="false"
-                                              placeholder="Subject"
-                                              defaultValue
+                                              placeholder="Email"
                                               type="text"
-                                              name="subject"
+                                              name="email"
+                                              value={formData.email}
+                                              onChange={handleChange}
+                                            />
+                                          </span>
+                                        </p>
+                                      </div>
+
+                                      <div className="col-lg-12 col-md-12 col-sm-12 form-group">
+                                        <p>
+                                          <span
+                                            className="wpcf7-form-control-wrap"
+                                            data-name="subject"
+                                          >
+                                            <input
+                                              size={40}
+                                              className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                              aria-required="true"
+                                              aria-invalid="false"
+                                              placeholder="Address"
+                                              type="text"
+                                              name="address"
+                                              value={formData.address}
+                                              onChange={handleChange}
                                             />
                                           </span>
                                         </p>
@@ -388,7 +471,9 @@ const Contact = () => {
                                               aria-invalid="false"
                                               placeholder="Message"
                                               name="message"
-                                              defaultValue={""}
+                                              value={formData.message}
+                                              onChange={handleChange}
+                                              required
                                             />
                                           </span>
                                         </p>
@@ -513,19 +598,21 @@ const Contact = () => {
                           <div className="footer-logo-box">
                             <a
                               href="/index.html"
-                              title="NK Construction - Green Energy HTML Template"
+                              title="Bhartiya Solars - Green Energy HTML Template"
                             >
                               <img
-                                src="/wp-content/uploads/2020/06/home2.svg"
-                                alt="NK Construction - Green Energy HTML Template"
-                                title="NK Construction - Green Energy HTML Template"
+                                src="wp-content/themes/strnix/assets/images/logo-nob.PNG"
+                                alt="Bhartiya Solars - Green Energy HTML Template"
+                                title="Bhartiya Solars - Green Energy HTML Template"
                               />
                             </a>
                           </div>
                           <div className="about-text">
-                            Integer lobortis sem consequat imperdiet In nulla
-                            viverra ut lorem ut, dapibus conse etur diam. Nun
-                            bibendum diet condiment sed ipsum duis lacinia.
+                            Bhartiya Solars is a renewable energy company
+                            specializing in the installation and maintenance of
+                            solar power systems. They offer sustainable
+                            solutions for residential, commercial, and
+                            industrial energy needs.
                           </div>
                           <div className="footer-social">
                             <ul className="footer-social-two clearfix">
@@ -599,7 +686,7 @@ const Contact = () => {
                             <ul>
                               <li>
                                 <Link to="#" target="_blank" rel="nofollow">
-                                  About NK Construction{" "}
+                                  About Bhartiya Solars{" "}
                                 </Link>
                               </li>
                               <li>
@@ -780,7 +867,7 @@ const Contact = () => {
                   <span className="flaticon-arrows" />
                 </div>
                 <div className="copyright">
-                  © Copyright 2025 By <Link to="#">NK Construction</Link>{" "}
+                  © Copyright 2025 By <Link to="#">Bhartiya Solars</Link>{" "}
                 </div>
                 <div className="footer-nav">
                   <ul className="clearfix">

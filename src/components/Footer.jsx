@@ -62,7 +62,7 @@ const Footer = () => {
                               <div className="logo">
                                 <Link to="#">
                                   <img
-                                    src="wp-content/uploads/2020/06/foorer-logo-1.svg"
+                                    src="wp-content/themes/strnix/assets/images/logo-nob.PNG"
                                     alt="footer"
                                   />
                                 </Link>

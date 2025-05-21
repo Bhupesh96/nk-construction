@@ -1,6 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 const ClientSection = () => {
+  const [testimonials, setTestimonials] = useState([]);
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const response = await fetch(
+          "https://rjtechx.fun/solar/api/?api=gettestimonial"
+        );
+        const data = await response.json();
+        if (data.Response.Success === 1) {
+          setTestimonials(data.Response.List);
+        }
+      } catch (error) {
+        console.error("Error fetching testimonials:", error);
+      }
+    };
+
+    fetchTestimonials();
+  }, []);
+
+  const renderStars = (rating) => {
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+      stars.push(<span key={i} className="fa fa-star" />);
+    }
+    return stars.slice(0, rating); // Only show stars up to the rating value
+  };
+
   return (
     <section
       className="elementor-section elementor-top-section elementor-element elementor-element-92bf75f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
@@ -30,7 +57,7 @@ const ClientSection = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        WHO ARE NK Construction
+                        WHO ARE Bhartiya Solars
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Client’s Reviews</h2>
@@ -47,191 +74,38 @@ const ClientSection = () => {
                         className="reviews-carousel strnix-carousel owl-theme owl-carousel"
                         data-options='{"loop": true, "margin": 40, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" }, "1024":{ "items" : "2" }, "1200":{ "items" : "2" }}}'
                       >
-                        <div className="testi-block-one">
-                          <div className="inner-box">
-                            <div className="quote-icon">
-                              <i
-                                aria-hidden="true"
-                                className="flaticon-quote-1"
-                              />
-                            </div>
-                            <div className="rating">
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                            </div>
-                            <div className="text">
-                              Integer lobortis sem consequat consequat
-                              imperdiet. In nulla sed viverra ut lorem dap ib
-                              consectetur bibendum imperdiets. Aliquam era
-                              volutpat dolore eu fugiat nulla pariatur excepteur
-                              sint occaecat.
-                            </div>
-                            <div className="testi-info">
-                              <div className="image">
-                                <img
-                                  decoding="async"
-                                  src="/wp-content/uploads/2020/06/author-thumb-1.jpg"
-                                  alt="about"
+                        {testimonials.map((testimonial) => (
+                          <div
+                            className="testi-block-one"
+                            key={testimonial.userid}
+                          >
+                            <div className="inner-box">
+                              <div className="quote-icon">
+                                <i
+                                  aria-hidden="true"
+                                  className="flaticon-quote-1"
                                 />
                               </div>
-                              <div className="name">Erina soulasd</div>
-                              <div className="designation">Florida, USA</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="testi-block-one">
-                          <div className="inner-box">
-                            <div className="quote-icon">
-                              <i
-                                aria-hidden="true"
-                                className="flaticon-quote-1"
-                              />
-                            </div>
-                            <div className="rating">
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                            </div>
-                            <div className="text">
-                              Integer lobortis sem consequat consequat
-                              imperdiet. In nulla sed viverra ut lorem dap ib
-                              consectetur bibendum imperdiets. Aliquam era
-                              volutpat dolore eu fugiat nulla pariatur excepteur
-                              sint occaecat.
-                            </div>
-                            <div className="testi-info">
-                              <div className="image">
-                                <img
-                                  decoding="async"
-                                  src="/wp-content/uploads/2020/06/author-thumb-2.jpg"
-                                  alt="about"
-                                />
+                              <div className="rating">
+                                {renderStars(testimonial.rating)}
                               </div>
-                              <div className="name">Noal hsuat</div>
-                              <div className="designation">Florida, USA</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="testi-block-one">
-                          <div className="inner-box">
-                            <div className="quote-icon">
-                              <i
-                                aria-hidden="true"
-                                className="flaticon-quote-1"
-                              />
-                            </div>
-                            <div className="rating">
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                            </div>
-                            <div className="text">
-                              Integer lobortis sem consequat consequat
-                              imperdiet. In nulla sed viverra ut lorem dap ib
-                              consectetur bibendum imperdiets. Aliquam era
-                              volutpat dolore eu fugiat nulla pariatur excepteur
-                              sint occaecat.
-                            </div>
-                            <div className="testi-info">
-                              <div className="image">
-                                <img
-                                  decoding="async"
-                                  src="/wp-content/uploads/2020/06/author-thumb-1.jpg"
-                                  alt="about"
-                                />
+                              <div className="text">{testimonial.message}</div>
+                              <div className="testi-info">
+                                <div className="image">
+                                  <img
+                                    decoding="async"
+                                    src={`https://rjtechx.fun/solar/${testimonial.profile_image}`}
+                                    alt={testimonial.name}
+                                  />
+                                </div>
+                                <div className="name">{testimonial.name}</div>
+                                <div className="designation">
+                                  {testimonial.address || "Unknown Location"}
+                                </div>
                               </div>
-                              <div className="name">Erina soulasd</div>
-                              <div className="designation">Florida, USA</div>
                             </div>
                           </div>
-                        </div>
-                        <div className="testi-block-one">
-                          <div className="inner-box">
-                            <div className="quote-icon">
-                              <i
-                                aria-hidden="true"
-                                className="flaticon-quote-1"
-                              />
-                            </div>
-                            <div className="rating">
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                            </div>
-                            <div className="text">
-                              Integer lobortis sem consequat consequat
-                              imperdiet. In nulla sed viverra ut lorem dap ib
-                              consectetur bibendum imperdiets. Aliquam era
-                              volutpat dolore eu fugiat nulla pariatur excepteur
-                              sint occaecat.
-                            </div>
-                            <div className="testi-info">
-                              <div className="image">
-                                <img
-                                  decoding="async"
-                                  src="/wp-content/uploads/2020/06/author-thumb-2.jpg"
-                                  alt="about"
-                                />
-                              </div>
-                              <div className="name">Noal hsuat</div>
-                              <div className="designation">Florida, USA</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="sponsors-outer">
-                    <div className="auto-container">
-                      {/*Sponsors Carousel*/}
-                      <div
-                        className="sponsors-carousel strnix-carousel owl-theme owl-carousel"
-                        data-options='{"loop": true, "margin": 40, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "3" } , "800":{ "items" : "3" }, "1024":{ "items" : "4" }, "1200":{ "items" : "5" }}}'
-                      >
-                        <div className="slide-item">
-                          <figure className="image-box">
-                            <Link to="#" onClick={(e) => e.preventDefault()}>
-                              {/* <img decoding="async" src="#" alt="about" /> */}
-                            </Link>
-                          </figure>
-                        </div>
-                        <div className="slide-item">
-                          <figure className="image-box">
-                            <Link to="#" onClick={(e) => e.preventDefault()}>
-                              {/* <img decoding="async" src="#" alt="about" /> */}
-                            </Link>
-                          </figure>
-                        </div>
-                        <div className="slide-item">
-                          <figure className="image-box">
-                            <Link to="#" onClick={(e) => e.preventDefault()}>
-                              {/* <img decoding="async" src="#" alt="about" /> */}
-                            </Link>
-                          </figure>
-                        </div>
-                        <div className="slide-item">
-                          <figure className="image-box">
-                            <Link to="#" onClick={(e) => e.preventDefault()}>
-                              {/* <img decoding="async" src="#" alt="about" /> */}
-                            </Link>
-                          </figure>
-                        </div>
-                        <div className="slide-item">
-                          <figure className="image-box">
-                            <Link to="#" onClick={(e) => e.preventDefault()}>
-                              {/* <img decoding="async" src="#" alt="about" /> */}
-                            </Link>
-                          </figure>
-                        </div>
+                        ))}
                       </div>
                     </div>
                   </div>

@@ -8,7 +8,7 @@ import ProjectsSection from "./ProjectsSection";
 import ClientSection from "./ClientSection";
 import PriceSection from "./PriceSection";
 import SupportSection from "./SupportSection";
-import CompanyNews from "./CompanyNews";
+// import CompanyNews from "./CompanyNews";
 import Footer from "../components/Footer";
 import Footer2 from "../components/Footer2";
 import Header from "../components/Header";
@@ -48,7 +48,6 @@ const Home = () => {
                       type="search"
                       className="form-control"
                       name="s"
-                      defaultValue
                       placeholder="Search Here"
                       required
                     />
@@ -77,7 +76,7 @@ const Home = () => {
           <ClientSection />
           <PriceSection />
           <SupportSection />
-          <CompanyNews />
+          {/* <CompanyNews /> */}
         </div>
         <Footer />
         <Footer2 />

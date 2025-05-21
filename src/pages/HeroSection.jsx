@@ -44,7 +44,7 @@ const HeroSection = () => {
                                   className="fas fa-solar-panel"
                                 />
                                 <span className="txt">
-                                  welcome to NK Construction
+                                  welcome to Bhartiya Solars&nbsp;
                                 </span>
                                 <i
                                   aria-hidden="true"
@@ -78,7 +78,7 @@ const HeroSection = () => {
                                   className="fas fa-solar-panel"
                                 />
                                 <span className="txt">
-                                  welcome to NK Construction
+                                  welcome to Bhartiya Solars
                                 </span>
                                 <i
                                   aria-hidden="true"
@@ -112,7 +112,7 @@ const HeroSection = () => {
                                   className="fas fa-solar-panel"
                                 />
                                 <span className="txt">
-                                  welcome to NK Construction
+                                  welcome to Bhartiya Solars
                                 </span>
                                 <i
                                   aria-hidden="true"

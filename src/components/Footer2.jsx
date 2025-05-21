@@ -110,7 +110,7 @@ const Footer2 = () => {
                           <ul>
                             <li>
                               <Link to="#" target="_blank" rel="nofollow">
-                                About NK Construction
+                                About Bhartiya Solars
                               </Link>
                             </li>
                             <li>
@@ -217,19 +217,21 @@ const Footer2 = () => {
                         <div className="footer-logo-box">
                           <a
                             href="index.html"
-                            title="NK Construction - Green Energy HTML Template"
+                            title="Bhartiya Solars - Green Energy HTML Template"
                           >
                             <img
-                              src="wp-content/uploads/2020/06/foorer-logo-1.svg"
-                              alt="NK Construction - Green Energy HTML Template"
-                              title="NK Construction - Green Energy HTML Template"
+                              src="wp-content/themes/strnix/assets/images/logo-nob.PNG"
+                              alt="Bhartiya Solars - Green Energy HTML Template"
+                              title="Bhartiya Solars - Green Energy HTML Template"
                             />
                           </a>
                         </div>
                         <div className="about-text">
-                          Integer lobortis sem consequat imperdiet In nulla
-                          viverra ut lorem ut, dapibus conse etur diam. Nun
-                          bibendum diet condiment sed ipsum duis lacinia.
+                          Bhartiya Solars is a renewable energy company
+                          specializing in the installation and maintenance of
+                          solar power systems. They offer sustainable solutions
+                          for residential, commercial, and industrial energy
+                          needs.
                         </div>
                         <div className="footer-social">
                           <ul className="footer-social-two clearfix">
@@ -299,7 +301,7 @@ const Footer2 = () => {
                 <span className="flaticon-arrows" />
               </div>
               <div className="copyright">
-                © Copyright 2025 By <Link to="#">NK Construction</Link>
+                © Copyright 2025 By <Link to="#">Bhartiya Solars</Link>
               </div>
               <div className="footer-nav">
                 <ul className="clearfix">

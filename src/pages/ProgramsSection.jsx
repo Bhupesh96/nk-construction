@@ -31,7 +31,7 @@ const ProgramsSection = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        NK Construction IS IMPORTANT
+                        Bhartiya Solars IS IMPORTANT
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Comprehensive Programs</h2>
@@ -69,7 +69,7 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    NK Construction provides solar thermal
+                                    Bhartiya Solars provides solar thermal
                                     systems that efficiently harness sunlight
                                     for water and space heating.
                                   </div>
@@ -105,7 +105,7 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    NK Construction provides solar thermal
+                                    Bhartiya Solars provides solar thermal
                                     systems that efficiently harness sunlight
                                     for water and space heating.
                                   </div>
@@ -140,7 +140,7 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    NK Construction offers efficient residential
+                                    Bhartiya Solars offers efficient residential
                                     EV chargers, providing homeowners with a
                                     convenient and sustainable solution for
                                     electric vehicle charging.
@@ -176,7 +176,7 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    NK Construction offers tailored commercial
+                                    Bhartiya Solars offers tailored commercial
                                     solar solutions that reduce energy costs,
                                     improve sustainability, and enhance
                                     long-term profitability for businesses.
@@ -212,7 +212,7 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    NK Construction provides solar thermal
+                                    Bhartiya Solars provides solar thermal
                                     systems that efficiently harness sunlight
                                     for water and space heating.
                                   </div>
@@ -247,7 +247,7 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    NK Construction provides solar thermal
+                                    Bhartiya Solars provides solar thermal
                                     systems that efficiently harness sunlight
                                     for water and space heating.
                                   </div>
@@ -282,7 +282,7 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    NK Construction offers efficient residential
+                                    Bhartiya Solars offers efficient residential
                                     EV chargers, providing homeowners with a
                                     convenient and sustainable solution for
                                     electric vehicle charging.
@@ -318,7 +318,7 @@ const ProgramsSection = () => {
                                     />
                                   </div>
                                   <div className="text">
-                                    NK Construction offers tailored commercial
+                                    Bhartiya Solars offers tailored commercial
                                     solar solutions that reduce energy costs,
                                     improve sustainability, and enhance
                                     long-term profitability for businesses.

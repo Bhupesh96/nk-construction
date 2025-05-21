@@ -95,7 +95,6 @@ const NewsLetter = () => {
                                   <input
                                     type="hidden"
                                     name="_wpcf7_posted_data_hash"
-                                    defaultValue
                                   />
                                 </div>
                                 <div className="row clearfix">
@@ -113,7 +112,6 @@ const NewsLetter = () => {
                                             aria-required="true"
                                             aria-invalid="false"
                                             placeholder="Your Name"
-                                            defaultValue
                                             type="text"
                                             name="your-name"
                                           />
@@ -137,7 +135,6 @@ const NewsLetter = () => {
                                             id="field-2"
                                             aria-invalid="false"
                                             placeholder="Your Email"
-                                            defaultValue
                                             type="email"
                                             name="your-email"
                                           />

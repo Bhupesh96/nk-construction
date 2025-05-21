@@ -1,6 +1,32 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const ProjectsSection = () => {
+  const countersRef = useRef([]);
+
+  useEffect(() => {
+    const animateCounter = (element, start, end, duration, isFloat = false) => {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const value = isFloat
+          ? (start + (end - start) * progress).toFixed(1)
+          : Math.floor(start + (end - start) * progress);
+        element.textContent = value;
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        }
+      };
+      requestAnimationFrame(step);
+    };
+
+    countersRef.current.forEach((counter) => {
+      const target = parseFloat(counter.getAttribute("data-stop"));
+      const isFloat = counter.getAttribute("data-stop").includes(".");
+      animateCounter(counter, 0, target, 2000, isFloat);
+    });
+  }, []);
+
   return (
     <section
       className="elementor-section elementor-top-section elementor-element elementor-element-c20ff2a elementor-section-full_width elementor-section-height-default elementor-section-height-default"
@@ -38,7 +64,7 @@ const ProjectsSection = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              WHO ARE NK Construction
+                              WHO ARE Bhartiya Solars
                               <span className="icon flaticon-flash" />
                             </div>
                             <h2>The Recent Projects</h2>
@@ -89,7 +115,9 @@ const ProjectsSection = () => {
                                   className="tab-btn active-btn"
                                   data-tab="#tab-0"
                                 >
-                                  <span className="btn-title">Raymond Era</span>
+                                  <span className="btn-title">
+                                    Commercial Era
+                                  </span>
                                   <span className="info">5.2KW SYSYEM</span>
                                 </li>
                                 <li className="tab-btn no" data-tab="#tab-1">
@@ -97,7 +125,9 @@ const ProjectsSection = () => {
                                   <span className="info">5.2KW SYSYEM</span>
                                 </li>
                                 <li className="tab-btn no" data-tab="#tab-2">
-                                  <span className="btn-title">Agri Lounge</span>
+                                  <span className="btn-title">
+                                    Residential Era
+                                  </span>
                                   <span className="info">5.2KW SYSYEM</span>
                                 </li>
                               </ul>
@@ -173,13 +203,14 @@ const ProjectsSection = () => {
                                 className="count-text"
                                 data-speed={1000}
                                 data-stop={24}
+                                ref={(el) => (countersRef.current[0] = el)}
                               >
-                                24
+                                0
                               </span>
                               + Years
                             </div>
                             <div className="counter-title">
-                              Of Experience &amp; Record
+                              Of Experience & Record
                             </div>
                           </div>
                         </div>
@@ -196,8 +227,9 @@ const ProjectsSection = () => {
                                 className="count-text"
                                 data-speed={1000}
                                 data-stop={3500}
+                                ref={(el) => (countersRef.current[1] = el)}
                               >
-                                3500
+                                0
                               </span>
                               +
                             </div>
@@ -219,8 +251,9 @@ const ProjectsSection = () => {
                                 className="count-text"
                                 data-speed={1000}
                                 data-stop="6.5"
+                                ref={(el) => (countersRef.current[2] = el)}
                               >
-                                6.5
+                                0
                               </span>
                               k Watt
                             </div>
@@ -242,8 +275,9 @@ const ProjectsSection = () => {
                                 className="count-text"
                                 data-speed={1000}
                                 data-stop={2700}
+                                ref={(el) => (countersRef.current[3] = el)}
                               >
-                                2700
+                                0
                               </span>
                               +
                             </div>
