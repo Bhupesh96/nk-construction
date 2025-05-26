@@ -28,7 +28,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.bhartiyasolar.in }}
-          username: ${{ secrets.jtd.jitendra.3099@gmail.com }}
+          username: ${{ secrets.u606446288.bhartiyasolar.in }}
           password: ${{ secrets.Jittu123@456 }}
           server-dir: public_html/ # Change if your directory is different
           local-dir: build/
