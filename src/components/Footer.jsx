@@ -65,8 +65,9 @@ const Footer = () => {
                               <div className="logo">
                                 <Link to="#">
                                   <img
-                                    src="wp-content/themes/strnix/assets/images/logo-nob.PNG"
+                                    src="Bhartiya Solar_logo_website.svg"
                                     alt="footer"
+                                    style={{ height: "140px" }}
                                   />
                                 </Link>
                               </div>

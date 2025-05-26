@@ -218,9 +218,9 @@ const Footer2 = () => {
                             title="Bhartiya Solars - Green Energy HTML Template"
                           >
                             <img
-                              src="wp-content/themes/strnix/assets/images/logo-nob.PNG"
-                              alt="Bhartiya Solars - Green Energy HTML Template"
-                              title="Bhartiya Solars - Green Energy HTML Template"
+                              src="Bhartiya Solar_logo_website.svg"
+                              alt="Logo"
+                              style={{ width: "300px", height: "100px" }}
                             />
                           </a>
                         </div>

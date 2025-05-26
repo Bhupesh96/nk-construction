@@ -96,8 +96,9 @@ const Header = () => {
                 <div className="logo">
                   <Link to="/">
                     <img
-                      src="wp-content/themes/strnix/assets/images/logo.PNG"
+                      src="Bhartiya Solar_logo_website.svg"
                       alt="Logo"
+                      style={{ width: "200px", height: "75px" }}
                     />
                   </Link>
                 </div>
@@ -170,8 +171,9 @@ const Header = () => {
           <div className="logo pull-left">
             <Link to="/">
               <img
-                src="wp-content/themes/strnix/assets/images/logo.PNG"
+                src="Bhartiya Solar_logo_website.svg"
                 alt="Logo"
+                style={{ width: "200px", height: "50px" }}
               />
             </Link>
           </div>
@@ -194,8 +196,9 @@ const Header = () => {
           <div className="nav-logo">
             <Link to="/">
               <img
-                src="wp-content/themes/strnix/assets/images/logo.PNG"
-                alt="logo"
+                src="Bhartiya Solar_logo_website.svg"
+                alt="Logo"
+                style={{ width: "200px", height: "100px", background: "" }}
               />
             </Link>
           </div>
