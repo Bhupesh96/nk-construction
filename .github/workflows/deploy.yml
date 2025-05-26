@@ -3,7 +3,7 @@ name: Deploy to Hostinger via FTP
 on:
   push:
     branches:
-      - main # or 'master', depending on your default branch
+      - main # Use your default branch name (main/master)
 
 jobs:
   deploy:
@@ -27,8 +27,8 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.bhartiyasolar.in }}
-          username: ${{ secrets.u606446288.bhartiyasolar.in }}
-          password: ${{ secrets.Jittu123@456 }}
-          server-dir: public_html/ # Change if your directory is different
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: public_html/
           local-dir: build/
