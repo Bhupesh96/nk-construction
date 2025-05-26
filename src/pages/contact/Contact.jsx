@@ -498,6 +498,32 @@ const Contact = () => {
                                           </button>
                                         </p>
                                       </div>
+                                      {status && (
+                                        <div
+                                          className={`col-md-12 col-sm-12 form-group status-message ${
+                                            status.includes("Error")
+                                              ? "error"
+                                              : "success"
+                                          }`}
+                                          style={{
+                                            marginTop: "20px",
+                                            padding: "10px",
+                                            borderRadius: "5px",
+                                            backgroundColor: status.includes(
+                                              "Error"
+                                            )
+                                              ? "#f8d7da"
+                                              : "#d4edda",
+                                            color: status.includes("Error")
+                                              ? "#721c24"
+                                              : "#155724",
+                                            textAlign: "center",
+                                            fontWeight: "bold",
+                                          }}
+                                        >
+                                          {status}
+                                        </div>
+                                      )}
                                     </div>
                                     <div
                                       className="wpcf7-response-output"
