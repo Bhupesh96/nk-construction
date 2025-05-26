@@ -32,7 +32,7 @@ const Home = () => {
         <div className="preloader">
           <div className="icon" />
         </div>
-
+        <div>Testing Deployment</div>
         <Header />
         <div id="search-popup" className="search-popup">
           <div className="close-search theme-btn">
