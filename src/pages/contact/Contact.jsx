@@ -630,9 +630,13 @@ const Contact = () => {
                               title="Bhartiya Solars - Green Energy HTML Template"
                             >
                               <img
-                                src="Bhartiya Solar_logo_website.svg"
+                                src="Bhartiya Solar_logo-website_white.png"
                                 alt="Logo"
-                                style={{ width: "250px", height: "100px" }}
+                                style={{
+                                  width: "250px",
+                                  height: "60px",
+                                  background: "",
+                                }}
                               />
                             </a>
                           </div>

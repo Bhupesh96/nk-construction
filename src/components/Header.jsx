@@ -96,9 +96,13 @@ const Header = () => {
                 <div className="logo">
                   <Link to="/">
                     <img
-                      src="Bhartiya Solar_logo_website.svg"
+                      src="Bhartiya Solar_logo-website_01.png"
                       alt="Logo"
-                      style={{ width: "200px", height: "75px" }}
+                      style={{
+                        width: "200px",
+                        height: "45px",
+                        marginTop: "12px",
+                      }}
                     />
                   </Link>
                 </div>
@@ -196,9 +200,9 @@ const Header = () => {
           <div className="nav-logo">
             <Link to="/">
               <img
-                src="Bhartiya Solar_logo_website.svg"
+                src="Bhartiya Solar_logo-website_white.png"
                 alt="Logo"
-                style={{ width: "200px", height: "100px", background: "" }}
+                style={{ width: "200px", height: "50px", background: "" }}
               />
             </Link>
           </div>
