@@ -30,7 +30,10 @@ const Footer = () => {
                   <div className="main-footer footer-style-one">
                     <div className="upper-section">
                       <div className="auto-container">
-                        <div className="outer clearfix">
+                        <div
+                          className="outer clearfix"
+                          style={{ justifyContent: "center", display: "flex" }}
+                        >
                           <div className="service-block-two">
                             <div className="inner-box">
                               <div className="icon-box">

@@ -225,7 +225,7 @@ const Contact = () => {
                                       </Link>
                                     </li>
                                     <li>
-                                      <Link to="tel:0800-12345">
+                                      <Link to="tel:+919713311719">
                                         +919713311719
                                       </Link>
                                     </li>{" "}
@@ -255,14 +255,14 @@ const Contact = () => {
                                   <ul className="info">
                                     <li>
                                       <div className="email">
-                                        <a href="mailto:example@email.com">
+                                        <a href="mailto:info@bhartiyasolar.in">
                                           Email: info@bhartiyasolar.in
                                         </a>
                                       </div>
                                     </li>
                                     <li>
                                       <div className="email">
-                                        <a href="mailto:example@email.com">
+                                        <a href="mailto:support@bhartiyasolar.in">
                                           Email: support@bhartiyasolar.in
                                         </a>
                                       </div>
@@ -524,7 +524,7 @@ const Contact = () => {
                                       alt="contact"
                                     />
                                   </span>
-                                  <Link to="tel:(222)-303-4500">
+                                  <Link to="tel:+919713311719">
                                     +919713311719
                                   </Link>{" "}
                                 </div>
@@ -611,11 +611,11 @@ const Contact = () => {
                             </a>
                           </div>
                           <div className="about-text">
-                            Bhartiya Solars is a renewable energy company
-                            specializing in the installation and maintenance of
-                            solar power systems. They offer sustainable
-                            solutions for residential, commercial, and
-                            industrial energy needs.
+                            At Bhartiya Solar, we provide reliable and
+                            affordable solar panel installation services for
+                            homes and businesses. With expert guidance and
+                            quality products, we help you save on electricity
+                            bills and embrace clean energy.
                           </div>
                           <div className="footer-social">
                             <ul className="footer-social-two clearfix">
@@ -692,31 +692,31 @@ const Contact = () => {
                                   About Bhartiya Solars{" "}
                                 </Link>
                               </li>
-                              <li>
+                              {/* <li>
                                 <Link to="#" target="_blank" rel="nofollow">
                                   News Blog{" "}
                                 </Link>
-                              </li>
+                              </li> */}
                               <li>
                                 <Link to="#" target="_blank" rel="nofollow">
                                   Careers{" "}
                                 </Link>
                               </li>
-                              <li>
+                              {/* <li>
                                 <Link to="#" target="_blank" rel="nofollow">
                                   Case Studies{" "}
                                 </Link>
-                              </li>
+                              </li> */}
                               <li>
                                 <Link to="#" target="_blank" rel="nofollow">
                                   Meet Our Team{" "}
                                 </Link>
                               </li>
-                              <li>
+                              {/* <li>
                                 <Link to="#" target="_blank" rel="nofollow">
                                   Testimonials{" "}
                                 </Link>
-                              </li>
+                              </li> */}
                             </ul>
                           </div>
                         </div>
@@ -808,7 +808,7 @@ const Contact = () => {
                               </div>
                               <strong>Visit The Office</strong>
                               <div className="info-text">
-                                102 Taily End Rd, NY
+                                NK constructions,Main road, Bagbahra 493449
                               </div>
                             </div>
                             <div className="info-block">
@@ -822,8 +822,8 @@ const Contact = () => {
                               </div>
                               <strong>Phone Inquiry</strong>
                               <div className="info-text">
-                                <Link to="tel:(222)-303-4500">
-                                  (222) 303 4500
+                                <Link to="tel:+919713311719">
+                                  +919713311719
                                 </Link>
                               </div>
                             </div>
@@ -839,8 +839,8 @@ const Contact = () => {
                               <strong>Send Email</strong>
                               <div className="info-text">
                                 <div className="email">
-                                  <a href="mailto:example@email.com">
-                                    Email: example@email.com
+                                  <a href="mailto:info@bhartiyasolar.in">
+                                    Email: info@bhartiyasolar.in
                                   </a>
                                 </div>
                               </div>

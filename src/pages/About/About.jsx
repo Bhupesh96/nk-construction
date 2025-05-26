@@ -5,6 +5,7 @@ import Footer2 from "../../components/Footer2";
 import Footer from "../../components/Footer";
 import $ from "jquery";
 import NewsLetter from "../NewsLetter";
+import Counter from "../Counter";
 const About = () => {
   useEffect(() => {
     const handlePreloader = () => {
@@ -977,100 +978,7 @@ const About = () => {
                         <div className="bg-pattern-layer" />
                         <div className="fact-counter">
                           <div className="auto-container">
-                            <div className="row clearfix">
-                              <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                                <div className="inner">
-                                  <div className="icon-box">
-                                    <i
-                                      aria-hidden="true"
-                                      className="flaticon-flash"
-                                    />
-                                  </div>
-                                  <div className="count-box">
-                                    <span
-                                      className="count-text"
-                                      data-speed={1000}
-                                      data-stop={24}
-                                    >
-                                      24
-                                    </span>
-                                    + Years
-                                  </div>
-                                  <div className="counter-title">
-                                    Of Experience &amp; Record
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                                <div className="inner">
-                                  <div className="icon-box">
-                                    <i
-                                      aria-hidden="true"
-                                      className="flaticon-flash"
-                                    />
-                                  </div>
-                                  <div className="count-box">
-                                    <span
-                                      className="count-text"
-                                      data-speed={1000}
-                                      data-stop={3500}
-                                    >
-                                      3500
-                                    </span>
-                                    +
-                                  </div>
-                                  <div className="counter-title">
-                                    Systems Installed
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                                <div className="inner">
-                                  <div className="icon-box">
-                                    <i
-                                      aria-hidden="true"
-                                      className="flaticon-flash"
-                                    />
-                                  </div>
-                                  <div className="count-box">
-                                    <span
-                                      className="count-text"
-                                      data-speed={1000}
-                                      data-stop="6.5"
-                                    >
-                                      6.5
-                                    </span>
-                                    k Watt
-                                  </div>
-                                  <div className="counter-title">
-                                    Energy Financing Done
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-                                <div className="inner">
-                                  <div className="icon-box">
-                                    <i
-                                      aria-hidden="true"
-                                      className="flaticon-flash"
-                                    />
-                                  </div>
-                                  <div className="count-box">
-                                    <span
-                                      className="count-text"
-                                      data-speed={1000}
-                                      data-stop={2700}
-                                    >
-                                      2700
-                                    </span>
-                                    +
-                                  </div>
-                                  <div className="counter-title">
-                                    Hours Of Inspection
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                            <Counter />
                           </div>
                         </div>
                       </section>

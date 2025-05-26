@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 
 const ServiceList = () => {
@@ -380,7 +378,7 @@ const ServiceList = () => {
                         Emergency Help? <br />
                         Call or email us 24/7 support team at{" "}
                         <span className="phone">
-                          <Link to="tel:+1-(222)-303-4500">+919713311719</Link>
+                          <Link to="tel:+919713311719">+919713311719</Link>
                         </span>
                       </div>
                     </div>

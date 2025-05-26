@@ -58,9 +58,7 @@ const Footer2 = () => {
                             </div>
                             <strong>Phone Inquiry</strong>
                             <div className="info-text">
-                              <Link to="tel:(222)-303-4500">
-                                (222) 303 4500
-                              </Link>
+                              <Link to="tel:+919713311719">+919713311719</Link>
                             </div>
                           </div>
                           <div className="info-block">
@@ -75,7 +73,7 @@ const Footer2 = () => {
                             <strong>Send Email</strong>
                             <div className="info-text">
                               <div className="email">
-                                <a href="mailto:example@email.com">
+                                <a href="mailto:info@bhartiyasolar.in">
                                   Email: info@bhartiyasolar.in
                                 </a>
                               </div>

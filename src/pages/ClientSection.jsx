@@ -1,22 +1,42 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "../css/ClientSection.css";
+
 const ClientSection = () => {
   const [testimonials, setTestimonials] = useState([]);
+  const [expanded, setExpanded] = useState({});
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1023);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
         const response = await fetch(
           "https://rjtechx.fun/solar/api/?api=gettestimonial"
         );
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
         const data = await response.json();
-        if (data.Response.Success === 1) {
+        console.log("API Response:", data);
+        if (data.Response.Success === 1 && Array.isArray(data.Response.List)) {
           setTestimonials(data.Response.List);
+          console.log("Testimonials Set:", data.Response.List);
+        } else {
+          console.error("Invalid API response:", data);
         }
       } catch (error) {
         console.error("Error fetching testimonials:", error);
       }
     };
-
     fetchTestimonials();
   }, []);
 
@@ -25,8 +45,25 @@ const ClientSection = () => {
     for (let i = 0; i < 5; i++) {
       stars.push(<span key={i} className="fa fa-star" />);
     }
-    return stars.slice(0, rating); // Only show stars up to the rating value
+    return stars.slice(0, rating || 0);
   };
+
+  const toggleReadMore = (userid) => {
+    setExpanded((prev) => ({ ...prev, [userid]: !prev[userid] }));
+  };
+
+  // Group testimonials: 2 per slide on desktop, 1 per slide on mobile
+  const groupedTestimonials = [];
+  if (isMobile) {
+    testimonials.forEach((testimonial) =>
+      groupedTestimonials.push([testimonial])
+    );
+  } else {
+    for (let i = 0; i < testimonials.length; i += 2) {
+      groupedTestimonials.push(testimonials.slice(i, i + 2));
+    }
+  }
+  console.log("Grouped Testimonials:", groupedTestimonials);
 
   return (
     <section
@@ -61,7 +98,6 @@ const ClientSection = () => {
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Client’s Reviews</h2>
-                      {/* <div className="subtitle">Company Testimonials</div> */}
                       <div className="bottom-dots clearfix">
                         <span className="dot line-dot" />
                         <span className="dot" />
@@ -70,43 +106,92 @@ const ClientSection = () => {
                       </div>
                     </div>
                     <div className="reviews-carousel-box">
-                      <div
-                        className="reviews-carousel strnix-carousel owl-theme owl-carousel"
-                        data-options='{"loop": true, "margin": 40, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" }, "1024":{ "items" : "2" }, "1200":{ "items" : "2" }}}'
-                      >
-                        {testimonials.map((testimonial) => (
-                          <div
-                            className="testi-block-one"
-                            key={testimonial.userid}
-                          >
-                            <div className="inner-box">
-                              <div className="quote-icon">
-                                <i
-                                  aria-hidden="true"
-                                  className="flaticon-quote-1"
-                                />
-                              </div>
-                              <div className="rating">
-                                {renderStars(testimonial.rating)}
-                              </div>
-                              <div className="text">{testimonial.message}</div>
-                              <div className="testi-info">
-                                <div className="image">
-                                  <img
-                                    decoding="async"
-                                    src={`https://rjtechx.fun/solar/${testimonial.profile_image}`}
-                                    alt={testimonial.name}
-                                  />
+                      {testimonials.length === 0 ? (
+                        <div>No testimonials available</div>
+                      ) : (
+                        <Carousel
+                          className="reviews-carousel strnix-carousel owl-theme owl-carousel"
+                          showArrows={true}
+                          showThumbs={false}
+                          showStatus={false}
+                          infiniteLoop={true}
+                          autoPlay={true}
+                          interval={6000}
+                          transitionTime={300} /* Faster for smoother mobile */
+                          showIndicators={true}
+                          swipeable={true}
+                          emulateTouch={true}
+                        >
+                          {groupedTestimonials.map((pair, index) => (
+                            <div key={index} className="testimonial-pair">
+                              {pair.map((testimonial) => (
+                                <div
+                                  className="testi-block-one"
+                                  key={testimonial.userid}
+                                  style={{ opacity: 1, visibility: "visible" }}
+                                >
+                                  <div className="inner-box">
+                                    <div className="quote-icon">
+                                      <i
+                                        aria-hidden="true"
+                                        className="flaticon-quote-1"
+                                      />
+                                    </div>
+                                    <div className="rating">
+                                      {renderStars(testimonial.rating || 0)}
+                                    </div>
+                                    <div
+                                      className={`text ${
+                                        !expanded[testimonial.userid]
+                                          ? "truncated"
+                                          : ""
+                                      }`}
+                                    >
+                                      {testimonial.message ||
+                                        "No review provided"}
+                                    </div>
+                                    {testimonial.message &&
+                                      testimonial.message.length > 100 && (
+                                        <button
+                                          className="read-more"
+                                          onClick={() =>
+                                            toggleReadMore(testimonial.userid)
+                                          }
+                                        >
+                                          {expanded[testimonial.userid]
+                                            ? "Read Less"
+                                            : "Read More"}
+                                        </button>
+                                      )}
+                                    <div className="testi-info">
+                                      <div className="image">
+                                        <img
+                                          decoding="async"
+                                          src={
+                                            testimonial.profile_image
+                                              ? `https://rjtechx.fun/solar/${testimonial.profile_image}`
+                                              : "https://via.placeholder.com/50"
+                                          }
+                                          alt={testimonial.name || "User"}
+                                        />
+                                      </div>
+                                      <div className="info-text">
+                                        <div className="name">
+                                          {testimonial.name || "Anonymous"}
+                                        </div>
+                                        <div className="designation">
+                                          {testimonial.address ||
+                                            "Unknown Location"}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div className="name">{testimonial.name}</div>
-                                <div className="designation">
-                                  {testimonial.address || "Unknown Location"}
-                                </div>
-                              </div>
+                              ))}
                             </div>
-                          </div>
-                        ))}
-                      </div>
+                          ))}
+                        </Carousel>
+                      )}
                     </div>
                   </div>
                 </section>

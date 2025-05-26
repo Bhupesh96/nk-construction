@@ -1,183 +1,212 @@
-/* Slider container */
-.custom-reviews-slider {
-  position: relative;
-  max-width: 100%; /* Ensure slider stays within container */
-  margin: 0 auto;
-  padding: 0 20px; /* Reduced padding to prevent overflow */
-  box-sizing: border-box;
-}
-
-/* Testimonial item */
-.custom-testimonial-item {
-  padding: 0 10px; /* Reduced padding to keep slides in view */
-  outline: none; /* Prevent outline on focus */
-  box-sizing: border-box;
-}
-
-.custom-testimonial-inner {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  width: 100%; /* Ensure item takes full slide width */
-  max-width: 500px; /* Cap width to prevent overflow */
-  margin: 0 auto; /* Center item within slide */
-}
-
-.custom-testimonial-inner:hover {
-  transform: translateY(-5px);
-}
-
-/* Quote icon */
-.custom-quote-icon {
-  font-size: 36px;
-  color: #ff6b6b;
-  margin-bottom: 15px;
-}
-
-/* Rating stars */
-.custom-rating {
-  margin-bottom: 15px;
-}
-
-.custom-rating .fa-star {
-  color: #f39c12;
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-/* Testimonial text */
-.custom-text {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 15px;
-  overflow: hidden; /* Prevent text overflow */
-  text-overflow: ellipsis; /* Handle long text gracefully */
-}
-
-/* Testimonial info */
-.custom-testi-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.custom-image img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.custom-name {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-}
-
-.custom-designation {
-  font-size: 13px;
-  color: #777;
-}
-
-/* Slick navigation arrows */
-.custom-reviews-slider .slick-prev,
-.custom-reviews-slider .slick-next {
-  width: 35px;
-  height: 35px;
-  background: #ff6b6b;
-  border-radius: 50%;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  transition: background 0.3s ease;
-}
-
-.custom-reviews-slider .slick-prev:hover,
-.custom-reviews-slider .slick-next:hover {
-  background: #e55a5a;
-}
-
-.custom-reviews-slider .slick-prev {
-  left: 10px; /* Adjusted to keep arrows in view */
-}
-
-.custom-reviews-slider .slick-next {
-  right: 10px; /* Adjusted to keep arrows in view */
-}
-
-.custom-reviews-slider .slick-prev:before,
-.custom-reviews-slider .slick-next:before {
-  font-size: 18px;
-  color: #fff;
-}
-
-/* Slick dots */
-.custom-reviews-slider .slick-dots {
-  display: flex !important;
-  justify-content: center;
-  margin-top: 15px;
+/* Ensure carousel is visible */
+.reviews-carousel {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
   padding: 0;
 }
 
-.custom-reviews-slider .slick-dots li {
-  margin: 0 5px;
+/* Testimonial container layout */
+.testimonial-pair {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.custom-reviews-slider .slick-dots li button {
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  border-radius: 50%;
+/* Remove card-like appearance completely */
+.reviews-carousel .testi-block-one {
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* Remove hover effect entirely */
+.reviews-carousel .testi-block-one:hover {
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Inner content layout */
+.testi-block-one .inner-box {
+  opacity: 1 !important;
+  visibility: visible !important;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Truncate long comment text */
+.text.truncated {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Ensure parent containers don’t clip dots */
+.reviews-carousel,
+.reviews-carousel .carousel,
+.reviews-carousel .carousel-root,
+.reviews-carousel .carousel-slider {
+  overflow: visible !important;
+}
+
+/* Read more button */
+.read-more {
+  background: #007bff;
   border: none;
-  text-indent: -9999px; /* Hide default text */
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  align-self: flex-start;
 }
 
-.custom-reviews-slider .slick-dots li.slick-active button {
-  background: #ff6b6b;
+.read-more:hover {
+  background: #0056b3;
 }
 
-/* Responsive styles */
-@media (max-width: 1200px) {
-  .custom-reviews-slider .slick-prev {
+/* Testimonial user info layout */
+.testi-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.testi-info .image img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+.testi-info .info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testi-info .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.testi-info .designation {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Carousel dots */
+.reviews-carousel-box {
+  position: relative;
+  overflow: visible;
+}
+
+.reviews-carousel .carousel .control-dots {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.reviews-carousel .carousel .control-dots .dot {
+  background: #fff;
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 50%;
+  transition: opacity 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.reviews-carousel .carousel .control-dots .dot:hover {
+  opacity: 0.6;
+}
+
+.reviews-carousel .carousel .control-dots .dot.selected {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Carousel arrows - improved for mobile */
+.reviews-carousel .carousel .control-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.6); /* Optional */
+  padding: 4px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #007bff;
+  transition: background 0.3s;
+}
+
+.reviews-carousel .carousel .control-prev.control-arrow {
+  left: -20px;
+}
+
+.reviews-carousel .carousel .control-next.control-arrow {
+  right: -20px;
+}
+
+@media (max-width: 768px) {
+  .reviews-carousel .carousel .control-prev.control-arrow {
     left: 5px;
   }
-  .custom-reviews-slider .slick-next {
+
+  .reviews-carousel .carousel .control-next.control-arrow {
     right: 5px;
   }
 }
 
-@media (max-width: 768px) {
-  .custom-testimonial-inner {
-    padding: 15px;
+/* Responsive layout */
+@media (min-width: 1024px) {
+  .reviews-carousel .carousel .slide {
+    display: flex;
+    justify-content: center;
   }
-  .custom-text {
-    font-size: 14px;
-  }
-  .custom-reviews-slider .slick-prev,
-  .custom-reviews-slider .slick-next {
-    width: 30px;
-    height: 30px;
-  }
-  .custom-reviews-slider .slick-prev:before,
-  .custom-reviews-slider .slick-next:before {
-    font-size: 16px;
+  .reviews-carousel .testi-block-one {
+    width: 48%;
+    max-width: 480px;
   }
 }
 
-@media (max-width: 600px) {
-  .custom-reviews-slider {
-    padding: 0 10px;
-  }
-  .custom-testimonial-inner {
-    padding: 12px;
-  }
-  .custom-quote-icon {
-    font-size: 30px;
+@media (max-width: 1023px) {
+  .testi-block-one {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 15px; /* Add horizontal padding for spacing */
+    box-sizing: border-box;
   }
 }

@@ -52,7 +52,7 @@ const Header = () => {
             </div>
             <div className="top-right clearfix">
               <div className="email">
-                <a href="mailto:example@email.com">
+                <a href="mailto:info@bhartiyasolar.in">
                   Email: info@bhartiyasolar.in
                 </a>
               </div>
@@ -130,17 +130,14 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="link-box">
-                  <a
-                    href="get-in-touch/index.html"
-                    className="theme-btn btn-style-one"
-                  >
+                  <Link to="/contact" className="theme-btn btn-style-one">
                     <div className="btn-title">
                       <span className="btn-txt">Free Consultation</span>
                       <span className="btn-icon">
                         <span className="icon flaticon-arrows-11" />
                       </span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
