@@ -51,9 +51,7 @@ const HeroSection = () => {
                                   className="fas fa-solar-panel"
                                 />
                               </div>
-                              <h1>
-                                Take Your Building Or Home Off The Grid By Solar
-                              </h1>
+                              <h1>On-Grid Solar for Homes & Businesses</h1>
                               <div className="links-box" />
                             </div>
                           </div>
@@ -85,9 +83,7 @@ const HeroSection = () => {
                                   className="fas fa-solar-panel"
                                 />
                               </div>
-                              <h1>
-                                Take Your Building Or Home Off The Grid By Solar
-                              </h1>
+                              <h1>Power Your Future With Solar Energy</h1>
                               <div className="links-box" />
                             </div>
                           </div>
@@ -119,9 +115,7 @@ const HeroSection = () => {
                                   className="fas fa-solar-panel"
                                 />
                               </div>
-                              <h1>
-                                Take Your Building Or Home Off The Grid By Solar
-                              </h1>
+                              <h1>On-Grid Solar for Homes & Businesses</h1>
                               <div className="links-box" />
                             </div>
                           </div>

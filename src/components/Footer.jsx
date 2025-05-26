@@ -98,7 +98,7 @@ const Footer = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="service-block-two">
+                          {/* <div className="service-block-two">
                             <div className="inner-box">
                               <div className="icon-box">
                                 <i
@@ -113,7 +113,7 @@ const Footer = () => {
                                 </Link>
                               </div>
                             </div>
-                          </div>
+                          </div> */}
                           <div className="service-block-two">
                             <div className="inner-box">
                               <div className="icon-box">

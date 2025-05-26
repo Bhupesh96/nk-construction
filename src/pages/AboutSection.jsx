@@ -33,12 +33,12 @@ const AboutSection = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              WHO ARE Bhartiya Solars
+                              BHARTIYA SOLARS OFFERS YOU
                               <span className="icon flaticon-flash" />
                             </div>
-                            <h2>Integrated Solar Solutions</h2>
+                            <h2>Complete Solar Solutions</h2>
                             <div className="subtitle">
-                              For Controling Your Energy Production
+                              Sun-Powered Solutions For Every Space.
                             </div>
                             <div className="bottom-dots clearfix">
                               <span className="dot line-dot" />
@@ -49,17 +49,16 @@ const AboutSection = () => {
                           </div>
                           <div className="text">
                             <p>
-                              Bhartiya Solars is a forward-thinking solar energy
-                              provider dedicated to powering a sustainable
-                              future. Specializing in the design, installation,
-                              and maintenance of solar power systems, NK
-                              Construction helps residential, commercial, and
-                              industrial clients reduce their energy costs while
-                              minimizing their carbon footprint. With a strong
-                              focus on quality, innovation, and customer
-                              satisfaction, Bhartiya Solars delivers end-to-end
-                              renewable energy solutions that are both reliable
-                              and environmentally friendly.
+                              Lighting Up India with Solar Energy At Bhartiya
+                              Solar, we believe in a cleaner, brighter future
+                              for all. We specialize in on-grid solar panel
+                              installations for both residential and commercial
+                              use, helping families and businesses reduce
+                              electricity bills and their carbon footprint. With
+                              a commitment to quality, transparency, and
+                              reliable service, we're empowering communities to
+                              embrace renewable energy and save money every
+                              month.
                             </p>
                             <div
                               className="text-content wow fadeInLeft animated"

@@ -48,11 +48,13 @@ const Header = () => {
         <div className="auto-container">
           <div className="inner clearfix">
             <div className="top-left clearfix">
-              <div className="top-text">The Nagy saving for us</div>
+              <div className="top-text">Get upto 78000 Subsidy</div>
             </div>
             <div className="top-right clearfix">
               <div className="email">
-                <a href="mailto:example@email.com">Email: example@email.com</a>
+                <a href="mailto:example@email.com">
+                  Email: info@bhartiyasolar.in
+                </a>
               </div>
 
               <ul className="social-links clearfix">
@@ -111,8 +113,8 @@ const Header = () => {
                         />
                       </span>
                     </div>
-                    <strong> Mon to Fri: 0800 - 1900 </strong>
-                    <div className="info-text">+1-(222)-303-4500</div>
+                    <strong> Mon to Sun: 8:00 AM - 9:00 PM </strong>
+                    <div className="info-text">+919713311719</div>
                   </div>
                   <div className="info-block">
                     <div className="icon-box">
@@ -123,8 +125,8 @@ const Header = () => {
                         />
                       </span>
                     </div>
-                    <strong> Mon to Fri: 0800 - 1900 </strong>
-                    <div className="info-text">+1-(222)-303-4500</div>
+                    <strong> Mon to Sun: 8:00 AM - 9:00 PM </strong>
+                    <div className="info-text">+919713311719</div>
                   </div>
                 </div>
                 <div className="link-box">

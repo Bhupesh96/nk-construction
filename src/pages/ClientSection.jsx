@@ -57,11 +57,11 @@ const ClientSection = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        WHO ARE Bhartiya Solars
+                        HEAR FROM THOSE WE'VE POWERED
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Client’s Reviews</h2>
-                      <div className="subtitle">Company Testimonials</div>
+                      {/* <div className="subtitle">Company Testimonials</div> */}
                       <div className="bottom-dots clearfix">
                         <span className="dot line-dot" />
                         <span className="dot" />

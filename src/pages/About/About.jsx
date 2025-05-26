@@ -134,15 +134,15 @@ const About = () => {
                                   data-wow-duration="1000ms"
                                 >
                                   <div className="upper-text">
-                                    WHO ARE Bhartiya Solars
+                                    OUR WORK SPEAKS FOR ITSELF
                                     <span className="icon flaticon-flash" />
                                   </div>
                                   <h2>
-                                    Helping Smart Comapnies With Better
+                                    Helping Smart Homes & Businesses With Better
                                     Integrated Solar Solutions
                                   </h2>
                                   <div className="subtitle">
-                                    For Controling Your Energy Production
+                                    THINK GREEN LIVE CLEAN
                                   </div>
                                   <div className="bottom-dots clearfix">
                                     <span className="dot line-dot" />
@@ -162,26 +162,26 @@ const About = () => {
                               >
                                 <div className="text-content">
                                   <p>
-                                    Bhartiya Solars is a forward-thinking solar
-                                    energy provider dedicated to powering a
-                                    sustainable future. Specializing in the
-                                    design, installation, and maintenance of
-                                    solar power systems, Bhartiya Solars helps
-                                    residential, commercial, and industrial
-                                    clients reduce their energy costs while
-                                    minimizing their carbon footprint. With a
-                                    strong focus on quality, innovation, and
-                                    customer satisfaction, Bhartiya Solars
-                                    delivers end-to-end renewable energy
-                                    solutions that are both reliable and
-                                    environmentally friendly.
+                                    About Bhartiya Solar At Bhartiya Solar,
+                                    we're on a mission to make clean, renewable
+                                    energy accessible to everyone. Based in
+                                    India, we specialize in on-grid solar panel
+                                    installations for both residential and
+                                    commercial spaces. Our team of trained
+                                    professionals delivers end-toend
+                                    solutions-from consultation and site
+                                    assessment to installation and maintenance.
+                                    We use only top-quality solar panels and
+                                    inverters backed by long-term warranties (30
+                                    years on panels and 8 years on inverters),
+                                    ensuring your investment is secure for
+                                    decades. With a focus on customer
+                                    satisfaction, efficiency, and affordable
+                                    pricing, Bhartiya Solar is your trusted
+                                    partner in the journey toward sustainable
+                                    energy.
                                   </p>
-                                  <p>
-                                    Driven by a vision of cleaner energy and a
-                                    greener planet, Bhartiya Solars is committed
-                                    to making solar power accessible, efficient,
-                                    and affordable for everyone.
-                                  </p>
+                                  <p>Go solar with us-and power your future.</p>
                                 </div>
                                 <div className="signature">Tunders daumoty</div>
                               </div>
@@ -749,7 +749,7 @@ const About = () => {
                                       to="#"
                                       onClick={(e) => e.preventDefault()}
                                     >
-                                      Charles Henry
+                                      Chandrashekhar Chandrakar
                                     </Link>
                                   </h3>
                                   <div className="info">CEO | Founder</div>
@@ -812,7 +812,7 @@ const About = () => {
                                       to="#"
                                       onClick={(e) => e.preventDefault()}
                                     >
-                                      edward matthew
+                                      NAGESH KAUSHІК
                                     </Link>
                                   </h3>
                                   <div className="info">CEO | Founder</div>
@@ -875,10 +875,10 @@ const About = () => {
                                       to="#"
                                       onClick={(e) => e.preventDefault()}
                                     >
-                                      ben christopher
+                                      ARUN PATEL
                                     </Link>
                                   </h3>
-                                  <div className="info">Senior Engineer</div>
+                                  <div className="info">Marketing Manager</div>
                                 </div>
                               </div>
                             </div>
@@ -938,7 +938,7 @@ const About = () => {
                                       to="#"
                                       onClick={(e) => e.preventDefault()}
                                     >
-                                      lindys thomas
+                                      SAJAL KASHYAP
                                     </Link>
                                   </h3>
                                   <div className="info">Marketing Manager</div>

@@ -124,7 +124,10 @@ const Contact = () => {
                     href="/index.html"
                     className="home"
                   >
-                    <span property="name">Bhartiya Solars World's Energy</span>
+                    <span property="name">
+                      "Let's Bring Solar to Your Home or Business."-We're Just a
+                      Call Away."
+                    </span>
                   </a>
                   <meta property="position" content={1} />
                 </span>{" "}
@@ -188,8 +191,8 @@ const Contact = () => {
                                   <ul className="info">
                                     <ul>
                                       <li>
-                                        102 Taily End Road, NY <br />
-                                        Newyork 33034
+                                        NK constructions,Main road, Bagbahra
+                                        493449
                                       </li>
                                     </ul>{" "}
                                   </ul>
@@ -218,12 +221,12 @@ const Contact = () => {
                                   <ul className="info">
                                     <li>
                                       <Link to="tel:+1-(222)-303-4500">
-                                        +1 (222) 303 4500
+                                        +919111337351
                                       </Link>
                                     </li>
                                     <li>
                                       <Link to="tel:0800-12345">
-                                        0800 12345
+                                        +919713311719
                                       </Link>
                                     </li>{" "}
                                   </ul>
@@ -253,14 +256,14 @@ const Contact = () => {
                                     <li>
                                       <div className="email">
                                         <a href="mailto:example@email.com">
-                                          Email: example@email.com
+                                          Email: info@bhartiyasolar.in
                                         </a>
                                       </div>
                                     </li>
                                     <li>
                                       <div className="email">
                                         <a href="mailto:example@email.com">
-                                          Email: example@email.com
+                                          Email: support@bhartiyasolar.in
                                         </a>
                                       </div>
                                     </li>{" "}
@@ -522,7 +525,7 @@ const Contact = () => {
                                     />
                                   </span>
                                   <Link to="tel:(222)-303-4500">
-                                    (222) 303 4500
+                                    +919713311719
                                   </Link>{" "}
                                 </div>
                               </div>

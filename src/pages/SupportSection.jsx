@@ -30,13 +30,11 @@ const SupportSection = () => {
                       data-wow-duration="1000ms"
                     >
                       <div className="upper-text">
-                        WHO ARE Bhartiya Solars
+                        NOT SURE WHERE TO START? WE'RE HERE TO HELP
                         <span className="icon flaticon-flash" />
                       </div>
                       <h2>Get Free Consultation</h2>
-                      <div className="subtitle">
-                        For Controling Your Energy Production
-                      </div>
+                      <div className="subtitle">THINK GREEN LIVE CLEAN</div>
                       <div className="bottom-dots clearfix">
                         <span className="dot line-dot" />
                         <span className="dot" />
@@ -218,7 +216,7 @@ const SupportSection = () => {
                         <div className="info">
                           Call Us 24/7 For Customer Support At
                           <span className="icon" />
-                          <a href="tel:(222)-303-4500">(222)-303-4500</a>
+                          <a href="tel:(222)-303-4500">+919713311719</a>
                         </div>
                       </div>
                     </div>

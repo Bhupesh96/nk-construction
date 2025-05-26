@@ -44,7 +44,7 @@ const Footer2 = () => {
                             </div>
                             <strong>Visit The Office</strong>
                             <div className="info-text">
-                              102 Taily End Rd, NY
+                              NK constructions,Main road, Bagbahra 493449
                             </div>
                           </div>
                           <div className="info-block">
@@ -76,7 +76,7 @@ const Footer2 = () => {
                             <div className="info-text">
                               <div className="email">
                                 <a href="mailto:example@email.com">
-                                  Email: example@email.com
+                                  Email: info@bhartiyasolar.in
                                 </a>
                               </div>
                             </div>
@@ -113,31 +113,31 @@ const Footer2 = () => {
                                 About Bhartiya Solars
                               </Link>
                             </li>
-                            <li>
+                            {/* <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 News Blog
                               </Link>
-                            </li>
+                            </li> */}
                             <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 Careers
                               </Link>
                             </li>
-                            <li>
+                            {/* <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 Case Studies
                               </Link>
-                            </li>
+                            </li> */}
                             <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 Meet Our Team
                               </Link>
                             </li>
-                            <li>
+                            {/* <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 Testimonials
                               </Link>
-                            </li>
+                            </li> */}
                           </ul>
                         </div>
                       </div>
@@ -227,11 +227,11 @@ const Footer2 = () => {
                           </a>
                         </div>
                         <div className="about-text">
-                          Bhartiya Solars is a renewable energy company
-                          specializing in the installation and maintenance of
-                          solar power systems. They offer sustainable solutions
-                          for residential, commercial, and industrial energy
-                          needs.
+                          At Bhartiya Solar, we provide reliable and affordable
+                          solar panel installation services for homes and
+                          businesses. With expert guidance and quality products,
+                          we help you save on electricity bills and embrace
+                          clean energy.
                         </div>
                         <div className="footer-social">
                           <ul className="footer-social-two clearfix">

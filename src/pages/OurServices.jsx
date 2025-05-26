@@ -224,15 +224,15 @@ const OurServices = () => {
                                   </div>
                                 </div>
                                 <div className="text">
-                                  At Bhartiya Solars, we recommend regular
-                                  maintenance to keep your solar panels
-                                  operating at their peak efficiency. Our team
-                                  ensures your panels remain clean, free from
-                                  damage, and optimized for maximum energy
-                                  production. Regular upkeep not only extends
-                                  the lifespan of your system but also helps you
-                                  achieve consistent, reliable performance
-                                  year-round.
+                                  Our solar solutions come with industry-leading
+                                  warranties for your peace of mind. Enjoy 8
+                                  years of comprehensive warranty on the
+                                  inverter, ensuring smooth and reliable energy
+                                  conversion. Plus, get a 30-year performance
+                                  warranty on solar panels, guaranteeing
+                                  long-term efficiency, durability, and maximum
+                                  power output. With Bhartiya Solar, your
+                                  investment is protected for decades.
                                 </div>
                                 <div className="link-box">
                                   <Link

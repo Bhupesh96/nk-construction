@@ -11,7 +11,7 @@ const NavigationMenu = () => {
         <a href="/about">ABOUT US</a>
       </li>
       <li className="menu-item menu-item-has-children">
-        <a href="services">Services</a>
+        <a href="services">SERVICES</a>
       </li>
       <li>
         <a href="/contact">CONTACT</a>

@@ -64,12 +64,12 @@ const ProjectsSection = () => {
                             data-wow-duration="1000ms"
                           >
                             <div className="upper-text">
-                              WHO ARE Bhartiya Solars
+                              SUNLIGHT TO SAVINGS - SEE OUR SUCCEEDS
                               <span className="icon flaticon-flash" />
                             </div>
-                            <h2>The Recent Projects</h2>
+                            <h2>Trusted By Families Chosen By Businesses</h2>
                             <div className="subtitle">
-                              Controling Your Energy Production
+                              Projects That Shine With Excellence
                             </div>
                             <div className="bottom-dots clearfix">
                               <span className="dot line-dot" />
@@ -79,9 +79,10 @@ const ProjectsSection = () => {
                             </div>
                           </div>
                           <div className="text">
-                            Aliquam era volutpat. Integer lobortis sem consequat
-                            consequat imperdiet. In nulla sed viverra ut lorem
-                            dapib consectetur bibendum imperdiets.
+                            Our successful solar installations across homes and
+                            businesses. From rooftop systems to commercial
+                            setups, each project reflects our commitment to
+                            quality, efficiency, and clean energy
                           </div>
                           <div className="links-box">
                             <a
@@ -121,8 +122,8 @@ const ProjectsSection = () => {
                                   <span className="info">5.2KW SYSYEM</span>
                                 </li>
                                 <li className="tab-btn no" data-tab="#tab-1">
-                                  <span className="btn-title">House Villa</span>
-                                  <span className="info">5.2KW SYSYEM</span>
+                                  <span className="btn-title">-</span>
+                                  {/* <span className="info">5.2KW SYSYEM</span> */}
                                 </li>
                                 <li className="tab-btn no" data-tab="#tab-2">
                                   <span className="btn-title">
@@ -202,7 +203,7 @@ const ProjectsSection = () => {
                               <span
                                 className="count-text"
                                 data-speed={1000}
-                                data-stop={24}
+                                data-stop={16}
                                 ref={(el) => (countersRef.current[0] = el)}
                               >
                                 0
@@ -226,7 +227,7 @@ const ProjectsSection = () => {
                               <span
                                 className="count-text"
                                 data-speed={1000}
-                                data-stop={3500}
+                                data-stop={120}
                                 ref={(el) => (countersRef.current[1] = el)}
                               >
                                 0
@@ -238,7 +239,7 @@ const ProjectsSection = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                        {/* <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                           <div className="inner">
                             <div className="icon-box">
                               <i
@@ -261,7 +262,7 @@ const ProjectsSection = () => {
                               Energy Financing Done
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                           <div className="inner">
                             <div className="icon-box">
@@ -270,19 +271,9 @@ const ProjectsSection = () => {
                                 className="flaticon-flash"
                               />
                             </div>
-                            <div className="count-box">
-                              <span
-                                className="count-text"
-                                data-speed={1000}
-                                data-stop={2700}
-                                ref={(el) => (countersRef.current[3] = el)}
-                              >
-                                0
-                              </span>
-                              +
-                            </div>
+                            <div className="count-box">A CLASS*</div>
                             <div className="counter-title">
-                              Hours Of Inspection
+                              ELECTRICAL CONTRACTOR
                             </div>
                           </div>
                         </div>

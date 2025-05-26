@@ -45,7 +45,7 @@ const ServiceList = () => {
                     >
                       <h2>A Smarter Way Of Solving The Challenges</h2>
                       <div className="subtitle">
-                        And For Controling Your Energy Production Worldwide
+                        And For Controling Your Energy Production Smartly
                       </div>
                       <div className="bottom-dots clearfix">
                         <span className="dot line-dot" />
@@ -56,13 +56,16 @@ const ServiceList = () => {
                     </div>
                     <div className="text">
                       <div className="text" style={{ textAlign: "center" }}>
-                        With NK Solars's advanced solutions, you can monitor
-                        your energy production across multiple locations in
-                        real-time. Our systems offer you a seamless way to track
-                        energy generation, ensuring you have full visibility
-                        into your consumption and production patterns worldwide.
+                        At Bhartiya Solar, we provide end-to-end solar energy
+                        solutions designed to meet your unique power needs.
+                        Whether you're a homeowner, a business, or an
+                        organization, our expert team ensures a smooth
+                        transition to clean, cost-saving solar energy. From
+                        consultation and system design to installation and
+                        maintenance-we handle everything with precision and
+                        care.
                       </div>
-                      <p className="text" style={{ textAlign: "center" }}>
+                      {/* <p className="text" style={{ textAlign: "center" }}>
                         Our technologies allow you to optimize energy
                         production, ensuring that every resource is used
                         effectively. By managing your energy output, you can
@@ -75,7 +78,7 @@ const ServiceList = () => {
                         production and make environmentally conscious decisions
                         that not only benefit your operations but also
                         contribute to a greener planet.
-                      </div>
+                      </div> */}
                       <div>&nbsp;</div>
                       <div>&nbsp;</div>
                       <div>&nbsp;</div>
@@ -99,9 +102,9 @@ const ServiceList = () => {
                               <div className="hover-inner">
                                 <div className="content">
                                   <div className="text">
-                                    NK Solars ensures top-tier quality through
-                                    rigorous assessments, guaranteeing reliable,
-                                    efficient, and long-lasting energy
+                                    Bhartiya Solars ensures top-tier quality
+                                    through rigorous assessments, guaranteeing
+                                    reliable, efficient, and long-lasting energy
                                     solutions.
                                   </div>
                                   <div className="link-box">
@@ -121,7 +124,7 @@ const ServiceList = () => {
                               </div>
                               <h3>
                                 <Link target="_blank" rel="nofollow" to="#">
-                                  Quality Assessment
+                                  Solar & Site Assessment
                                 </Link>
                               </h3>
                             </div>
@@ -146,10 +149,10 @@ const ServiceList = () => {
                               <div className="hover-inner">
                                 <div className="content">
                                   <div className="text">
-                                    NK Solars provides advanced energy storage
-                                    solutions, enabling efficient storage of
-                                    solar energy for reliable use during
-                                    non-sunny hours or peak demand times.
+                                    Bhartiya Solars provides advanced energy
+                                    storage solutions, enabling efficient
+                                    storage of solar energy for reliable use
+                                    during non-sunny hours or peak demand times.
                                   </div>
                                   <div className="link-box">
                                     <Link target="_blank" rel="nofollow" to="#">
@@ -168,7 +171,7 @@ const ServiceList = () => {
                               </div>
                               <h3>
                                 <Link target="_blank" rel="nofollow" to="#">
-                                  Energy Storage
+                                  On-Grid Solar Panel Installation
                                 </Link>
                               </h3>
                             </div>
@@ -193,10 +196,11 @@ const ServiceList = () => {
                               <div className="hover-inner">
                                 <div className="content">
                                   <div className="text">
-                                    NK Solars specializes in renewable energy
-                                    solutions, harnessing sustainable power
-                                    sources like solar to reduce environmental
-                                    impact and promote energy independence.
+                                    Bhartiya Solars specializes in renewable
+                                    energy solutions, harnessing sustainable
+                                    power sources like solar to reduce
+                                    environmental impact and promote energy
+                                    independence.
                                   </div>
                                   <div className="link-box">
                                     <Link target="_blank" rel="nofollow" to="#">
@@ -215,7 +219,7 @@ const ServiceList = () => {
                               </div>
                               <h3>
                                 <Link target="_blank" rel="nofollow" to="#">
-                                  Renewable Energy
+                                  Inverter Installation & Configuration
                                 </Link>
                               </h3>
                             </div>
@@ -240,10 +244,10 @@ const ServiceList = () => {
                               <div className="hover-inner">
                                 <div className="content">
                                   <div className="text">
-                                    NK Solars specializes in the design and
-                                    construction of large-scale dams, providing
-                                    sustainable solutions for water management
-                                    and infrastructure development.
+                                    Bhartiya Solars specializes in the design
+                                    and construction of large-scale dams,
+                                    providing sustainable solutions for water
+                                    management and infrastructure development.
                                   </div>
                                   <div className="link-box">
                                     <Link target="_blank" rel="nofollow" to="#">
@@ -262,7 +266,7 @@ const ServiceList = () => {
                               </div>
                               <h3>
                                 <Link target="_blank" rel="nofollow" to="#">
-                                  Large Scale Dams
+                                  System Monitoring & Mobile App Setup
                                 </Link>
                               </h3>
                             </div>
@@ -287,8 +291,8 @@ const ServiceList = () => {
                               <div className="hover-inner">
                                 <div className="content">
                                   <div className="text">
-                                    NK Solars promotes a powerful ecology by
-                                    integrating sustainable practices and
+                                    Bhartiya Solars promotes a powerful ecology
+                                    by integrating sustainable practices and
                                     renewable energy solutions that support
                                     environmental preservation and reduce carbon
                                     footprints.
@@ -310,7 +314,7 @@ const ServiceList = () => {
                               </div>
                               <h3>
                                 <Link target="_blank" rel="nofollow" to="#">
-                                  Powerful Ecology
+                                  Government Subsidy & Loan Assistance
                                 </Link>
                               </h3>
                             </div>
@@ -335,11 +339,11 @@ const ServiceList = () => {
                               <div className="hover-inner">
                                 <div className="content">
                                   <div className="text">
-                                    NK Solars excels in plant construction,
-                                    delivering efficient and sustainable
-                                    solutions for industrial facilities,
-                                    ensuring optimal performance and long-term
-                                    reliability.
+                                    Bhartiya Solars excels in plant
+                                    construction, delivering efficient and
+                                    sustainable solutions for industrial
+                                    facilities, ensuring optimal performance and
+                                    long-term reliability.
                                   </div>
                                   <div className="link-box">
                                     <Link target="_blank" rel="nofollow" to="#">
@@ -358,7 +362,7 @@ const ServiceList = () => {
                               </div>
                               <h3>
                                 <Link target="_blank" rel="nofollow" to="#">
-                                  Plant Construction
+                                  Old System Upgrade & Expansion
                                 </Link>
                               </h3>
                             </div>
@@ -376,9 +380,7 @@ const ServiceList = () => {
                         Emergency Help? <br />
                         Call or email us 24/7 support team at{" "}
                         <span className="phone">
-                          <Link to="tel:+1-(222)-303-4500">
-                            +1 (222) 303 4500
-                          </Link>
+                          <Link to="tel:+1-(222)-303-4500">+919713311719</Link>
                         </span>
                       </div>
                     </div>
