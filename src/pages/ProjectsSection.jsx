@@ -100,7 +100,7 @@ const ProjectsSection = () => {
                                 </li> */}
                                 <li className="tab-btn no" data-tab="#tab-1">
                                   <span className="btn-title">RESIDENTIAL</span>
-                                  <span className="info">5.2KW SYSYEM</span>
+                                  <span className="info">INSTALLATION</span>
                                 </li>
                               </ul>
                             </div>

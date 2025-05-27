@@ -108,7 +108,7 @@ const Footer2 = () => {
                           <ul>
                             <li>
                               <Link to="#" target="_blank" rel="nofollow">
-                                About Bhartiya Solars
+                                Contact
                               </Link>
                             </li>
                             {/* <li>
@@ -118,7 +118,7 @@ const Footer2 = () => {
                             </li> */}
                             <li>
                               <Link to="#" target="_blank" rel="nofollow">
-                                Careers
+                                About Bhartiya Solar
                               </Link>
                             </li>
                             {/* <li>
@@ -128,14 +128,14 @@ const Footer2 = () => {
                             </li> */}
                             <li>
                               <Link to="#" target="_blank" rel="nofollow">
+                                Services
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="#" target="_blank" rel="nofollow">
                                 Meet Our Team
                               </Link>
                             </li>
-                            {/* <li>
-                              <Link to="#" target="_blank" rel="nofollow">
-                                Testimonials
-                              </Link>
-                            </li> */}
                           </ul>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ const Footer2 = () => {
                             </li>
                             <li>
                               <Link to="#" target="_blank" rel="nofollow">
-                                Free Replacemrnt
+                                Service upgradations
                               </Link>
                             </li>
                             <li>
