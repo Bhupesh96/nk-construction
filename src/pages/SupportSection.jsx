@@ -29,7 +29,7 @@ const SupportSection = () => {
                       data-wow-delay="0ms"
                       data-wow-duration="1000ms"
                     >
-                      <div className="upper-text">
+                      <div className="upper-text" style={{ color: "#fff" }}>
                         NOT SURE WHERE TO START? WE'RE HERE TO HELP
                         <span className="icon flaticon-flash" />
                       </div>

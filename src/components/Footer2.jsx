@@ -126,11 +126,11 @@ const Footer2 = () => {
                                 Case Studies
                               </Link>
                             </li> */}
-                            <li>
+                            {/* <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 Meet Our Team
                               </Link>
-                            </li>
+                            </li> */}
                             {/* <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 Testimonials

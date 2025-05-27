@@ -714,7 +714,7 @@ const About = () => {
                                     >
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/team-image-1.jpg"
+                                        src="/wp-content/uploads/Team/Chandrashekhar.jpeg"
                                         alt="about"
                                       />
                                     </Link>
@@ -777,7 +777,7 @@ const About = () => {
                                     >
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/team-image-2.jpg"
+                                        src="/wp-content/uploads/Team/Nagesh_kaushik.jpeg"
                                         alt="about"
                                       />
                                     </Link>
@@ -813,7 +813,7 @@ const About = () => {
                                       to="#"
                                       onClick={(e) => e.preventDefault()}
                                     >
-                                      NAGESH KAUSHІК
+                                      NAGESH KAUSHIK
                                     </Link>
                                   </h3>
                                   <div className="info">CEO | Founder</div>
@@ -840,7 +840,7 @@ const About = () => {
                                     >
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/team-image-3.jpg"
+                                        src="/wp-content/uploads/Team/Arun_Patel.jpeg"
                                         alt="about"
                                       />
                                     </Link>
@@ -903,7 +903,7 @@ const About = () => {
                                     >
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/team-image-4.jpg"
+                                        src="/wp-content/uploads/Team/Sajal.jpeg"
                                         alt="about"
                                       />
                                     </Link>
