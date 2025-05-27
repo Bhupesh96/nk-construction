@@ -83,8 +83,8 @@ const ClientSection = () => {
               showStatus={false}
               infiniteLoop={true}
               autoPlay={true}
-              interval={6000}
-              transitionTime={300}
+              interval={3000}
+              transitionTime={200}
               showIndicators={true}
               swipeable={true}
               emulateTouch={true}

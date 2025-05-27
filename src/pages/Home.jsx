@@ -6,7 +6,7 @@ import NewsLetter from "./NewsLetter";
 import OurServices from "./OurServices";
 import ProjectsSection from "./ProjectsSection";
 import ClientSection from "./ClientSection";
-import PriceSection from "./PriceSection";
+// import PriceSection from "./PriceSection";
 import SupportSection from "./SupportSection";
 // import CompanyNews from "./CompanyNews";
 import Footer from "../components/Footer";
