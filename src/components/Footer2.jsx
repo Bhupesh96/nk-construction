@@ -37,7 +37,7 @@ const Footer2 = () => {
                             <div className="icon-box">
                               <span className="icon">
                                 <img
-                                  src="wp-content/uploads/2020/06/icon-message-1.png"
+                                  src="/wp-content/uploads/2020/06/location.svg"
                                   alt="footer"
                                 />
                               </span>
@@ -126,11 +126,11 @@ const Footer2 = () => {
                                 Case Studies
                               </Link>
                             </li> */}
-                            {/* <li>
+                            <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 Meet Our Team
                               </Link>
-                            </li> */}
+                            </li>
                             {/* <li>
                               <Link to="#" target="_blank" rel="nofollow">
                                 Testimonials

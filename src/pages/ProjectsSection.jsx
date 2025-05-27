@@ -91,9 +91,7 @@ const ProjectsSection = () => {
                                   className="tab-btn active-btn"
                                   data-tab="#tab-0"
                                 >
-                                  <span className="btn-title">
-                                    Commercial Era
-                                  </span>
+                                  <span className="btn-title">Commercial</span>
                                   <span className="info">5.2KW SYSYEM</span>
                                 </li>
                                 <li className="tab-btn no" data-tab="#tab-1">
@@ -101,9 +99,7 @@ const ProjectsSection = () => {
                                   {/* <span className="info">5.2KW SYSYEM</span> */}
                                 </li>
                                 <li className="tab-btn no" data-tab="#tab-2">
-                                  <span className="btn-title">
-                                    Residential Era
-                                  </span>
+                                  <span className="btn-title">Residential</span>
                                   <span className="info">5.2KW SYSYEM</span>
                                 </li>
                               </ul>

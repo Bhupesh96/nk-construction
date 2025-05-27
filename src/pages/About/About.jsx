@@ -184,7 +184,7 @@ const About = () => {
                                   </p>
                                   <p>Go solar with us-and power your future.</p>
                                 </div>
-                                <div className="signature">Tunders daumoty</div>
+                                {/* <div className="signature">Tunders daumoty</div> */}
                               </div>
                             </div>
                           </div>
