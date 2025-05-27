@@ -426,12 +426,11 @@ const About = () => {
                                         <Link to="#">our Mission</Link>
                                       </h3>
                                       <div className="text">
-                                        Aenean volutpa sem sit amet ullamcorper
-                                        grav datortor arcu molestie risusut
-                                        bibendum urna enim nulla. Pellentesque
-                                        porta arc velit faucibus kodales dolor
-                                        rhoncus curabitur lacinia sed massa
-                                        vitae efficitur.
+                                        To make clean, affordable solar energy
+                                        accessible to every home and business.
+                                        We aim to empower communities with
+                                        sustainable power solutions that reduce
+                                        costs and carbon footprints.
                                       </div>
                                     </div>
                                   </div>
@@ -465,12 +464,11 @@ const About = () => {
                                         <Link to="#">INNOVATION</Link>
                                       </h3>
                                       <div className="text">
-                                        Aenean volutpa sem sit amet ullamcorper
-                                        grav datortor arcu molestie risusut
-                                        bibendum urna enim nulla. Pellentesque
-                                        porta arc velit faucibus kodales dolor
-                                        rhoncus curabitur lacinia sed massa
-                                        vitae efficitur.
+                                        We use advanced technology and smart
+                                        design to deliver efficient,
+                                        future-ready solar systems. Our
+                                        solutions are tailored, scalable, and
+                                        built for long-term performance.
                                       </div>
                                     </div>
                                   </div>
