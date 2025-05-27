@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const OurServices = () => {
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0); // Scroll to top when link is clicked
-  };
-
   return (
     <section
       className="elementor-section elementor-top-section elementor-element elementor-element-baba57a elementor-section-full_width elementor-section-height-default elementor-section-height-default"
@@ -61,10 +57,7 @@ const OurServices = () => {
                     <div className="services">
                       <div className="service-block">
                         <div className="row clearfix">
-                          <div
-                            class
-                            Name="image-column col-lg-5 col-md-6 col-sm-12"
-                          >
+                          <div className="image-column col-lg-5 col-md-6 col-sm-12">
                             <div
                               className="inner wow fadeInLeft"
                               data-wow-delay="0ms"
@@ -113,7 +106,11 @@ const OurServices = () => {
                                   sustainability, and customer satisfaction.
                                 </div>
                                 <div className="link-box">
-                                  <Link to="/contact" onClick={handleLinkClick}>
+                                  <Link
+                                    href="http://asasas.com/"
+                                    target="_blank"
+                                    rel="nofollow"
+                                  >
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
                                   </Link>
@@ -153,7 +150,11 @@ const OurServices = () => {
                                   systems.
                                 </div>
                                 <div className="link-box">
-                                  <Link to="/contact" onClick={handleLinkClick}>
+                                  <Link
+                                    href="http://asasas.com/"
+                                    target="_blank"
+                                    rel="nofollow"
+                                  >
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
                                   </Link>
@@ -234,7 +235,11 @@ const OurServices = () => {
                                   investment is protected for decades.
                                 </div>
                                 <div className="link-box">
-                                  <Link to="/contact" onClick={handleLinkClick}>
+                                  <Link
+                                    href="http://asasas.com/"
+                                    target="_blank"
+                                    rel="nofollow"
+                                  >
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
                                   </Link>
