@@ -94,12 +94,12 @@ const ProjectsSection = () => {
                                   <span className="btn-title">Commercial</span>
                                   <span className="info">5.2KW SYSYEM</span>
                                 </li>
-                                <li className="tab-btn no" data-tab="#tab-1">
+                                {/* <li className="tab-btn no" data-tab="#tab-1">
                                   <span className="btn-title">-</span>
-                                  {/* <span className="info">5.2KW SYSYEM</span> */}
-                                </li>
-                                <li className="tab-btn no" data-tab="#tab-2">
-                                  <span className="btn-title">Residential</span>
+                                  <span className="info">5.2KW SYSYEM</span>
+                                </li> */}
+                                <li className="tab-btn no" data-tab="#tab-1">
+                                  <span className="btn-title">RESIDENTIAL</span>
                                   <span className="info">5.2KW SYSYEM</span>
                                 </li>
                               </ul>
@@ -117,7 +117,7 @@ const ProjectsSection = () => {
                                   <div className="cat-info">COMMERCIAL</div>
                                 </div>
                               </div>
-                              <div className="tab no" id="tab-1">
+                              {/* <div className="tab no" id="tab-1">
                                 <div className="tab-inner">
                                   <figure className="image">
                                     <img
@@ -128,8 +128,8 @@ const ProjectsSection = () => {
                                   </figure>
                                   <div className="cat-info">COMMERCIAL</div>
                                 </div>
-                              </div>
-                              <div className="tab no" id="tab-2">
+                              </div> */}
+                              <div className="tab no" id="tab-1">
                                 <div className="tab-inner">
                                   <figure className="image">
                                     <img
