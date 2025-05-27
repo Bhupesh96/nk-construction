@@ -47,7 +47,7 @@ const Counter = () => {
             </span>
             + Years
           </div>
-          <div className="counter-title">OF EXPERIENXE & RECORD</div>
+          <div className="counter-title">OF EXPERIENCE & RECORD</div>
         </div>
       </div>
       <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
