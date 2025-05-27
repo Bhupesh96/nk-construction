@@ -66,7 +66,7 @@ const Counter = () => {
             </span>
             +
           </div>
-          <div className="counter-title">Systems Installed</div>
+          <div className="counter-title">Systems Installed In 2025</div>
         </div>
       </div>
       {/* <div className="counter-column col-lg-3 col-md-6 col-sm-12 wow fadeInUp">

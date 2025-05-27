@@ -183,8 +183,9 @@ const Contact = () => {
                                   <div className="icon">
                                     <img
                                       decoding="async"
-                                      src="/wp-content/uploads/2020/06/icon-message-1.png"
+                                      src="/wp-content/uploads/2020/06/location.svg"
                                       alt="contact"
+                                      style={{ height: "55px" }}
                                     />
                                   </div>
                                   <strong>Visit The Office</strong>
@@ -217,10 +218,10 @@ const Contact = () => {
                                       alt="contact"
                                     />
                                   </div>
-                                  <strong>Visit The Office</strong>
+                                  <strong>Phone Inquiry</strong>
                                   <ul className="info">
                                     <li>
-                                      <Link to="tel:+1-(222)-303-4500">
+                                      <Link to="tel:+919111337351">
                                         +919111337351
                                       </Link>
                                     </li>
@@ -831,7 +832,7 @@ const Contact = () => {
                               <div className="icon-box">
                                 <span className="icon">
                                   <img
-                                    src="/wp-content/uploads/2020/06/icon-message-1.png"
+                                    src="/wp-content/uploads/2020/06/location.svg"
                                     alt="contact"
                                   />
                                 </span>
