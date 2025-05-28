@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import Footer2 from "../../components/Footer2";
 import Footer from "../../components/Footer";
 import $ from "jquery";
-// import NewsLetter from "../NewsLetter";
 import Counter from "../Counter";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+
 const About = () => {
   useEffect(() => {
     const handlePreloader = () => {
@@ -30,6 +30,7 @@ const About = () => {
       }
     }
   }, [location]);
+
   return (
     <div>
       <div className="page-wrapper">
@@ -51,13 +52,12 @@ const About = () => {
                       type="search"
                       className="form-control"
                       name="s"
-                      defaultValue
                       placeholder="Search Here"
                       required
                     />
                     <input
                       type="submit"
-                      defaultValue="Search Now!"
+                      value="Search Now!"
                       className="theme-btn"
                     />
                   </fieldset>
@@ -73,15 +73,15 @@ const About = () => {
               <div className="auto-container">
                 {/* Breadcrumb NavXT 7.2.0 */}
                 <span property="itemListElement" typeof="ListItem">
-                  <Link
+                  <a
                     property="item"
                     typeof="WebPage"
                     title="Go to Bhartiya Solars World's Energy."
-                    to="/index.html"
+                    href="/index.html"
                     className="home"
                   >
                     <span property="name">Bhartiya Solars World's Energy</span>
-                  </Link>
+                  </a>
                   <meta property="position" content={1} />
                 </span>
                 →
@@ -181,8 +181,8 @@ const About = () => {
                                     India, we specialize in on-grid solar panel
                                     installations for both residential and
                                     commercial spaces. Our team of trained
-                                    professionals delivers end-toend
-                                    solutions-from consultation and site
+                                    professionals delivers end-to-end
+                                    solutions—from consultation and site
                                     assessment to installation and maintenance.
                                     We use only top-quality solar panels and
                                     inverters backed by long-term warranties (30
@@ -194,9 +194,8 @@ const About = () => {
                                     partner in the journey toward sustainable
                                     energy.
                                   </p>
-                                  <p>Go solar with us-and power your future.</p>
+                                  <p>Go solar with us—and power your future.</p>
                                 </div>
-                                {/* <div className="signature">Tunders daumoty</div> */}
                               </div>
                             </div>
                           </div>
@@ -390,12 +389,12 @@ const About = () => {
                                 <div className="links-box">
                                   <Link
                                     rel="nofollow"
-                                    to="#"
+                                    to="/services"
                                     className="theme-btn btn-style-one"
                                   >
                                     <div className="btn-title">
                                       <span className="btn-txt">
-                                        View All Works
+                                        View All Services
                                       </span>
                                       <span className="btn-icon">
                                         <span className="icon flaticon-arrows-11" />
@@ -495,171 +494,6 @@ const About = () => {
               </div>
             </div>
           </section>
-          {/* <section
-            className="elementor-section elementor-top-section elementor-element elementor-element-c67e741 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-            data-id="c67e741"
-            data-element_type="section"
-          >
-            <div className="elementor-container elementor-column-gap-default">
-              <div
-                className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb25c17"
-                data-id="fb25c17"
-                data-element_type="column"
-              >
-                <div className="elementor-widget-wrap elementor-element-populated">
-                  <div
-                    className="elementor-element elementor-element-39ebbe0 elementor-widget elementor-widget-history_area__o"
-                    data-id="39ebbe0"
-                    data-element_type="widget"
-                    data-widget_type="history_area__o.default"
-                  >
-                    <div className="elementor-widget-container">
-                      <section className="history-section">
-                        <div className="auto-container">
-                          <div
-                            className="sec-title dark-title wow fadeInLeft centered"
-                            data-wow-delay="0ms"
-                            data-wow-duration="1000ms"
-                          >
-                            <div className="upper-text">
-                              Bhartiya Solars IS IMPORTANT
-                              <span className="icon flaticon-flash" />
-                            </div>
-                            <h2>Bhartiya Solars Company History</h2>
-                            <div className="subtitle">
-                              Bhartiya Solars Company History
-                            </div>
-                            <div className="bottom-dots clearfix">
-                              <span className="dot line-dot" />
-                              <span className="dot" />
-                              <span className="dot" />
-                              <span className="dot" />
-                            </div>
-                          </div>
-                          <div className="carousel-box">
-                            <div
-                              className="history-carousel strnix-carousel owl-theme owl-carousel"
-                              data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" }, "800":{ "items" : "2" }, "1024":{ "items" : "3" }, "1200":{ "items" : "4" }}}'
-                            >
-                              <div className="slide">
-                                <div className="history-block">
-                                  <div className="date">2015</div>
-                                  <div className="round-dot" />
-                                  <div className="title">
-                                    got best tech award
-                                  </div>
-                                  <div className="text">
-                                    Pellentesque porta arcu velit faucibs
-                                    kodales dolor rhoncus sed. Curabitur lacinia
-                                    masysa vitae sed.
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="slide">
-                                <div className="history-block">
-                                  <div className="date">2018</div>
-                                  <div className="round-dot" />
-                                  <div className="title">
-                                    Features &amp; add-ons
-                                  </div>
-                                  <div className="text">
-                                    Pellentesque porta arcu velit faucibs
-                                    kodales dolor rhoncus sed. Curabitur lacinia
-                                    masysa vitae sed.
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="slide">
-                                <div className="history-block">
-                                  <div className="date">2019</div>
-                                  <div className="round-dot" />
-                                  <div className="title">Temtaris daspo</div>
-                                  <div className="text">
-                                    Pellentesque porta arcu velit faucibs
-                                    kodales dolor rhoncus sed. Curabitur lacinia
-                                    masysa vitae sed.
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="slide">
-                                <div className="history-block">
-                                  <div className="date">2019</div>
-                                  <div className="round-dot" />
-                                  <div className="title">
-                                    narid aspolas kola
-                                  </div>
-                                  <div className="text">
-                                    Pellentesque porta arcu velit faucibs
-                                    kodales dolor rhoncus sed. Curabitur lacinia
-                                    masysa vitae sed.
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="slide">
-                                <div className="history-block">
-                                  <div className="date">2015</div>
-                                  <div className="round-dot" />
-                                  <div className="title">
-                                    got best tech award
-                                  </div>
-                                  <div className="text">
-                                    Pellentesque porta arcu velit faucibs
-                                    kodales dolor rhoncus sed. Curabitur lacinia
-                                    masysa vitae sed.
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="slide">
-                                <div className="history-block">
-                                  <div className="date">2018</div>
-                                  <div className="round-dot" />
-                                  <div className="title">
-                                    Features &amp; add-ons
-                                  </div>
-                                  <div className="text">
-                                    Pellentesque porta arcu velit faucibs
-                                    kodales dolor rhoncus sed. Curabitur lacinia
-                                    masysa vitae sed.
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="slide">
-                                <div className="history-block">
-                                  <div className="date">2019</div>
-                                  <div className="round-dot" />
-                                  <div className="title">Temtaris daspo</div>
-                                  <div className="text">
-                                    Pellentesque porta arcu velit faucibs
-                                    kodales dolor rhoncus sed. Curabitur lacinia
-                                    masysa vitae sed.
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="slide">
-                                <div className="history-block">
-                                  <div className="date">2019</div>
-                                  <div className="round-dot" />
-                                  <div className="title">
-                                    narid aspolas kola
-                                  </div>
-                                  <div className="text">
-                                    Pellentesque porta arcu velit faucibs
-                                    kodales dolor rhoncus sed. Curabitur lacinia
-                                    masysa vitae sed.
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
-
           <section
             className="elementor-section elementor-top-section elementor-element elementor-element-d17bb0a elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
             data-id="d17bb0a"
@@ -684,7 +518,10 @@ const About = () => {
                         <div className="auto-container">
                           <div className="title-box clearfix">
                             <div className="sec-title left hydro-theme">
-                              <div className="upper-text">
+                              <div
+                                className="upper-text"
+                                style={{ marginRight: "157px" }}
+                              >
                                 Offering Great Job With Good Hands
                               </div>
                               <h2>Dedicated Team Members</h2>
@@ -694,12 +531,6 @@ const About = () => {
                                 <span className="dot" />
                                 <span className="dot" />
                               </div>
-                            </div>
-                            <div className="link-box">
-                              <Link rel="nofollow" to="#">
-                                <span className="txt">View All Team</span>
-                                <span className="icon flaticon-arrows-11" />
-                              </Link>
                             </div>
                           </div>
                           <div className="row clearfix">
@@ -724,29 +555,25 @@ const About = () => {
                                       <img
                                         decoding="async"
                                         src="/wp-content/uploads/Team/Chandrashekhar.jpeg"
-                                        alt="about"
+                                        alt="Chandrashekhar Chandrakar"
                                       />
                                     </Link>
                                   </div>
                                   <div className="social-links">
                                     <ul>
                                       <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-twitter" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
+                                        <Link
+                                          to="https://www.instagram.com/chandrashekharchandrakar?igsh=aXhxY3hwaGdpMG94"
+                                          target="_blank"
+                                        >
                                           <span className="fab fa-instagram" />
                                         </Link>
                                       </li>
                                       <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-linkedin-in" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
+                                        <Link
+                                          to="https://www.facebook.com/share/14quDEtBJR/"
+                                          target="_blank"
+                                        >
                                           <span className="fab fa-facebook-f" />
                                         </Link>
                                       </li>
@@ -787,29 +614,17 @@ const About = () => {
                                       <img
                                         decoding="async"
                                         src="/wp-content/uploads/Team/Nagesh_kaushik.jpeg"
-                                        alt="about"
+                                        alt="Nagesh Kaushik"
                                       />
                                     </Link>
                                   </div>
                                   <div className="social-links">
                                     <ul>
                                       <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-twitter" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-instagram" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-linkedin-in" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
+                                        <Link
+                                          to="https://www.facebook.com/share/1L6C35n8Nj/"
+                                          target="_blank"
+                                        >
                                           <span className="fab fa-facebook-f" />
                                         </Link>
                                       </li>
@@ -822,7 +637,7 @@ const About = () => {
                                       to="#"
                                       onClick={(e) => e.preventDefault()}
                                     >
-                                      NAGESH KAUSHIK
+                                      Nagesh Kaushik
                                     </Link>
                                   </h3>
                                   <div className="info">CEO | Founder</div>
@@ -850,29 +665,17 @@ const About = () => {
                                       <img
                                         decoding="async"
                                         src="/wp-content/uploads/Team/Arun_Patel.jpeg"
-                                        alt="about"
+                                        alt="Arun Patel"
                                       />
                                     </Link>
                                   </div>
                                   <div className="social-links">
                                     <ul>
                                       <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-twitter" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-instagram" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-linkedin-in" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
+                                        <Link
+                                          to="https://www.facebook.com/share/1JEqZZbvaQ/"
+                                          target="_blank"
+                                        >
                                           <span className="fab fa-facebook-f" />
                                         </Link>
                                       </li>
@@ -885,7 +688,7 @@ const About = () => {
                                       to="#"
                                       onClick={(e) => e.preventDefault()}
                                     >
-                                      ARUN PATEL
+                                      Arun Patel
                                     </Link>
                                   </h3>
                                   <div className="info">Marketing Manager</div>
@@ -913,29 +716,25 @@ const About = () => {
                                       <img
                                         decoding="async"
                                         src="/wp-content/uploads/Team/Sajal.jpeg"
-                                        alt="about"
+                                        alt="Sajal Kashyap"
                                       />
                                     </Link>
                                   </div>
                                   <div className="social-links">
                                     <ul>
                                       <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-twitter" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
+                                        <Link
+                                          to="https://www.instagram.com/sajal.kashyap._/profilecard/?igsh=ODQ2NHNlM2dxMnN6"
+                                          target="_blank"
+                                        >
                                           <span className="fab fa-instagram" />
                                         </Link>
                                       </li>
                                       <li>
-                                        <Link to="void(0.html">
-                                          <span className="fab fa-linkedin-in" />
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="void(0.html">
+                                        <Link
+                                          to="https://www.facebook.com/share/16ZzXfa81u/"
+                                          target="_blank"
+                                        >
                                           <span className="fab fa-facebook-f" />
                                         </Link>
                                       </li>
@@ -948,7 +747,7 @@ const About = () => {
                                       to="#"
                                       onClick={(e) => e.preventDefault()}
                                     >
-                                      SAJAL KASHYAP
+                                      Sajal Kashyap
                                     </Link>
                                   </h3>
                                   <div className="info">Marketing Manager</div>
@@ -1004,21 +803,21 @@ const About = () => {
       <link
         rel="stylesheet"
         id="elementor-post-360-css"
-        to="/wp-content/uploads/elementor/css/post-36060e4.css?ver=1724841869"
+        href="/wp-content/uploads/elementor/css/post-36060e4.css?ver=1724841869"
         type="text/css"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-post-351-css"
-        to="/wp-content/uploads/elementor/css/post-35160e4.css?ver=1724841869"
+        href="/wp-content/uploads/elementor/css/post-35160e4.css?ver=1724841869"
         type="text/css"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-icons-fa-brands-css"
-        to="/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min52d5.css?ver=5.15.3"
+        href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min52d5.css?ver=5.15.3"
         type="text/css"
         media="all"
       />

@@ -1,6 +1,73 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const SupportSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    mobile: "",
+    email: "",
+    address: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("");
+
+    const payload = {
+      istype: "contact",
+      name: formData.name,
+      mobile: formData.mobile,
+      email: formData.email,
+      address: formData.address,
+      message: formData.message,
+      created_by: "1",
+    };
+
+    try {
+      const response = await axios.post(
+        "https://bhartiyasolar.com/solar/api/post/submit_activity_api.php",
+        payload,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response.data.success === true) {
+        setStatus("Form submitted successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          mobile: "",
+          address: "",
+          message: "",
+        });
+      } else {
+        setStatus(`Error: ${response.data.message || "Submission failed"}`);
+      }
+    } catch (error) {
+      setStatus("Error: Failed to submit form. Please try again.");
+      console.error("Submission error:", error);
+    }
+  };
+
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus("");
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
   return (
     <section
       className="elementor-section elementor-top-section elementor-element elementor-element-6d9fdb0 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
@@ -63,8 +130,7 @@ const SupportSection = () => {
                             <ul />
                           </div>
                           <form
-                            action="https://Bhartiya Solars.smartdemowp.com/#wpcf7-f5-p6-o2"
-                            method="post"
+                            onSubmit={handleSubmit}
                             className="wpcf7-form init"
                             aria-label="Contact form"
                             noValidate="novalidate"
@@ -115,7 +181,10 @@ const SupportSection = () => {
                                       aria-invalid="false"
                                       placeholder="Your Name"
                                       type="text"
-                                      name="your-name"
+                                      name="name"
+                                      value={formData.name}
+                                      onChange={handleChange}
+                                      required
                                     />
                                   </span>
                                 </p>
@@ -129,10 +198,14 @@ const SupportSection = () => {
                                     <input
                                       size={40}
                                       className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
+                                      aria-required="true"
                                       aria-invalid="false"
                                       placeholder="Email"
                                       type="email"
-                                      name="your-email"
+                                      name="email"
+                                      value={formData.email}
+                                      onChange={handleChange}
+                                      required
                                     />
                                   </span>
                                 </p>
@@ -148,9 +221,33 @@ const SupportSection = () => {
                                       className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                       aria-required="true"
                                       aria-invalid="false"
-                                      placeholder="Phone"
+                                      placeholder="Mobile"
+                                      type="number"
+                                      name="mobile"
+                                      value={formData.mobile}
+                                      onChange={handleChange}
+                                      required
+                                    />
+                                  </span>
+                                </p>
+                              </div>
+                              <div className="col-lg-12 col-md-12 col-sm-12 form-group">
+                                <p>
+                                  <span
+                                    className="wpcf7-form-control-wrap"
+                                    data-name="address"
+                                  >
+                                    <input
+                                      size={40}
+                                      className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                      aria-required="true"
+                                      aria-invalid="false"
+                                      placeholder="Address"
                                       type="text"
-                                      name="phone"
+                                      name="address"
+                                      value={formData.address}
+                                      onChange={handleChange}
+                                      required
                                     />
                                   </span>
                                 </p>
@@ -164,7 +261,9 @@ const SupportSection = () => {
                                     <select
                                       className="wpcf7-form-control wpcf7-select custom-select-box"
                                       aria-invalid="false"
-                                      name="select-name"
+                                      name="message"
+                                      value={formData.message}
+                                      onChange={handleChange}
                                     >
                                       <option value="Subject / Discuss About Service">
                                         Subject / Discuss About Service
@@ -199,6 +298,30 @@ const SupportSection = () => {
                                   </button>
                                 </p>
                               </div>
+                              {status && (
+                                <div
+                                  className={`col-md-12 col-sm-12 form-group status-message ${
+                                    status.includes("Error")
+                                      ? "error"
+                                      : "success"
+                                  }`}
+                                  style={{
+                                    marginTop: "20px",
+                                    padding: "10px",
+                                    borderRadius: "5px",
+                                    backgroundColor: status.includes("Error")
+                                      ? "#f8d7da"
+                                      : "#d4edda",
+                                    color: status.includes("Error")
+                                      ? "#721c24"
+                                      : "#155724",
+                                    textAlign: "center",
+                                    fontWeight: "bold",
+                                  }}
+                                >
+                                  {status}
+                                </div>
+                              )}
                             </div>
                             <div
                               className="wpcf7-response-output"
@@ -216,7 +339,7 @@ const SupportSection = () => {
                         <div className="info">
                           Call Us 24/7 For Customer Support At
                           <span className="icon" />
-                          <a href="tel:(222)-303-4500">+919713311719</a>
+                          <a href="tel:+919713311719">+919713311719</a>
                         </div>
                       </div>
                     </div>

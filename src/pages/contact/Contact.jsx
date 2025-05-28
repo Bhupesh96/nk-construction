@@ -8,7 +8,6 @@ const Contact = () => {
     name: "",
     mobile: "",
     email: "",
-    phone: "",
     address: "",
     message: "",
   });
@@ -33,9 +32,11 @@ const Contact = () => {
       created_by: "1",
     };
 
+    console.log("Payload:", payload); // Log payload for debugging
+
     try {
       const response = await fetch(
-        "https://rjtechx.fun/solar/api/post/submit_activity_api.php",
+        "https://bhartiyasolar.com/solar/api/post/submit_activity_api.php",
         {
           method: "POST",
           headers: {
@@ -45,6 +46,10 @@ const Contact = () => {
         }
       );
 
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
       const result = await response.json();
       if (result.success === true) {
         setStatus("Form submitted successfully!");
@@ -52,7 +57,6 @@ const Contact = () => {
           name: "",
           mobile: "",
           email: "",
-          phone: "",
           address: "",
           message: "",
         });
@@ -60,21 +64,32 @@ const Contact = () => {
         setStatus(`Error: ${result.message || "Submission failed"}`);
       }
     } catch (error) {
-      setStatus("Error: Failed to submit form. Please try again.");
+      setStatus(
+        `Error: ${error.message || "Failed to submit form. Please try again."}`
+      );
       console.error("Submission error:", error);
     }
   };
+
   useEffect(() => {
+    // Handle preloader
     const handlePreloader = () => {
       if ($(".preloader").length) {
         $("body").addClass("page-loaded");
         $(".preloader").delay(1000).fadeOut(0);
       }
     };
-
-    // Trigger preloader logic on mount
     handlePreloader();
-  }, []);
+
+    // Clear status message after 3 seconds
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus("");
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
   return (
     <div className="page-template page-template-elementor_header_footer page page-id-555 elementor-default elementor-template-full-width elementor-kit-722 elementor-page elementor-page-555">
       <div className="page-wrapper">
@@ -115,7 +130,6 @@ const Contact = () => {
           <div className="auto-container">
             <div className="breadcrumb-box">
               <div className="auto-container">
-                {/* Breadcrumb NavXT 7.2.0 */}
                 <span property="itemListElement" typeof="ListItem">
                   <a
                     property="item"
@@ -404,15 +418,15 @@ const Contact = () => {
                                         <p>
                                           <span
                                             className="wpcf7-form-control-wrap"
-                                            data-name="your-email"
+                                            data-name="mobile"
                                           >
                                             <input
                                               size={40}
-                                              className="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                              className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                               aria-required="true"
                                               aria-invalid="false"
                                               placeholder="Mobile"
-                                              type="number"
+                                              type="text"
                                               name="mobile"
                                               value={formData.mobile}
                                               onChange={handleChange}
@@ -425,28 +439,28 @@ const Contact = () => {
                                         <p>
                                           <span
                                             className="wpcf7-form-control-wrap"
-                                            data-name="subject"
+                                            data-name="email"
                                           >
                                             <input
                                               size={40}
-                                              className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                              className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
                                               aria-required="true"
                                               aria-invalid="false"
                                               placeholder="Email"
-                                              type="text"
+                                              type="email"
                                               name="email"
                                               value={formData.email}
                                               onChange={handleChange}
+                                              required
                                             />
                                           </span>
                                         </p>
                                       </div>
-
                                       <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                                         <p>
                                           <span
                                             className="wpcf7-form-control-wrap"
-                                            data-name="subject"
+                                            data-name="address"
                                           >
                                             <input
                                               size={40}
@@ -458,6 +472,7 @@ const Contact = () => {
                                               name="address"
                                               value={formData.address}
                                               onChange={handleChange}
+                                              required
                                             />
                                           </span>
                                         </p>
@@ -598,7 +613,6 @@ const Contact = () => {
             </div>
           </section>
         </div>
-        351
         <div
           data-elementor-type="page"
           data-elementor-id={672}
@@ -733,21 +747,11 @@ const Contact = () => {
                                   Services{" "}
                                 </Link>
                               </li>
-                              {/* <li>
-                                <Link to="#"  rel="nofollow">
-                                  Case Studies{" "}
-                                </Link>
-                              </li> */}
                               <li>
                                 <Link to="/about#team" rel="nofollow">
                                   Meet Our Team{" "}
                                 </Link>
                               </li>
-                              {/* <li>
-                                <Link to="#"  rel="nofollow">
-                                  Testimonials{" "}
-                                </Link>
-                              </li> */}
                             </ul>
                           </div>
                         </div>
@@ -778,7 +782,7 @@ const Contact = () => {
                             <ul>
                               <li>
                                 <Link to="/services" rel="nofollow">
-                                  Installation &amp; Monitoring{" "}
+                                  Installation & Monitoring{" "}
                                 </Link>
                               </li>
                               <li>
@@ -912,7 +916,7 @@ const Contact = () => {
                       <Link to="#">Sitemap</Link>
                     </li>
                     <li>
-                      <Link to="#">Terms &amp; Conditions</Link>
+                      <Link to="#">Terms & Conditions</Link>
                     </li>
                   </ul>
                 </div>

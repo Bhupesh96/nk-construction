@@ -1,6 +1,69 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const NewsLetter = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("");
+
+    const payload = {
+      istype: "inquiry",
+      name: formData.name,
+      email: formData.email,
+      mobile: null,
+      address: null,
+      message: "Email subscription request",
+      created_by: "0",
+    };
+
+    try {
+      const response = await axios.post(
+        "https://bhartiyasolar.com/solar/api/post/submit_activity_api.php",
+        payload,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response.data.success === true) {
+        setStatus("Subscribed");
+        setFormData({
+          name: "",
+          email: "",
+        });
+      } else {
+        setStatus(
+          `Error: ${response.data.message || "Inquiry submission failed"}`
+        );
+      }
+    } catch (error) {
+      setStatus("Error: Failed to submit inquiry. Please try again.");
+      console.error("Submission error:", error);
+    }
+  };
+
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus("");
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
   return (
     <section
       className="elementor-section elementor-top-section elementor-element elementor-element-1490e21 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
@@ -24,7 +87,6 @@ const NewsLetter = () => {
               <div className="elementor-widget-container">
                 <section className="newsletter-section">
                   <div className="auto-container">
-                    {/*Big Icon*/}
                     <div className="big-icon">
                       <span className="flaticon-solar-panel" />
                     </div>
@@ -59,8 +121,7 @@ const NewsLetter = () => {
                                 <ul />
                               </div>
                               <form
-                                action="https://strnix.smartdemowp.com/#wpcf7-f282-p6-o1"
-                                method="post"
+                                onSubmit={handleSubmit}
                                 className="wpcf7-form init"
                                 aria-label="Contact form"
                                 noValidate="novalidate"
@@ -113,7 +174,10 @@ const NewsLetter = () => {
                                             aria-invalid="false"
                                             placeholder="Your Name"
                                             type="text"
-                                            name="your-name"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required
                                           />
                                         </span>
                                         <label htmlFor="field-1">
@@ -133,10 +197,14 @@ const NewsLetter = () => {
                                             size={40}
                                             className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
                                             id="field-2"
+                                            aria-required="true"
                                             aria-invalid="false"
                                             placeholder="Your Email"
                                             type="email"
-                                            name="your-email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required
                                           />
                                         </span>
                                         <label htmlFor="field-2">
@@ -154,7 +222,7 @@ const NewsLetter = () => {
                                         >
                                           <span className="btn-title">
                                             <span className="btn-txt">
-                                              Get More Info
+                                              Subscribe
                                             </span>
                                             <span className="btn-icon">
                                               <span className="icon flaticon-arrows-11" />{" "}
@@ -164,6 +232,32 @@ const NewsLetter = () => {
                                       </p>
                                     </div>
                                   </div>
+                                  {status && (
+                                    <div
+                                      className={`form-group col-lg-12 col-md-12 col-sm-12 status-message ${
+                                        status.includes("Error")
+                                          ? "error"
+                                          : "success"
+                                      }`}
+                                      style={{
+                                        marginTop: "20px",
+                                        padding: "10px",
+                                        borderRadius: "5px",
+                                        backgroundColor: status.includes(
+                                          "Error"
+                                        )
+                                          ? "#f8d7da"
+                                          : "#d4edda",
+                                        color: status.includes("Error")
+                                          ? "#721c24"
+                                          : "#155724",
+                                        textAlign: "center",
+                                        fontWeight: "bold",
+                                      }}
+                                    >
+                                      {status}
+                                    </div>
+                                  )}
                                 </div>
                                 <div
                                   className="wpcf7-response-output"

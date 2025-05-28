@@ -116,7 +116,11 @@ const HeroSection = () => {
                                 />
                               </div>
                               <h1>
-                                Sun-Powered Savings – Subsidy up to ₹78,000
+                                Sun-Powered Savings – Subsidy up to ₹78,000{" "}
+                                <span
+                                  className="icon flaticon-flash"
+                                  style={{ color: "yellow" }}
+                                />
                               </h1>
                               <div className="links-box" />
                             </div>
