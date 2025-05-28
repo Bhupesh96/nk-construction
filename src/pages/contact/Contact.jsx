@@ -651,7 +651,7 @@ const Contact = () => {
                           <div className="footer-social">
                             <ul className="footer-social-two clearfix">
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="#" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-facebook-f"
@@ -659,7 +659,7 @@ const Contact = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="#" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-twitter"
@@ -667,7 +667,7 @@ const Contact = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="#" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-instagram"
@@ -675,7 +675,7 @@ const Contact = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="#" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-linkedin-in"
@@ -683,7 +683,7 @@ const Contact = () => {
                                 </Link>
                               </li>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="#" rel="nofollow">
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-pinterest-p"
@@ -719,32 +719,32 @@ const Contact = () => {
                           <div className="widget-content">
                             <ul>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="/contact" rel="nofollow">
+                                  Contact{" "}
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/about" rel="nofollow">
                                   About Bhartiya Solars{" "}
                                 </Link>
                               </li>
-                              {/* <li>
-                                <Link to="#" target="_blank" rel="nofollow">
-                                  News Blog{" "}
-                                </Link>
-                              </li> */}
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
-                                  Careers{" "}
+                                <Link to="/services" rel="nofollow">
+                                  Services{" "}
                                 </Link>
                               </li>
                               {/* <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="#"  rel="nofollow">
                                   Case Studies{" "}
                                 </Link>
                               </li> */}
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="/about#team" rel="nofollow">
                                   Meet Our Team{" "}
                                 </Link>
                               </li>
                               {/* <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="#"  rel="nofollow">
                                   Testimonials{" "}
                                 </Link>
                               </li> */}
@@ -777,27 +777,27 @@ const Contact = () => {
                           <div className="widget-content">
                             <ul>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="/services" rel="nofollow">
                                   Installation &amp; Monitoring{" "}
                                 </Link>
                               </li>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="/services" rel="nofollow">
                                   After Sales Service{" "}
                                 </Link>
                               </li>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="/services" rel="nofollow">
                                   Free Replacemrnt{" "}
                                 </Link>
                               </li>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="/services" rel="nofollow">
                                   Warrenty Claims{" "}
                                 </Link>
                               </li>
                               <li>
-                                <Link to="#" target="_blank" rel="nofollow">
+                                <Link to="/services" rel="nofollow">
                                   Energy Equipments{" "}
                                 </Link>
                               </li>

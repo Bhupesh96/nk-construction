@@ -62,7 +62,6 @@ const ProjectsSection = () => {
                           <div className="links-box">
                             <Link
                               to="/services"
-                              target="_blank"
                               rel="nofollow"
                               className="theme-btn btn-style-two"
                             >

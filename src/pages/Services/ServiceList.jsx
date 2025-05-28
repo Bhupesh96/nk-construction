@@ -106,7 +106,7 @@ const ServiceList = () => {
                                     solutions.
                                   </div>
                                   <div className="link-box">
-                                    <Link target="_blank" rel="nofollow" to="#">
+                                    <Link rel="nofollow" to="#">
                                       <span className="txt">Read More </span>{" "}
                                       <span className="icon flaticon-arrows-11" />
                                     </Link>
@@ -121,7 +121,7 @@ const ServiceList = () => {
                                 <span className="flaticon-settings" />
                               </div>
                               <h3>
-                                <Link target="_blank" rel="nofollow" to="#">
+                                <Link rel="nofollow" to="#">
                                   Solar & Site Assessment
                                 </Link>
                               </h3>
@@ -153,7 +153,7 @@ const ServiceList = () => {
                                     during non-sunny hours or peak demand times.
                                   </div>
                                   <div className="link-box">
-                                    <Link target="_blank" rel="nofollow" to="#">
+                                    <Link rel="nofollow" to="#">
                                       <span className="txt">Read More </span>{" "}
                                       <span className="icon flaticon-arrows-11" />
                                     </Link>
@@ -168,7 +168,7 @@ const ServiceList = () => {
                                 <span className="flaticon-settings" />
                               </div>
                               <h3>
-                                <Link target="_blank" rel="nofollow" to="#">
+                                <Link rel="nofollow" to="#">
                                   On-Grid Solar Panel Installation
                                 </Link>
                               </h3>
@@ -201,7 +201,7 @@ const ServiceList = () => {
                                     independence.
                                   </div>
                                   <div className="link-box">
-                                    <Link target="_blank" rel="nofollow" to="#">
+                                    <Link rel="nofollow" to="#">
                                       <span className="txt">Read More </span>{" "}
                                       <span className="icon flaticon-arrows-11" />
                                     </Link>
@@ -216,7 +216,7 @@ const ServiceList = () => {
                                 <span className="flaticon-settings" />
                               </div>
                               <h3>
-                                <Link target="_blank" rel="nofollow" to="#">
+                                <Link rel="nofollow" to="#">
                                   Inverter Installation & Configuration
                                 </Link>
                               </h3>
@@ -248,7 +248,7 @@ const ServiceList = () => {
                                     management and infrastructure development.
                                   </div>
                                   <div className="link-box">
-                                    <Link target="_blank" rel="nofollow" to="#">
+                                    <Link rel="nofollow" to="#">
                                       <span className="txt">Read More </span>{" "}
                                       <span className="icon flaticon-arrows-11" />
                                     </Link>
@@ -263,7 +263,7 @@ const ServiceList = () => {
                                 <span className="flaticon-settings" />
                               </div>
                               <h3>
-                                <Link target="_blank" rel="nofollow" to="#">
+                                <Link rel="nofollow" to="#">
                                   System Monitoring & Mobile App Setup
                                 </Link>
                               </h3>
@@ -296,7 +296,7 @@ const ServiceList = () => {
                                     footprints.
                                   </div>
                                   <div className="link-box">
-                                    <Link target="_blank" rel="nofollow" to="#">
+                                    <Link rel="nofollow" to="#">
                                       <span className="txt">Read More </span>{" "}
                                       <span className="icon flaticon-arrows-11" />
                                     </Link>
@@ -311,7 +311,7 @@ const ServiceList = () => {
                                 <span className="flaticon-settings" />
                               </div>
                               <h3>
-                                <Link target="_blank" rel="nofollow" to="#">
+                                <Link rel="nofollow" to="#">
                                   Government Subsidy & Loan Assistance
                                 </Link>
                               </h3>
@@ -344,7 +344,7 @@ const ServiceList = () => {
                                     long-term reliability.
                                   </div>
                                   <div className="link-box">
-                                    <Link target="_blank" rel="nofollow" to="#">
+                                    <Link rel="nofollow" to="#">
                                       <span className="txt">Read More </span>{" "}
                                       <span className="icon flaticon-arrows-11" />
                                     </Link>
@@ -359,7 +359,7 @@ const ServiceList = () => {
                                 <span className="flaticon-settings" />
                               </div>
                               <h3>
-                                <Link target="_blank" rel="nofollow" to="#">
+                                <Link rel="nofollow" to="#">
                                   Old System Upgrade & Expansion
                                 </Link>
                               </h3>

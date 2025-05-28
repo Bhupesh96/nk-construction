@@ -131,7 +131,6 @@ const PriceSection = () => {
                                                 <div className="links-box">
                                                   <Link
                                                     to="#"
-                                                    target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
                                                   >
@@ -200,7 +199,6 @@ const PriceSection = () => {
                                                 <div className="links-box">
                                                   <Link
                                                     to="#"
-                                                    target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
                                                   >
@@ -269,7 +267,6 @@ const PriceSection = () => {
                                                 <div className="links-box">
                                                   <Link
                                                     to="#"
-                                                    target="_blank"
                                                     rel="nofollow"
                                                     className="theme-btn btn-style-three"
                                                   >

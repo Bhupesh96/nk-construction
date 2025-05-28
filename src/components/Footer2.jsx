@@ -107,32 +107,32 @@ const Footer2 = () => {
                         <div className="widget-content">
                           <ul>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/contact" rel="nofollow">
                                 Contact
                               </Link>
                             </li>
                             {/* <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="#"  rel="nofollow">
                                 News Blog
                               </Link>
                             </li> */}
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/about" rel="nofollow">
                                 About Bhartiya Solar
                               </Link>
                             </li>
                             {/* <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="#"  rel="nofollow">
                                 Case Studies
                               </Link>
                             </li> */}
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/services" rel="nofollow">
                                 Services
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/about#team" rel="nofollow">
                                 Meet Our Team
                               </Link>
                             </li>
@@ -165,27 +165,27 @@ const Footer2 = () => {
                         <div className="widget-content">
                           <ul>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/services" rel="nofollow">
                                 Installation &amp; Monitoring
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/services" rel="nofollow">
                                 After Sales Service
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/services" rel="nofollow">
                                 Service upgradations
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/services" rel="nofollow">
                                 Warrenty Claims
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="/services" rel="nofollow">
                                 Energy Equipments
                               </Link>
                             </li>
@@ -238,7 +238,7 @@ const Footer2 = () => {
                         <div className="footer-social">
                           <ul className="footer-social-two clearfix">
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="#" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-facebook-f"
@@ -246,7 +246,7 @@ const Footer2 = () => {
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="#" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-twitter"
@@ -254,7 +254,7 @@ const Footer2 = () => {
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="#" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-instagram"
@@ -262,7 +262,7 @@ const Footer2 = () => {
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="#" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-linkedin-in"
@@ -270,7 +270,7 @@ const Footer2 = () => {
                               </Link>
                             </li>
                             <li>
-                              <Link to="#" target="_blank" rel="nofollow">
+                              <Link to="#" rel="nofollow">
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-pinterest-p"

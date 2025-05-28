@@ -1,11 +1,12 @@
-import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 import Footer2 from "../../components/Footer2";
 import Footer from "../../components/Footer";
 import $ from "jquery";
-import NewsLetter from "../NewsLetter";
+// import NewsLetter from "../NewsLetter";
 import Counter from "../Counter";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 const About = () => {
   useEffect(() => {
     const handlePreloader = () => {
@@ -18,6 +19,17 @@ const About = () => {
     // Trigger preloader logic on mount
     handlePreloader();
   }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#team") {
+      const teamSection = document.getElementById("team");
+      if (teamSection) {
+        teamSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div>
       <div className="page-wrapper">
@@ -377,7 +389,6 @@ const About = () => {
                                 </div>
                                 <div className="links-box">
                                   <Link
-                                    target="_blank"
                                     rel="nofollow"
                                     to="#"
                                     className="theme-btn btn-style-one"
@@ -484,7 +495,7 @@ const About = () => {
               </div>
             </div>
           </section>
-          <section
+          {/* <section
             className="elementor-section elementor-top-section elementor-element elementor-element-c67e741 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
             data-id="c67e741"
             data-element_type="section"
@@ -647,8 +658,8 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </section>
-          <NewsLetter />
+          </section> */}
+
           <section
             className="elementor-section elementor-top-section elementor-element elementor-element-d17bb0a elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
             data-id="d17bb0a"
@@ -669,7 +680,7 @@ const About = () => {
                     data-widget_type="team_area__o.default"
                   >
                     <div className="elementor-widget-container">
-                      <section className="team-section">
+                      <section className="team-section" id="team">
                         <div className="auto-container">
                           <div className="title-box clearfix">
                             <div className="sec-title left hydro-theme">
@@ -685,7 +696,7 @@ const About = () => {
                               </div>
                             </div>
                             <div className="link-box">
-                              <Link target="_blank" rel="nofollow" to="#">
+                              <Link rel="nofollow" to="#">
                                 <span className="txt">View All Team</span>
                                 <span className="icon flaticon-arrows-11" />
                               </Link>

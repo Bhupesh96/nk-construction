@@ -106,11 +106,7 @@ const OurServices = () => {
                                   sustainability, and customer satisfaction.
                                 </div>
                                 <div className="link-box">
-                                  <Link
-                                    href="http://asasas.com/"
-                                    target="_blank"
-                                    rel="nofollow"
-                                  >
+                                  <Link to="/services" rel="nofollow">
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
                                   </Link>
@@ -150,11 +146,7 @@ const OurServices = () => {
                                   systems.
                                 </div>
                                 <div className="link-box">
-                                  <Link
-                                    href="http://asasas.com/"
-                                    target="_blank"
-                                    rel="nofollow"
-                                  >
+                                  <Link to="/services" rel="nofollow">
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
                                   </Link>
@@ -235,11 +227,7 @@ const OurServices = () => {
                                   investment is protected for decades.
                                 </div>
                                 <div className="link-box">
-                                  <Link
-                                    href="http://asasas.com/"
-                                    target="_blank"
-                                    rel="nofollow"
-                                  >
+                                  <Link to="/services" rel="nofollow">
                                     <span className="txt">GET STARTED</span>
                                     <span className="icon flaticon-arrows-11" />
                                   </Link>
