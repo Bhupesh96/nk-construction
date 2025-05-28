@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const Footer2 = () => {
   return (
     <>
@@ -38,35 +39,35 @@ const Footer2 = () => {
                               <span className="icon">
                                 <img
                                   src="/wp-content/uploads/2020/06/location.svg"
-                                  alt="footer"
+                                  alt="Office Location"
                                 />
                               </span>
                             </div>
                             <strong>Visit The Office</strong>
                             <div className="info-text">
-                              NK constructions,Main road, Bagbahra 493449
+                              NK Constructions, Main Road, Bagbahra 493449
                             </div>
                           </div>
                           <div className="info-block">
                             <div className="icon-box">
                               <span className="icon">
                                 <img
-                                  src="wp-content/uploads/2020/06/icon-call-1.png"
-                                  alt="footer"
+                                  src="/wp-content/uploads/2020/06/icon-call-1.png"
+                                  alt="Phone Contact"
                                 />
                               </span>
                             </div>
                             <strong>Phone Inquiry</strong>
                             <div className="info-text">
-                              <Link to="tel:+919713311719">+919713311719</Link>
+                              <a href="tel:+919713311719">+91 97133 11719</a>
                             </div>
                           </div>
                           <div className="info-block">
                             <div className="icon-box">
                               <span className="icon">
                                 <img
-                                  src="wp-content/uploads/2020/06/icon-mail-1.png"
-                                  alt="footer"
+                                  src="/wp-content/uploads/2020/06/icon-mail-1.png"
+                                  alt="Email Contact"
                                 />
                               </span>
                             </div>
@@ -74,7 +75,7 @@ const Footer2 = () => {
                             <div className="info-text">
                               <div className="email">
                                 <a href="mailto:info@bhartiyasolar.in">
-                                  Email: info@bhartiyasolar.in
+                                  info@bhartiyasolar.in
                                 </a>
                               </div>
                             </div>
@@ -111,21 +112,11 @@ const Footer2 = () => {
                                 Contact
                               </Link>
                             </li>
-                            {/* <li>
-                              <Link to="#"  rel="nofollow">
-                                News Blog
-                              </Link>
-                            </li> */}
                             <li>
                               <Link to="/about" rel="nofollow">
                                 About Bhartiya Solar
                               </Link>
                             </li>
-                            {/* <li>
-                              <Link to="#"  rel="nofollow">
-                                Case Studies
-                              </Link>
-                            </li> */}
                             <li>
                               <Link to="/services" rel="nofollow">
                                 Services
@@ -166,7 +157,7 @@ const Footer2 = () => {
                           <ul>
                             <li>
                               <Link to="/services" rel="nofollow">
-                                Installation &amp; Monitoring
+                                Installation & Monitoring
                               </Link>
                             </li>
                             <li>
@@ -176,12 +167,12 @@ const Footer2 = () => {
                             </li>
                             <li>
                               <Link to="/services" rel="nofollow">
-                                Service upgradations
+                                Service Upgradations
                               </Link>
                             </li>
                             <li>
                               <Link to="/services" rel="nofollow">
-                                Warrenty Claims
+                                Warranty Claims
                               </Link>
                             </li>
                             <li>
@@ -214,16 +205,15 @@ const Footer2 = () => {
                       <div className="footer-widget about-widget">
                         <div className="footer-logo-box">
                           <a
-                            href="index.html"
-                            title="Bhartiya Solars - Green Energy HTML Template"
+                            href="/index.html"
+                            title="Bhartiya Solars - Green Energy"
                           >
                             <img
-                              src="Bhartiya Solar_logo-website_white.png"
-                              alt="Logo"
+                              src="/Bhartiya Solar_logo-website_white.png"
+                              alt="Bhartiya Solars Logo"
                               style={{
                                 width: "250px",
                                 height: "60px",
-                                background: "",
                               }}
                             />
                           </a>
@@ -235,47 +225,36 @@ const Footer2 = () => {
                           we help you save on electricity bills and embrace
                           clean energy.
                         </div>
-                        <div className="footer-social">
+                        <div
+                          className="footer-social"
+                          style={{ marginLeft: "20px" }}
+                        >
                           <ul className="footer-social-two clearfix">
                             <li>
-                              <Link to="#" rel="nofollow">
+                              <a
+                                href="https://www.facebook.com/share/16ZzXfa81u/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Follow Sajal Kashyap on Facebook"
+                              >
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-facebook-f"
                                 />
-                              </Link>
+                              </a>
                             </li>
                             <li>
-                              <Link to="#" rel="nofollow">
-                                <i
-                                  aria-hidden="true"
-                                  className="fab fa-twitter"
-                                />
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="#" rel="nofollow">
+                              <a
+                                href="https://www.instagram.com/sajal.kashyap._/profilecard/?igsh=ODQ2NHNlM2dxMnN6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Follow Sajal Kashyap on Instagram"
+                              >
                                 <i
                                   aria-hidden="true"
                                   className="fab fa-instagram"
                                 />
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="#" rel="nofollow">
-                                <i
-                                  aria-hidden="true"
-                                  className="fab fa-linkedin-in"
-                                />
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="#" rel="nofollow">
-                                <i
-                                  aria-hidden="true"
-                                  className="fab fa-pinterest-p"
-                                />
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
@@ -288,7 +267,7 @@ const Footer2 = () => {
           </div>
         </section>
       </div>
-      <footer className="main-footer 1">
+      <footer className="main-footer">
         <div className="footer-bottom">
           <div className="auto-container">
             <div className="inner clearfix">
@@ -303,18 +282,18 @@ const Footer2 = () => {
                 <span className="flaticon-arrows" />
               </div>
               <div className="copyright">
-                © Copyright 2025 By <Link to="#">Bhartiya Solars</Link>
+                © Copyright 2025 By <Link to="/">Bhartiya Solars</Link>
               </div>
               <div className="footer-nav">
                 <ul className="clearfix">
                   <li>
-                    <Link to="#">Privacy Policy</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="#">Sitemap</Link>
+                    <Link to="/sitemap">Sitemap</Link>
                   </li>
                   <li>
-                    <Link to="#">Terms &amp; Conditions</Link>
+                    <Link to="/terms">Terms & Conditions</Link>
                   </li>
                 </ul>
               </div>

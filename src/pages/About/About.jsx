@@ -4,10 +4,21 @@ import Footer2 from "../../components/Footer2";
 import Footer from "../../components/Footer";
 import $ from "jquery";
 import Counter from "../Counter";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const About = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     const handlePreloader = () => {
       if ($(".preloader").length) {
@@ -16,7 +27,6 @@ const About = () => {
       }
     };
 
-    // Trigger preloader logic on mount
     handlePreloader();
   }, []);
 
@@ -71,22 +81,21 @@ const About = () => {
           <div className="auto-container">
             <div className="breadcrumb-box">
               <div className="auto-container">
-                {/* Breadcrumb NavXT 7.2.0 */}
                 <span property="itemListElement" typeof="ListItem">
-                  <a
+                  <Link
                     property="item"
                     typeof="WebPage"
                     title="Go to Bhartiya Solars World's Energy."
-                    href="/index.html"
+                    to="/about"
                     className="home"
                   >
-                    <span property="name">Bhartiya Solars World's Energy</span>
-                  </a>
+                    <span property="name">Where Innovation Meets</span>
+                  </Link>
                   <meta property="position" content={1} />
                 </span>
                 →
                 <span className="post post-page current-item">
-                  About Bhartiya Solars
+                  Solar Excellence
                 </span>
               </div>
             </div>
@@ -134,7 +143,6 @@ const About = () => {
                         </div>
                         <div className="auto-container">
                           <div className="row clearfix">
-                            {/*Title Column*/}
                             <div
                               className="title-column col-lg-5 col-md-12 col-sm-12 wow fadeInLeft"
                               data-wow-delay="0ms"
@@ -166,7 +174,6 @@ const About = () => {
                                 </div>
                               </div>
                             </div>
-                            {/*Text Column*/}
                             <div className="text-column col-lg-7 col-md-12 col-sm-12">
                               <div
                                 className="inner wow fadeInRight"
@@ -211,8 +218,8 @@ const About = () => {
                                     <Link to="#">
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/featured-image-32.jpg"
-                                        alt="about"
+                                        src="/wp-content/uploads/poster/residential.jpg"
+                                        alt="Residential Solutions"
                                       />
                                     </Link>
                                   </div>
@@ -245,8 +252,9 @@ const About = () => {
                                     <Link to="#">
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/featured-image-33.jpg"
-                                        alt="about"
+                                        src="/wp-content/uploads/poster/ground.jpeg"
+                                        alt="Solar Thermal Systems"
+                                        style={{ height: "259px" }}
                                       />
                                     </Link>
                                   </div>
@@ -257,13 +265,16 @@ const About = () => {
                                         to="#"
                                         onClick={(e) => e.preventDefault()}
                                       >
-                                        Solar Thermal Systems
+                                        Residential And Commercial Ground
+                                        Mounting
                                       </Link>
                                     </h3>
                                     <div className="text">
-                                      Bhartiya Solars provides solar thermal
-                                      systems that efficiently harness sunlight
-                                      for water and space heating.
+                                      Bhartiya Solars provides efficient solar
+                                      solutions for residential and commercial
+                                      ground mounting, offering easy
+                                      installation, high durability, and optimal
+                                      energy generation.
                                     </div>
                                   </div>
                                 </div>
@@ -278,8 +289,8 @@ const About = () => {
                                     <Link to="#">
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/2020/06/featured-image-34.jpg"
-                                        alt="about"
+                                        src="/wp-content/uploads/poster/commercial.jpg"
+                                        alt="Commercial Solutions"
                                       />
                                     </Link>
                                   </div>
@@ -405,7 +416,6 @@ const About = () => {
                               </div>
                             </div>
                           </div>
-                          {/*Image Column*/}
                           <div className="image-column clearfix">
                             <div className="inner clearfix">
                               <div className="text-over-block">
@@ -520,7 +530,11 @@ const About = () => {
                             <div className="sec-title left hydro-theme">
                               <div
                                 className="upper-text"
-                                style={{ marginRight: "157px" }}
+                                style={
+                                  windowWidth >= 768
+                                    ? { marginRight: "157px" }
+                                    : {}
+                                }
                               >
                                 Offering Great Job With Good Hands
                               </div>
@@ -562,20 +576,22 @@ const About = () => {
                                   <div className="social-links">
                                     <ul>
                                       <li>
-                                        <Link
-                                          to="https://www.instagram.com/chandrashekharchandrakar?igsh=aXhxY3hwaGdpMG94"
+                                        <a
+                                          href="https://www.instagram.com/chandrashekharchandrakar?igsh=aXhxY3hwaGdpMG94"
                                           target="_blank"
+                                          rel="noopener noreferrer"
                                         >
                                           <span className="fab fa-instagram" />
-                                        </Link>
+                                        </a>
                                       </li>
                                       <li>
-                                        <Link
-                                          to="https://www.facebook.com/share/14quDEtBJR/"
+                                        <a
+                                          href="https://www.facebook.com/share/14quDEtBJR/"
                                           target="_blank"
+                                          rel="noopener noreferrer"
                                         >
                                           <span className="fab fa-facebook-f" />
-                                        </Link>
+                                        </a>
                                       </li>
                                     </ul>
                                   </div>
@@ -621,12 +637,13 @@ const About = () => {
                                   <div className="social-links">
                                     <ul>
                                       <li>
-                                        <Link
-                                          to="https://www.facebook.com/share/1L6C35n8Nj/"
+                                        <a
+                                          href="https://www.facebook.com/share/1L6C35n8Nj/"
                                           target="_blank"
+                                          rel="noopener noreferrer"
                                         >
                                           <span className="fab fa-facebook-f" />
-                                        </Link>
+                                        </a>
                                       </li>
                                     </ul>
                                   </div>
@@ -672,12 +689,13 @@ const About = () => {
                                   <div className="social-links">
                                     <ul>
                                       <li>
-                                        <Link
-                                          to="https://www.facebook.com/share/1JEqZZbvaQ/"
+                                        <a
+                                          href="https://www.facebook.com/share/1JEqZZbvaQ/"
                                           target="_blank"
+                                          rel="noopener noreferrer"
                                         >
                                           <span className="fab fa-facebook-f" />
-                                        </Link>
+                                        </a>
                                       </li>
                                     </ul>
                                   </div>
@@ -723,20 +741,22 @@ const About = () => {
                                   <div className="social-links">
                                     <ul>
                                       <li>
-                                        <Link
-                                          to="https://www.instagram.com/sajal.kashyap._/profilecard/?igsh=ODQ2NHNlM2dxMnN6"
+                                        <a
+                                          href="https://www.instagram.com/sajal.kashyap._/profilecard/?igsh=ODQ2NHNlM2dxMnN6"
                                           target="_blank"
+                                          rel="noopener noreferrer"
                                         >
                                           <span className="fab fa-instagram" />
-                                        </Link>
+                                        </a>
                                       </li>
                                       <li>
-                                        <Link
-                                          to="https://www.facebook.com/share/16ZzXfa81u/"
+                                        <a
+                                          href="https://www.facebook.com/share/16ZzXfa81u/"
                                           target="_blank"
+                                          rel="noopener noreferrer"
                                         >
                                           <span className="fab fa-facebook-f" />
-                                        </Link>
+                                        </a>
                                       </li>
                                     </ul>
                                   </div>

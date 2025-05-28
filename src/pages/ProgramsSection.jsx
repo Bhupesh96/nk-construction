@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 const ProgramBlock = ({ imageSrc, title, text, iconClass }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleToggle = (e) => {
-    e.preventDefault();
+  const handleToggle = () => {
     setIsExpanded(!isExpanded);
   };
 
@@ -30,13 +29,13 @@ const ProgramBlock = ({ imageSrc, title, text, iconClass }) => {
                   >
                     {text}
                   </div>
-                  <Link
-                    to="#"
+                  <button
                     className="program-block-read-more"
                     onClick={handleToggle}
+                    aria-expanded={isExpanded}
                   >
                     {isExpanded ? "Read Less" : "Read More"}
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -96,6 +95,8 @@ const ProgramBlock = ({ imageSrc, title, text, iconClass }) => {
             background: rgba(0, 0, 0, 0.4);
             padding: 2px 6px;
             border-radius: 3px;
+            border: none;
+            outline: none;
           }
 
           .program-block-read-more:hover {
@@ -131,7 +132,7 @@ const ProgramsSection = () => {
     {
       imageSrc: "/wp-content/uploads/poster/loan.jpeg",
       title: "Subsidy & Financing Assistance",
-      text: "* Includes: Help with government solar subsidies (like under PM Surya Ghar Yojana).EMI plans via NBFCs or banks. Leasing or PPAs (Power Purchase Agreements) for commercial clients.",
+      text: "Includes: Help with government solar subsidies (like under PM Surya Ghar Yojana). EMI plans via NBFCs or banks. Leasing or PPAs (Power Purchase Agreements) for commercial clients.",
       iconClass: "flaticon-chimney",
     },
     {
@@ -141,9 +142,9 @@ const ProgramsSection = () => {
       iconClass: "flaticon-chimney",
     },
     {
-      imageSrc: "/wp-content/uploads/poster/installation.jpg",
+      imageSrc: "/wp-content/uploads/poster/m-support.jpeg",
       title: "Maintenance & Support Packages",
-      text: "Types: Annual Maintenance Contracts (AMCs) On-demand cleaning and inspections Warranty claim support",
+      text: "Types: Annual Maintenance Contracts (AMCs). On-demand cleaning and inspections. Warranty claim support.",
       iconClass: "flaticon-chimney",
     },
   ];

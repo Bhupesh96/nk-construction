@@ -599,10 +599,13 @@ const Contact = () => {
                     data-element_type="widget"
                     data-widget_type="html.default"
                   >
-                    <div className="elementor-widget-container">
+                    <div
+                      className="elementor-widget-container"
+                      style={{ marginTop: "50px" }}
+                    >
                       <iframe
-                        title="Google Map showing Covanta Essex location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734.2655638357738!2d-74.12491711357168!3d40.73728092000734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253ff752b7f07%3A0xdb70c6057600452b!2sCovanta%20Essex!5e0!3m2!1sen!2sbd!4v1576403085085!5m2!1sen!2sbd"
+                        title="Ganesg Agro Agency"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.569634214982!2d82.37829617503208!3d21.049899280604702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a26051ae896b875%3A0x42fccbe5d3e48444!2sGanesh%20Agro%20Agency%20%26%20Borewells!5e0!3m2!1sen!2sin!4v1748423347257!5m2!1sen!2sin"
                         width={600}
                         height={650}
                       />{" "}
@@ -662,47 +665,36 @@ const Contact = () => {
                             quality products, we help you save on electricity
                             bills and embrace clean energy.
                           </div>
-                          <div className="footer-social">
+                          <div
+                            className="footer-social"
+                            style={{ marginLeft: "20px" }}
+                          >
                             <ul className="footer-social-two clearfix">
                               <li>
-                                <Link to="#" rel="nofollow">
+                                <a
+                                  href="https://www.facebook.com/share/16ZzXfa81u/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  aria-label="Follow Sajal Kashyap on Facebook"
+                                >
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-facebook-f"
-                                  />{" "}
-                                </Link>
+                                  ></i>
+                                </a>
                               </li>
                               <li>
-                                <Link to="#" rel="nofollow">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fab fa-twitter"
-                                  />{" "}
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="#" rel="nofollow">
+                                <a
+                                  href="https://www.instagram.com/sajal.kashyap._/profilecard/?igsh=ODQ2NHNlM2dxMnN6"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  aria-label="Follow Sajal Kashyap on Instagram"
+                                >
                                   <i
                                     aria-hidden="true"
                                     className="fab fa-instagram"
-                                  />{" "}
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="#" rel="nofollow">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fab fa-linkedin-in"
-                                  />{" "}
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="#" rel="nofollow">
-                                  <i
-                                    aria-hidden="true"
-                                    className="fab fa-pinterest-p"
-                                  />{" "}
-                                </Link>
+                                  ></i>
+                                </a>
                               </li>
                             </ul>
                           </div>
@@ -890,10 +882,13 @@ const Contact = () => {
             </div>
           </section>
         </div>
-        <footer className="main-footer footer-style-five">
+        <footer
+          className="main-footer footer-style-five"
+          style={{ paddingBottom: "60px" }}
+        >
           <div className="footer-bottom">
             <div className="auto-container">
-              <div className="inner clearfix">
+              <div className="inner">
                 <div
                   className="scroll-top-footer scroll-to-target"
                   onClick={() => {
@@ -902,21 +897,21 @@ const Contact = () => {
                       .scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <span className="flaticon-arrows" />
+                  <span className="flaticon-arrows"></span>
                 </div>
                 <div className="copyright">
-                  © Copyright 2025 By <Link to="#">Bhartiya Solars</Link>{" "}
+                  © Copyright 2025 By <Link to="/">Bhartiya Solar</Link>
                 </div>
                 <div className="footer-nav">
-                  <ul className="clearfix">
+                  <ul className="list-unstyled">
                     <li>
-                      <Link to="#">Privacy Policy</Link>
+                      <Link to="/privacy">Privacy Policy</Link>
                     </li>
                     <li>
-                      <Link to="#">Sitemap</Link>
+                      <Link to="/sitemap">Sitemap</Link>
                     </li>
                     <li>
-                      <Link to="#">Terms & Conditions</Link>
+                      <Link to="/terms">Terms & Conditions</Link>
                     </li>
                   </ul>
                 </div>
@@ -925,6 +920,7 @@ const Contact = () => {
           </div>
         </footer>
       </div>
+
       <link
         rel="stylesheet"
         id="elementor-post-672-css"

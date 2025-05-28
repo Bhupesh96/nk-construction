@@ -76,29 +76,22 @@ const Header = () => {
                 </div>
                 <ul className="social-links clearfix">
                   <li>
-                    <Link to="/">
-                      <span className="fab fa-twitter" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
+                    <a
+                      href="https://www.facebook.com/share/16ZzXfa81u/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span className="fab fa-facebook-f" />
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/">
+                    <a
+                      href="https://www.instagram.com/sajal.kashyap._/profilecard/?igsh=ODQ2NHNlM2dxMnN6"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <span className="fab fa-instagram" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <span className="fab fa-linkedin-in" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <span className="fab fa-pinterest-p" />
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>

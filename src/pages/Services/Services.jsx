@@ -7,6 +7,7 @@ import $ from "jquery";
 import SupportSection from "../SupportSection";
 import ServiceList from "./ServiceList";
 import OurServices from "../OurServices";
+import ClientSection from "../ClientSection";
 
 const Services = () => {
   useEffect(() => {
@@ -67,16 +68,16 @@ const Services = () => {
                     property="item"
                     typeof="WebPage"
                     title="Go to Bhartiya Solars."
-                    to="../index.html"
+                    to="/services"
                     className="home"
                   >
-                    <span property="name">Bhartiya Solars</span>
+                    <span property="name">Our Services</span>
                   </Link>
                   <meta property="position" content={1} />
                 </span>{" "}
                 →{" "}
                 <span className="post post-page current-item">
-                  Our Services
+                  Your Solar Solution
                 </span>{" "}
               </div>
             </div>
@@ -92,7 +93,8 @@ const Services = () => {
           <ServiceList />
           <OurServices />
           <SupportSection />
-          <section
+          <ClientSection />
+          {/* <section
             className="elementor-section elementor-top-section elementor-element elementor-element-9431280 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
             data-id={9431280}
             data-element_type="section"
@@ -279,7 +281,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
         <Footer />
         <Footer2 />

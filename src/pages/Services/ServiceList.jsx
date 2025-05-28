@@ -53,7 +53,10 @@ const ServiceList = () => {
                       </div>
                     </div>
                     <div className="text">
-                      <div className="text" style={{ textAlign: "center" }}>
+                      <div
+                        className="text"
+                        style={{ textAlign: "center", fontSize: "18px" }}
+                      >
                         At Bhartiya Solar, we provide end-to-end solar energy
                         solutions designed to meet your unique power needs.
                         Whether you're a homeowner, a business, or an
@@ -99,18 +102,16 @@ const ServiceList = () => {
                             <div className="hover-box">
                               <div className="hover-inner">
                                 <div className="content">
-                                  <div className="text">
-                                    Bhartiya Solars ensures top-tier quality
-                                    through rigorous assessments, guaranteeing
-                                    reliable, efficient, and long-lasting energy
-                                    solutions.
+                                  <div
+                                    className="text"
+                                    style={{ color: "#fff" }}
+                                  >
+                                    We evaluate your location, energy usage, and
+                                    roof condition to design the best solar
+                                    solution. Accurate assessments ensure
+                                    maximum efficiency and savings.
                                   </div>
-                                  <div className="link-box">
-                                    <Link rel="nofollow" to="#">
-                                      <span className="txt">Read More </span>{" "}
-                                      <span className="icon flaticon-arrows-11" />
-                                    </Link>
-                                  </div>
+                                  <div className="link-box"></div>
                                 </div>
                               </div>
                             </div>
@@ -146,18 +147,16 @@ const ServiceList = () => {
                             <div className="hover-box">
                               <div className="hover-inner">
                                 <div className="content">
-                                  <div className="text">
-                                    Bhartiya Solars provides advanced energy
-                                    storage solutions, enabling efficient
-                                    storage of solar energy for reliable use
-                                    during non-sunny hours or peak demand times.
+                                  <div
+                                    className="text"
+                                    style={{ color: "#fff" }}
+                                  >
+                                    We install high-quality solar systems
+                                    connected to the power grid. Enjoy reduced
+                                    electricity bills and earn credits through
+                                    net metering.
                                   </div>
-                                  <div className="link-box">
-                                    <Link rel="nofollow" to="#">
-                                      <span className="txt">Read More </span>{" "}
-                                      <span className="icon flaticon-arrows-11" />
-                                    </Link>
-                                  </div>
+                                  <div className="link-box"></div>
                                 </div>
                               </div>
                             </div>
@@ -193,19 +192,16 @@ const ServiceList = () => {
                             <div className="hover-box">
                               <div className="hover-inner">
                                 <div className="content">
-                                  <div className="text">
-                                    Bhartiya Solars specializes in renewable
-                                    energy solutions, harnessing sustainable
-                                    power sources like solar to reduce
-                                    environmental impact and promote energy
-                                    independence.
+                                  <div
+                                    className="text"
+                                    style={{ color: "#fff" }}
+                                  >
+                                    We provide expert installation of inverters
+                                    for efficient power conversion. Includes
+                                    safety setup and smart configuration for
+                                    optimal performance.
                                   </div>
-                                  <div className="link-box">
-                                    <Link rel="nofollow" to="#">
-                                      <span className="txt">Read More </span>{" "}
-                                      <span className="icon flaticon-arrows-11" />
-                                    </Link>
-                                  </div>
+                                  <div className="link-box"></div>
                                 </div>
                               </div>
                             </div>
@@ -241,18 +237,16 @@ const ServiceList = () => {
                             <div className="hover-box">
                               <div className="hover-inner">
                                 <div className="content">
-                                  <div className="text">
-                                    Bhartiya Solars specializes in the design
-                                    and construction of large-scale dams,
-                                    providing sustainable solutions for water
-                                    management and infrastructure development.
+                                  <div
+                                    className="text"
+                                    style={{ color: "#fff" }}
+                                  >
+                                    Track your solar performance in real time
+                                    with easy-to-use mobile apps. Monitor power
+                                    generation, savings, and system health
+                                    anytime, anywhere.
                                   </div>
-                                  <div className="link-box">
-                                    <Link rel="nofollow" to="#">
-                                      <span className="txt">Read More </span>{" "}
-                                      <span className="icon flaticon-arrows-11" />
-                                    </Link>
-                                  </div>
+                                  <div className="link-box"></div>
                                 </div>
                               </div>
                             </div>
@@ -288,19 +282,16 @@ const ServiceList = () => {
                             <div className="hover-box">
                               <div className="hover-inner">
                                 <div className="content">
-                                  <div className="text">
-                                    Bhartiya Solars promotes a powerful ecology
-                                    by integrating sustainable practices and
-                                    renewable energy solutions that support
-                                    environmental preservation and reduce carbon
-                                    footprints.
+                                  <div
+                                    className="text"
+                                    style={{ color: "#fff" }}
+                                  >
+                                    We help you apply for government subsidies
+                                    and solar loans with ease. Save more on your
+                                    solar investment with expert financial
+                                    guidance.
                                   </div>
-                                  <div className="link-box">
-                                    <Link rel="nofollow" to="#">
-                                      <span className="txt">Read More </span>{" "}
-                                      <span className="icon flaticon-arrows-11" />
-                                    </Link>
-                                  </div>
+                                  <div className="link-box"></div>
                                 </div>
                               </div>
                             </div>
@@ -336,19 +327,16 @@ const ServiceList = () => {
                             <div className="hover-box">
                               <div className="hover-inner">
                                 <div className="content">
-                                  <div className="text">
-                                    Bhartiya Solars excels in plant
-                                    construction, delivering efficient and
-                                    sustainable solutions for industrial
-                                    facilities, ensuring optimal performance and
-                                    long-term reliability.
+                                  <div
+                                    className="text"
+                                    style={{ color: "#fff" }}
+                                  >
+                                    Upgrade your existing solar setup with
+                                    better panels or inverters. Expand capacity
+                                    as your energy needs grow—cost-effective and
+                                    hassle-free Of course!
                                   </div>
-                                  <div className="link-box">
-                                    <Link rel="nofollow" to="#">
-                                      <span className="txt">Read More </span>{" "}
-                                      <span className="icon flaticon-arrows-11" />
-                                    </Link>
-                                  </div>
+                                  <div className="link-box"></div>
                                 </div>
                               </div>
                             </div>
