@@ -186,7 +186,10 @@ const TermsAndConditions = () => {
                           accurate and complete information. You are responsible
                           for maintaining the confidentiality of any account
                           credentials. Our use of your data is governed by our{" "}
-                          <Link to="/privacy" style={{ color: "#007bff" }}>
+                          <Link
+                            to="/privacy-policy"
+                            style={{ color: "#007bff" }}
+                          >
                             Privacy Policy
                           </Link>
                           .
