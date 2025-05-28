@@ -282,7 +282,7 @@ const Footer2 = () => {
                 <span className="flaticon-arrows" />
               </div>
               <div className="copyright">
-                © Copyright 2025 By <Link to="/">Bhartiya Solars</Link>
+                © Copyright 2025 By <a href="/">Bhartiya Solars</a>
               </div>
               <div className="footer-nav">
                 <ul className="clearfix">

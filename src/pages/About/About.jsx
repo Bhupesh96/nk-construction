@@ -363,7 +363,7 @@ const About = () => {
                                   </div>
                                   <h2>Works That Matters</h2>
                                 </div>
-                                <div className="text">
+                                <div className="text" style={{ color: "#fff" }}>
                                   At Bhartiya Solars, we focus on projects that
                                   drive positive change and sustainable growth.
                                   Our innovative solutions aim to create a

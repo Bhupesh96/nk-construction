@@ -1000,7 +1000,7 @@ const Contact = () => {
                   <span className="flaticon-arrows"></span>
                 </div>
                 <div className="copyright">
-                  © Copyright 2025 By <Link to="/">Bhartiya Solar</Link>
+                  © Copyright 2025 By <a href="/">Bhartiya Solar</a>
                 </div>
                 <div className="footer-nav">
                   <ul className="list-unstyled">
