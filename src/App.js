@@ -6,6 +6,8 @@ import Services from "./pages/Services/Services";
 import Contact from "./pages/contact/Contact";
 import ScrollToTop from "./utils/ScrollToTop";
 import "./css/ClientSection.css";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermAndConditions";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
+        <Route path="/terms" element={<TermsAndConditions />}></Route>
       </Routes>
     </Router>
   );

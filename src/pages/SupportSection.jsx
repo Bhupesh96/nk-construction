@@ -10,15 +10,67 @@ const SupportSection = () => {
     message: "",
   });
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const [status, setStatus] = useState("");
+
+  // Validation function
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { name: "", email: "", message: "" };
+
+    // Name validation: letters and spaces only, min 2 characters
+    const nameRegex = /^[a-zA-Z\s]{2,}$/;
+    if (!formData.name) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    } else if (!nameRegex.test(formData.name)) {
+      newErrors.name =
+        "Name must contain only letters and spaces (min 2 characters)";
+      isValid = false;
+    }
+
+    // Email validation: valid email format
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!emailRegex.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+      isValid = false;
+    }
+
+    // Subject (message) validation: must not be empty or default placeholder
+    if (
+      !formData.message ||
+      formData.message === "Subject / Discuss About Service"
+    ) {
+      newErrors.message = "Please select a subject";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // Clear errors for the field being edited
+    setErrors({ ...errors, [e.target.name]: "" });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("");
+
+    // Validate form before submission
+    if (!validateForm()) {
+      return;
+    }
 
     const payload = {
       istype: "contact",
@@ -54,8 +106,18 @@ const SupportSection = () => {
         setStatus(`Error: ${response.data.message || "Submission failed"}`);
       }
     } catch (error) {
-      setStatus("Error: Failed to submit form. Please try again.");
-      console.error("Submission error:", error);
+      setStatus(
+        `Error: ${
+          error.response?.data?.message ||
+          "Failed to submit form. Please try again."
+        }`
+      );
+      console.error("Submission error details:", {
+        message: error.message,
+        response: error.response?.data,
+        status: error.response?.status,
+        headers: error.response?.headers,
+      });
     }
   };
 
@@ -177,8 +239,12 @@ const SupportSection = () => {
                                     <input
                                       size={40}
                                       className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                      id="name-field"
                                       aria-required="true"
-                                      aria-invalid="false"
+                                      aria-invalid={!!errors.name}
+                                      aria-describedby={
+                                        errors.name ? "name-error" : undefined
+                                      }
                                       placeholder="Your Name"
                                       type="text"
                                       name="name"
@@ -187,6 +253,23 @@ const SupportSection = () => {
                                       required
                                     />
                                   </span>
+                                  {errors.name && (
+                                    <span
+                                      id="name-error"
+                                      className="error-message"
+                                      style={{
+                                        color: "#ffffff",
+                                        fontSize: "14px",
+                                        marginTop: "5px",
+                                        display: "block",
+                                        backgroundColor: "#721c24",
+                                        padding: "5px",
+                                        borderRadius: "3px",
+                                      }}
+                                    >
+                                      {errors.name}
+                                    </span>
+                                  )}
                                 </p>
                               </div>
                               <div className="col-lg-4 col-md-6 col-sm-12 form-group">
@@ -198,8 +281,12 @@ const SupportSection = () => {
                                     <input
                                       size={40}
                                       className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
+                                      id="email-field"
                                       aria-required="true"
-                                      aria-invalid="false"
+                                      aria-invalid={!!errors.email}
+                                      aria-describedby={
+                                        errors.email ? "email-error" : undefined
+                                      }
                                       placeholder="Email"
                                       type="email"
                                       name="email"
@@ -208,6 +295,23 @@ const SupportSection = () => {
                                       required
                                     />
                                   </span>
+                                  {errors.email && (
+                                    <span
+                                      id="email-error"
+                                      className="error-message"
+                                      style={{
+                                        color: "#ffffff",
+                                        fontSize: "14px",
+                                        marginTop: "5px",
+                                        display: "block",
+                                        backgroundColor: "#721c24",
+                                        padding: "5px",
+                                        borderRadius: "3px",
+                                      }}
+                                    >
+                                      {errors.email}
+                                    </span>
+                                  )}
                                 </p>
                               </div>
                               <div className="col-lg-4 col-md-12 col-sm-12 form-group">
@@ -218,15 +322,13 @@ const SupportSection = () => {
                                   >
                                     <input
                                       size={40}
-                                      className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                      aria-required="true"
+                                      className="wpcf7-form-control wpcf7-text"
                                       aria-invalid="false"
                                       placeholder="Mobile"
-                                      type="number"
+                                      type="tel"
                                       name="mobile"
                                       value={formData.mobile}
                                       onChange={handleChange}
-                                      required
                                     />
                                   </span>
                                 </p>
@@ -239,15 +341,13 @@ const SupportSection = () => {
                                   >
                                     <input
                                       size={40}
-                                      className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                      aria-required="true"
+                                      className="wpcf7-form-control wpcf7-text"
                                       aria-invalid="false"
                                       placeholder="Address"
                                       type="text"
                                       name="address"
                                       value={formData.address}
                                       onChange={handleChange}
-                                      required
                                     />
                                   </span>
                                 </p>
@@ -260,12 +360,20 @@ const SupportSection = () => {
                                   >
                                     <select
                                       className="wpcf7-form-control wpcf7-select custom-select-box"
-                                      aria-invalid="false"
+                                      id="subject-field"
+                                      aria-required="true"
+                                      aria-invalid={!!errors.message}
+                                      aria-describedby={
+                                        errors.message
+                                          ? "subject-error"
+                                          : undefined
+                                      }
                                       name="message"
                                       value={formData.message}
                                       onChange={handleChange}
+                                      required
                                     >
-                                      <option value="Subject / Discuss About Service">
+                                      <option value="" disabled>
                                         Subject / Discuss About Service
                                       </option>
                                       <option value="Installation">
@@ -279,6 +387,23 @@ const SupportSection = () => {
                                       </option>
                                     </select>
                                   </span>
+                                  {errors.message && (
+                                    <span
+                                      id="subject-error"
+                                      className="error-message"
+                                      style={{
+                                        color: "#ffffff",
+                                        fontSize: "14px",
+                                        marginTop: "5px",
+                                        display: "block",
+                                        backgroundColor: "#721c24",
+                                        padding: "5px",
+                                        borderRadius: "3px",
+                                      }}
+                                    >
+                                      {errors.message}
+                                    </span>
+                                  )}
                                 </p>
                               </div>
                               <div className="col-md-12 col-sm-12 form-group">

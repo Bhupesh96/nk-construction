@@ -7,15 +7,57 @@ const NewsLetter = () => {
     email: "",
   });
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+  });
+
   const [status, setStatus] = useState("");
+
+  // Validation function
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { name: "", email: "" };
+
+    // Name validation: letters and spaces only, min 2 characters
+    const nameRegex = /^[a-zA-Z\s]{2,}$/;
+    if (!formData.name) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    } else if (!nameRegex.test(formData.name)) {
+      newErrors.name =
+        "Name must contain only letters and spaces (min 2 characters)";
+      isValid = false;
+    }
+
+    // Email validation: basic email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!emailRegex.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // Clear errors for the field being edited
+    setErrors({ ...errors, [e.target.name]: "" });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("");
+
+    // Validate form before submission
+    if (!validateForm()) {
+      return;
+    }
 
     const payload = {
       istype: "inquiry",
@@ -39,7 +81,7 @@ const NewsLetter = () => {
       );
 
       if (response.data.success === true) {
-        setStatus("Subscribed");
+        setStatus("Subscribed successfully!");
         setFormData({
           name: "",
           email: "",
@@ -171,7 +213,12 @@ const NewsLetter = () => {
                                             className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                             id="field-1"
                                             aria-required="true"
-                                            aria-invalid="false"
+                                            aria-invalid={!!errors.name}
+                                            aria-describedby={
+                                              errors.name
+                                                ? "name-error"
+                                                : undefined
+                                            }
                                             placeholder="Your Name"
                                             type="text"
                                             name="name"
@@ -183,6 +230,23 @@ const NewsLetter = () => {
                                         <label htmlFor="field-1">
                                           <span className="far fa-user" />
                                         </label>
+                                        {errors.name && (
+                                          <span
+                                            id="name-error"
+                                            className="error-message"
+                                            style={{
+                                              color: "#ffffff",
+                                              fontSize: "14px",
+                                              marginTop: "5px",
+                                              display: "block",
+                                              backgroundColor: "#721c24",
+                                              padding: "5px",
+                                              borderRadius: "3px",
+                                            }}
+                                          >
+                                            {errors.name}
+                                          </span>
+                                        )}
                                       </p>
                                     </div>
                                   </div>
@@ -198,7 +262,12 @@ const NewsLetter = () => {
                                             className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
                                             id="field-2"
                                             aria-required="true"
-                                            aria-invalid="false"
+                                            aria-invalid={!!errors.email}
+                                            aria-describedby={
+                                              errors.email
+                                                ? "email-error"
+                                                : undefined
+                                            }
                                             placeholder="Your Email"
                                             type="email"
                                             name="email"
@@ -210,6 +279,23 @@ const NewsLetter = () => {
                                         <label htmlFor="field-2">
                                           <span className="far fa-envelope-open" />
                                         </label>
+                                        {errors.email && (
+                                          <span
+                                            id="email-error"
+                                            className="error-message"
+                                            style={{
+                                              color: "#ffffff",
+                                              fontSize: "14px",
+                                              marginTop: "5px",
+                                              display: "block",
+                                              backgroundColor: "#721c24",
+                                              padding: "5px",
+                                              borderRadius: "3px",
+                                            }}
+                                          >
+                                            {errors.email}
+                                          </span>
+                                        )}
                                       </p>
                                     </div>
                                   </div>

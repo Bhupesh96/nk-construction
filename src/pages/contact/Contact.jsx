@@ -12,15 +12,64 @@ const Contact = () => {
     message: "",
   });
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const [status, setStatus] = useState("");
+
+  // Validation function
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { name: "", email: "", message: "" };
+
+    // Name validation: letters and spaces only, min 2 characters
+    const nameRegex = /^[a-zA-Z\s]{2,}$/;
+    if (!formData.name) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    } else if (!nameRegex.test(formData.name)) {
+      newErrors.name =
+        "Name must contain only letters and spaces (min 2 characters)";
+      isValid = false;
+    }
+
+    // Email validation: valid email format
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!emailRegex.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+      isValid = false;
+    }
+
+    // Message validation: non-empty
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // Clear errors for the field being edited
+    setErrors({ ...errors, [e.target.name]: "" });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("");
+
+    // Validate form before submission
+    if (!validateForm()) {
+      return;
+    }
 
     const payload = {
       istype: "contact",
@@ -67,7 +116,11 @@ const Contact = () => {
       setStatus(
         `Error: ${error.message || "Failed to submit form. Please try again."}`
       );
-      console.error("Submission error:", error);
+      console.error("Submission error details:", {
+        message: error.message,
+        response: error.response,
+        status: error.status,
+      });
     }
   };
 
@@ -103,29 +156,10 @@ const Contact = () => {
           </div>
           <div className="popup-inner">
             <div className="overlay-layer" />
-            <div className="search-form">
-              <form method="post" action="https://strnix.smartdemowp.com/">
-                <div className="form-group">
-                  <fieldset>
-                    <input
-                      type="search"
-                      className="form-control"
-                      name="s"
-                      placeholder="Search Here"
-                      required
-                    />
-                    <input
-                      type="submit"
-                      defaultValue="Search Now!"
-                      className="theme-btn"
-                    />
-                  </fieldset>
-                </div>
-              </form>
-            </div>
+            <div className="search-form"></div>
           </div>
         </div>
-        <section className="page-banner page-breadcrumb ">
+        <section className="page-banner">
           <div className="image-layer" />
           <div className="auto-container">
             <div className="breadcrumb-box">
@@ -134,8 +168,8 @@ const Contact = () => {
                   <a
                     property="item"
                     typeof="WebPage"
-                    title="Go to Strnix World's Energy."
-                    href="/index.html"
+                    title="Go to Bhartiya."
+                    href="/"
                     className="home"
                   >
                     <span property="name">
@@ -402,8 +436,14 @@ const Contact = () => {
                                             <input
                                               size={40}
                                               className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                              id="name-field"
                                               aria-required="true"
-                                              aria-invalid="false"
+                                              aria-invalid={!!errors.name}
+                                              aria-describedby={
+                                                errors.name
+                                                  ? "name-error"
+                                                  : undefined
+                                              }
                                               placeholder="Your Name"
                                               type="text"
                                               name="name"
@@ -412,6 +452,23 @@ const Contact = () => {
                                               required
                                             />
                                           </span>
+                                          {errors.name && (
+                                            <span
+                                              id="name-error"
+                                              className="error-message"
+                                              style={{
+                                                color: "#ffffff",
+                                                fontSize: "14px",
+                                                marginTop: "5px",
+                                                display: "block",
+                                                backgroundColor: "#721c24",
+                                                padding: "5px",
+                                                borderRadius: "3px",
+                                              }}
+                                            >
+                                              {errors.name}
+                                            </span>
+                                          )}
                                         </p>
                                       </div>
                                       <div className="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -422,15 +479,13 @@ const Contact = () => {
                                           >
                                             <input
                                               size={40}
-                                              className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                              aria-required="true"
+                                              className="wpcf7-form-control wpcf7-text"
                                               aria-invalid="false"
                                               placeholder="Mobile"
-                                              type="text"
+                                              type="tel"
                                               name="mobile"
                                               value={formData.mobile}
                                               onChange={handleChange}
-                                              required
                                             />
                                           </span>
                                         </p>
@@ -444,8 +499,14 @@ const Contact = () => {
                                             <input
                                               size={40}
                                               className="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
+                                              id="email-field"
                                               aria-required="true"
-                                              aria-invalid="false"
+                                              aria-invalid={!!errors.email}
+                                              aria-describedby={
+                                                errors.email
+                                                  ? "email-error"
+                                                  : undefined
+                                              }
                                               placeholder="Email"
                                               type="email"
                                               name="email"
@@ -454,6 +515,23 @@ const Contact = () => {
                                               required
                                             />
                                           </span>
+                                          {errors.email && (
+                                            <span
+                                              id="email-error"
+                                              className="error-message"
+                                              style={{
+                                                color: "#ffffff",
+                                                fontSize: "14px",
+                                                marginTop: "5px",
+                                                display: "block",
+                                                backgroundColor: "#721c24",
+                                                padding: "5px",
+                                                borderRadius: "3px",
+                                              }}
+                                            >
+                                              {errors.email}
+                                            </span>
+                                          )}
                                         </p>
                                       </div>
                                       <div className="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -464,15 +542,13 @@ const Contact = () => {
                                           >
                                             <input
                                               size={40}
-                                              className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                              aria-required="true"
+                                              className="wpcf7-form-control wpcf7-text"
                                               aria-invalid="false"
                                               placeholder="Address"
                                               type="text"
                                               name="address"
                                               value={formData.address}
                                               onChange={handleChange}
-                                              required
                                             />
                                           </span>
                                         </p>
@@ -487,7 +563,14 @@ const Contact = () => {
                                               cols={40}
                                               rows={10}
                                               className="wpcf7-form-control wpcf7-textarea"
-                                              aria-invalid="false"
+                                              id="message-field"
+                                              aria-required="true"
+                                              aria-invalid={!!errors.message}
+                                              aria-describedby={
+                                                errors.message
+                                                  ? "message-error"
+                                                  : undefined
+                                              }
                                               placeholder="Message"
                                               name="message"
                                               value={formData.message}
@@ -495,6 +578,23 @@ const Contact = () => {
                                               required
                                             />
                                           </span>
+                                          {errors.message && (
+                                            <span
+                                              id="message-error"
+                                              className="error-message"
+                                              style={{
+                                                color: "#ffffff",
+                                                fontSize: "14px",
+                                                marginTop: "5px",
+                                                display: "block",
+                                                backgroundColor: "#721c24",
+                                                padding: "5px",
+                                                borderRadius: "3px",
+                                              }}
+                                            >
+                                              {errors.message}
+                                            </span>
+                                          )}
                                         </p>
                                       </div>
                                       <div className="col-md-12 col-sm-12 form-group">
@@ -905,11 +1005,11 @@ const Contact = () => {
                 <div className="footer-nav">
                   <ul className="list-unstyled">
                     <li>
-                      <Link to="/privacy">Privacy Policy</Link>
+                      <Link to="/privacy-policy">Privacy Policy</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/sitemap">Sitemap</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/terms">Terms & Conditions</Link>
                     </li>
