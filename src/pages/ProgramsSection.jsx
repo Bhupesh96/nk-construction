@@ -30,13 +30,13 @@ const ProgramBlock = ({ imageSrc, title, text, iconClass }) => {
                   >
                     {text}
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="program-block-read-more"
                     onClick={handleToggle}
                   >
                     {isExpanded ? "Read Less" : "Read More"}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -111,37 +111,37 @@ const ProgramBlock = ({ imageSrc, title, text, iconClass }) => {
 const ProgramsSection = () => {
   const programs = [
     {
-      imageSrc: "/wp-content/uploads/2020/06/program-image-1.jpg",
+      imageSrc: "/wp-content/uploads/poster/assesment.jpeg",
       title: "Free Site Assessment & Energy Audit",
       text: "What it includes: Site visit, energy usage analysis, shadow study, and panel placement planning. Why it's important: Helps customers understand feasibility and expected savings.",
       iconClass: "flaticon-chimney",
     },
     {
-      imageSrc: "/wp-content/uploads/2020/06/program-image-3.jpg",
+      imageSrc: "/wp-content/uploads/poster/installation.jpg",
       title: "Customized System Design",
       text: "What it includes: Tailored solar system designs based on energy needs, budget, and roof/land availability. Add-on: Use 3D modeling or drone-based mapping for accurate designs.",
       iconClass: "flaticon-chimney",
     },
     {
-      imageSrc: "/wp-content/uploads/2020/06/program-image-4.jpg",
+      imageSrc: "/wp-content/uploads/poster/upgrade-service.jpeg",
       title: "End-to-End Installation Services",
       text: "Scope: Procurement, transportation, installation, net-metering, and government liaison. Assurance: Use certified installers and branded components (Tier-1 panels, inverters, etc.).",
       iconClass: "flaticon-chimney",
     },
     {
-      imageSrc: "/wp-content/uploads/2020/06/program-image-2.jpg",
+      imageSrc: "/wp-content/uploads/poster/loan.jpeg",
       title: "Subsidy & Financing Assistance",
       text: "* Includes: Help with government solar subsidies (like under PM Surya Ghar Yojana).EMI plans via NBFCs or banks. Leasing or PPAs (Power Purchase Agreements) for commercial clients.",
       iconClass: "flaticon-chimney",
     },
     {
-      imageSrc: "/wp-content/uploads/2020/06/program-image-1.jpg",
+      imageSrc: "/wp-content/uploads/poster/monitoring.jpeg",
       title: "Monitoring & Performance Tracking",
       text: "Tools: Mobile app/web dashboard showing real-time energy generation, savings, and alerts. Add-on: Remote diagnostics and performance optimization.",
       iconClass: "flaticon-chimney",
     },
     {
-      imageSrc: "/wp-content/uploads/2020/06/program-image-3.jpg",
+      imageSrc: "/wp-content/uploads/poster/installation.jpg",
       title: "Maintenance & Support Packages",
       text: "Types: Annual Maintenance Contracts (AMCs) On-demand cleaning and inspections Warranty claim support",
       iconClass: "flaticon-chimney",

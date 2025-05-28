@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Counter from "./Counter";
 
 const ProjectsSection = () => {
@@ -60,19 +60,21 @@ const ProjectsSection = () => {
                             quality, efficiency, and clean energy
                           </div>
                           <div className="links-box">
-                            <a
-                              href="#_"
+                            <Link
+                              to="/services"
                               target="_blank"
                               rel="nofollow"
                               className="theme-btn btn-style-two"
                             >
                               <div className="btn-title">
-                                <span className="btn-txt">View All Works</span>
+                                <span className="btn-txt">
+                                  View All Services
+                                </span>
                                 <span className="btn-icon">
                                   <span className="icon flaticon-arrows-11" />
                                 </span>
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -86,19 +88,42 @@ const ProjectsSection = () => {
                           {/*Tabs Box*/}
                           <div className="tabs-box recent-proj-tabs">
                             <div className="buttons-box">
-                              <ul className="tab-buttons clearfix">
+                              <ul
+                                className="tab-buttons"
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "row",
+                                  width: "100%",
+                                  margin: 0,
+                                  padding: 0,
+                                  listStyle: "none",
+                                }}
+                              >
                                 <li
                                   className="tab-btn active-btn"
                                   data-tab="#tab-0"
+                                  style={{
+                                    width: "50%",
+                                    boxSizing: "border-box",
+                                    margin: 0,
+                                    padding: "10px",
+                                    textAlign: "center",
+                                  }}
                                 >
                                   <span className="btn-title">Commercial</span>
-                                  <span className="info">5.2KW SYSYEM</span>
+                                  <span className="info">Installation</span>
                                 </li>
-                                {/* <li className="tab-btn no" data-tab="#tab-1">
-                                  <span className="btn-title">-</span>
-                                  <span className="info">5.2KW SYSYEM</span>
-                                </li> */}
-                                <li className="tab-btn no" data-tab="#tab-1">
+                                <li
+                                  className="tab-btn"
+                                  data-tab="#tab-1"
+                                  style={{
+                                    width: "50%",
+                                    boxSizing: "border-box",
+                                    margin: 0,
+                                    padding: "10px",
+                                    textAlign: "center",
+                                  }}
+                                >
                                   <span className="btn-title">RESIDENTIAL</span>
                                   <span className="info">INSTALLATION</span>
                                 </li>
@@ -110,35 +135,23 @@ const ProjectsSection = () => {
                                   <figure className="image">
                                     <img
                                       decoding="async"
-                                      src="wp-content/uploads/2020/06/featured-image-6.jpg"
+                                      src="wp-content/uploads/poster/commercial.jpg"
                                       alt="program"
                                     />
                                   </figure>
                                   <div className="cat-info">COMMERCIAL</div>
                                 </div>
                               </div>
-                              {/* <div className="tab no" id="tab-1">
+                              <div className="tab" id="tab-1">
                                 <div className="tab-inner">
                                   <figure className="image">
                                     <img
                                       decoding="async"
-                                      src="wp-content/uploads/2020/06/featured-image-7.jpg"
+                                      src="wp-content/uploads/poster/residential.jpg"
                                       alt="program"
                                     />
                                   </figure>
-                                  <div className="cat-info">COMMERCIAL</div>
-                                </div>
-                              </div> */}
-                              <div className="tab no" id="tab-1">
-                                <div className="tab-inner">
-                                  <figure className="image">
-                                    <img
-                                      decoding="async"
-                                      src="wp-content/uploads/2020/06/featured-image-8.jpg"
-                                      alt="program"
-                                    />
-                                  </figure>
-                                  <div className="cat-info">COMMERCIAL</div>
+                                  <div className="cat-info">RESIDENTIAL</div>
                                 </div>
                               </div>
                             </div>

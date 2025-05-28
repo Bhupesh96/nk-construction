@@ -66,7 +66,7 @@ const OurServices = () => {
                               <div className="image">
                                 <img
                                   decoding="async"
-                                  src="wp-content/uploads/2020/06/featured-image-3.jpg"
+                                  src="wp-content/uploads/poster/solar_panel_installation.jpeg"
                                   alt="service"
                                 />
                               </div>
@@ -171,7 +171,7 @@ const OurServices = () => {
                               <div className="image">
                                 <img
                                   decoding="async"
-                                  src="wp-content/uploads/2020/06/featured-image-4.jpg"
+                                  src="wp-content/uploads/poster/maintainance.jpeg"
                                   alt="service"
                                 />
                               </div>
@@ -196,7 +196,7 @@ const OurServices = () => {
                               <div className="image">
                                 <img
                                   decoding="async"
-                                  src="wp-content/uploads/2020/06/featured-image-5.jpg"
+                                  src="wp-content/uploads/poster/upgrade.jpeg"
                                   alt="service"
                                 />
                               </div>

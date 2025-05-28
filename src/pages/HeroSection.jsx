@@ -31,7 +31,7 @@ const HeroSection = () => {
                         className="image-layer"
                         style={{
                           backgroundImage:
-                            'url("/wp-content/uploads/2020/06/1-1.jpg")',
+                            'url("/wp-content/uploads/banner/banner-1.jpg")',
                         }}
                       />
                       <div className="auto-container">
@@ -63,7 +63,7 @@ const HeroSection = () => {
                         className="image-layer"
                         style={{
                           backgroundImage:
-                            'url("/wp-content/uploads/2020/06/1-1.jpg")',
+                            'url("/wp-content/uploads/banner/banner-2.jpg")',
                         }}
                       />
                       <div className="auto-container">
@@ -76,7 +76,7 @@ const HeroSection = () => {
                                   className="fas fa-solar-panel"
                                 />
                                 <span className="txt">
-                                  welcome to Bhartiya Solars
+                                  welcome to Bhartiya Solars&nbsp;
                                 </span>
                                 <i
                                   aria-hidden="true"
@@ -95,7 +95,7 @@ const HeroSection = () => {
                         className="image-layer"
                         style={{
                           backgroundImage:
-                            'url("/wp-content/uploads/2020/06/1-1.jpg")',
+                            'url("/wp-content/uploads/banner/banner-3.jpg")',
                         }}
                       />
                       <div className="auto-container">
@@ -108,14 +108,16 @@ const HeroSection = () => {
                                   className="fas fa-solar-panel"
                                 />
                                 <span className="txt">
-                                  welcome to Bhartiya Solars
+                                  welcome to Bhartiya Solars&nbsp;
                                 </span>
                                 <i
                                   aria-hidden="true"
                                   className="fas fa-solar-panel"
                                 />
                               </div>
-                              <h1>On-Grid Solar for Homes & Businesses</h1>
+                              <h1>
+                                Sun-Powered Savings – Subsidy up to ₹78,000
+                              </h1>
                               <div className="links-box" />
                             </div>
                           </div>

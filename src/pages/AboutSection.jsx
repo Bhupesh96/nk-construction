@@ -116,7 +116,7 @@ const AboutSection = () => {
                               >
                                 <img
                                   decoding="async"
-                                  src="wp-content/uploads/2020/06/featured-image-1.jpg"
+                                  src="/wp-content/uploads/poster/solution.jpeg"
                                   alt="about"
                                 />
                               </figure>

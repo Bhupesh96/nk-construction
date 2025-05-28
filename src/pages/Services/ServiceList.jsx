@@ -92,7 +92,7 @@ const ServiceList = () => {
                             <figure className="image">
                               <img
                                 decoding="async"
-                                src="/wp-content/uploads/2020/06/featured-image-18.jpg"
+                                src="/wp-content/uploads/poster/assesment.jpeg"
                                 alt="services"
                               />
                             </figure>
@@ -139,7 +139,7 @@ const ServiceList = () => {
                             <figure className="image">
                               <img
                                 decoding="async"
-                                src="/wp-content/uploads/2020/06/featured-image-19.jpg"
+                                src="/wp-content/uploads/poster/installation.jpg"
                                 alt="services"
                               />
                             </figure>
@@ -186,7 +186,7 @@ const ServiceList = () => {
                             <figure className="image">
                               <img
                                 decoding="async"
-                                src="/wp-content/uploads/2020/06/featured-image-20.jpg"
+                                src="/wp-content/uploads/poster/inverter.jpeg"
                                 alt="services"
                               />
                             </figure>
@@ -234,7 +234,7 @@ const ServiceList = () => {
                             <figure className="image">
                               <img
                                 decoding="async"
-                                src="/wp-content/uploads/2020/06/featured-image-21.jpg"
+                                src="/wp-content/uploads/poster/monitoring.jpeg"
                                 alt="services"
                               />
                             </figure>
@@ -281,7 +281,7 @@ const ServiceList = () => {
                             <figure className="image">
                               <img
                                 decoding="async"
-                                src="/wp-content/uploads/2020/06/featured-image-22.jpg"
+                                src="/wp-content/uploads/poster/loan.jpeg"
                                 alt="services"
                               />
                             </figure>
@@ -329,7 +329,7 @@ const ServiceList = () => {
                             <figure className="image">
                               <img
                                 decoding="async"
-                                src="/wp-content/uploads/2020/06/featured-image-23.jpg"
+                                src="/wp-content/uploads/poster/upgrade-service.jpeg"
                                 alt="services"
                               />
                             </figure>
