@@ -743,10 +743,7 @@ const Contact = () => {
                       <div className="footer-column">
                         <div className="footer-widget about-widget">
                           <div className="footer-logo-box">
-                            <a
-                              href="/index.html"
-                              title="Bhartiya Solars - Green Energy HTML Template"
-                            >
+                            <a href="/" title="Bhartiya Solar">
                               <img
                                 src="Bhartiya Solar_logo-website_white.png"
                                 alt="Logo"

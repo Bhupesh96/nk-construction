@@ -204,10 +204,7 @@ const Footer2 = () => {
                     <div className="footer-column">
                       <div className="footer-widget about-widget">
                         <div className="footer-logo-box">
-                          <a
-                            href="/index.html"
-                            title="Bhartiya Solars - Green Energy"
-                          >
+                          <a href="/" title="Bhartiya Solar - Green Energy">
                             <img
                               src="/Bhartiya Solar_logo-website_white.png"
                               alt="Bhartiya Solars Logo"
