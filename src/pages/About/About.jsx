@@ -568,67 +568,6 @@ const About = () => {
                                     >
                                       <img
                                         decoding="async"
-                                        src="/wp-content/uploads/Team/Chandrashekhar.jpeg"
-                                        alt="Chandrashekhar Chandrakar"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <div className="social-links">
-                                    <ul>
-                                      <li>
-                                        <a
-                                          href="https://www.instagram.com/chandrashekharchandrakar?igsh=aXhxY3hwaGdpMG94"
-                                          target="_blank"
-                                          rel="noopener noreferrer"
-                                        >
-                                          <span className="fab fa-instagram" />
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <a
-                                          href="https://www.facebook.com/share/14quDEtBJR/"
-                                          target="_blank"
-                                          rel="noopener noreferrer"
-                                        >
-                                          <span className="fab fa-facebook-f" />
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                                <div className="lower-box">
-                                  <h3>
-                                    <Link
-                                      to="#"
-                                      onClick={(e) => e.preventDefault()}
-                                    >
-                                      Chandrashekhar Chandrakar
-                                    </Link>
-                                  </h3>
-                                  <div className="info">CEO | Founder</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="team-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated"
-                              data-wow-delay="0ms"
-                              data-wow-duration="1500ms"
-                              style={{
-                                visibility: "visible",
-                                animationDuration: "1500ms",
-                                animationDelay: "0ms",
-                                animationName: "fadeInUp",
-                              }}
-                            >
-                              <div className="inner-box">
-                                <div className="image-box">
-                                  <div className="image">
-                                    <Link
-                                      to="#"
-                                      onClick={(e) => e.preventDefault()}
-                                    >
-                                      <img
-                                        decoding="async"
                                         src="/wp-content/uploads/Team/Nagesh_kaushik.jpeg"
                                         alt="Nagesh Kaushik"
                                       />
@@ -681,6 +620,68 @@ const About = () => {
                                     >
                                       <img
                                         decoding="async"
+                                        src="/wp-content/uploads/Team/Chandrashekhar.jpeg"
+                                        alt="Chandrashekhar Chandrakar"
+                                      />
+                                    </Link>
+                                  </div>
+                                  <div className="social-links">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="https://www.instagram.com/chandrashekharchandrakar?igsh=aXhxY3hwaGdpMG94"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <span className="fab fa-instagram" />
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="https://www.facebook.com/share/14quDEtBJR/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <span className="fab fa-facebook-f" />
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div className="lower-box">
+                                  <h3>
+                                    <Link
+                                      to="#"
+                                      onClick={(e) => e.preventDefault()}
+                                    >
+                                      Chandrashekhar Chandrakar
+                                    </Link>
+                                  </h3>
+                                  <div className="info">CEO | Founder</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              className="team-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp animated"
+                              data-wow-delay="0ms"
+                              data-wow-duration="1500ms"
+                              style={{
+                                visibility: "visible",
+                                animationDuration: "1500ms",
+                                animationDelay: "0ms",
+                                animationName: "fadeInUp",
+                              }}
+                            >
+                              <div className="inner-box">
+                                <div className="image-box">
+                                  <div className="image">
+                                    <Link
+                                      to="#"
+                                      onClick={(e) => e.preventDefault()}
+                                    >
+                                      <img
+                                        decoding="async"
                                         src="/wp-content/uploads/Team/Arun_Patel.jpeg"
                                         alt="Arun Patel"
                                       />
@@ -709,7 +710,7 @@ const About = () => {
                                       Arun Patel
                                     </Link>
                                   </h3>
-                                  <div className="info">Marketing Manager</div>
+                                  <div className="info">CEO | Founder</div>
                                 </div>
                               </div>
                             </div>
@@ -770,7 +771,7 @@ const About = () => {
                                       Sajal Kashyap
                                     </Link>
                                   </h3>
-                                  <div className="info">Marketing Manager</div>
+                                  <div className="info">CMO</div>
                                 </div>
                               </div>
                             </div>
