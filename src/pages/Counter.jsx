@@ -59,7 +59,7 @@ const Counter = () => {
             <span
               className="count-text"
               data-speed={1000}
-              data-stop={120}
+              data-stop={1500}
               ref={(el) => (countersRef.current[1] = el)}
             >
               0

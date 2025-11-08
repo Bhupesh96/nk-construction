@@ -48,6 +48,23 @@ const Footer2 = () => {
                               NK Constructions, Main Road, Bagbahra 493449
                             </div>
                           </div>
+
+                          <div className="info-block">
+                            <div className="icon-box">
+                              <span className="icon">
+                                <img
+                                  src="/wp-content/uploads/2020/06/location.svg"
+                                  alt="Branch Office"
+                                />
+                              </span>
+                            </div>
+                            <strong>Branch Office</strong>
+                            <div className="info-text">
+                              Shop No 7, in front of Palash Height, Mahadev
+                              Nagar, Raipur
+                            </div>
+                          </div>
+
                           <div className="info-block">
                             <div className="icon-box">
                               <span className="icon">
@@ -60,6 +77,8 @@ const Footer2 = () => {
                             <strong>Phone Inquiry</strong>
                             <div className="info-text">
                               <a href="tel:+919713311719">+91 97133 11719</a>
+                              <br />
+                              <a href="tel:+917587704619">+91 75877 04619</a>
                             </div>
                           </div>
                           <div className="info-block">
@@ -279,7 +298,10 @@ const Footer2 = () => {
                 <span className="flaticon-arrows" />
               </div>
               <div className="copyright">
-                © Copyright 2025 By <a href="/">Bhartiya Solars</a>
+                © Copyright 2024 By{" "}
+                <a href="https://www.techwithus.in/" target="_blank">
+                  TechWithUs
+                </a>
               </div>
               <div className="footer-nav">
                 <ul className="clearfix">

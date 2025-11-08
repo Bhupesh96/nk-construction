@@ -464,7 +464,7 @@ const SupportSection = () => {
                         <div className="info">
                           Call Us 24/7 For Customer Support At
                           <span className="icon" />
-                          <a href="tel:+919713311719">+919713311719</a>
+                          <a href="tel:+917587704619">+91 75877 04619</a>
                         </div>
                       </div>
                     </div>

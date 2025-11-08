@@ -66,7 +66,7 @@ const Header = () => {
           <div className="auto-container">
             <div className="inner clearfix">
               <div className="top-left clearfix">
-                <div className="top-text">Get upto ₹ 78000 Subsidy</div>
+                <div className="top-text">Get upto ₹ 108000 Subsidy</div>
               </div>
               <div className="top-right clearfix">
                 <div className="email">

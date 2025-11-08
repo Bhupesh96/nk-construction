@@ -439,8 +439,11 @@ const PrivacyPolicy = () => {
                               info@bhartiyasolar.in
                             </a>
                             <br />
-                            <strong>Address</strong>: NK Constructions, Main
+                            <strong>Head Office</strong>: NK Constructions, Main
                             Road, Bagbahra 493449, India
+                            <br />
+                            <strong>Branch Office</strong>: Shop No 7, in front
+                            of Palash Height, Mahadev Nagar, Raipur, India
                             <br />
                             <strong>Phone</strong>:{" "}
                             <a

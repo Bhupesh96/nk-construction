@@ -215,7 +215,15 @@ const Contact = () => {
                       <section className="contact-section contact-page">
                         <div className="auto-container">
                           <div className="info-blocks">
-                            <div className="row clearfix">
+                            <div
+                              className="row clearfix"
+                              style={{
+                                display: "flex",
+                                flexWrap: "wrap",
+                                gap: "20px",
+                              }}
+                            >
+                              {/* Office Address */}
                               <div
                                 className="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated"
                                 data-wow-delay="0ms"
@@ -225,10 +233,34 @@ const Contact = () => {
                                   animationDuration: "2000ms",
                                   animationDelay: "0ms",
                                   animationName: "fadeInUp",
+                                  flex: "1 1 30%",
+                                  minHeight: "250px",
+                                  display: "flex",
                                 }}
                               >
-                                <div className="inner">
-                                  <div className="icon">
+                                <div
+                                  className="inner"
+                                  style={{
+                                    flex: 1,
+                                    background: "#fff",
+                                    borderRadius: "8px",
+                                    padding: "20px",
+                                    boxSizing: "border-box",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    alignItems: "center", // centers icon + title horizontally
+                                    textAlign: "center", // centers title text
+                                  }}
+                                >
+                                  <div
+                                    className="icon"
+                                    style={{
+                                      display: "flex",
+                                      justifyContent: "center",
+                                      alignItems: "center",
+                                      marginBottom: "10px",
+                                    }}
+                                  >
                                     <img
                                       decoding="async"
                                       src="/wp-content/uploads/2020/06/location.svg"
@@ -236,17 +268,40 @@ const Contact = () => {
                                       style={{ height: "55px" }}
                                     />
                                   </div>
-                                  <strong>Visit The Office</strong>
-                                  <ul className="info">
-                                    <ul>
-                                      <li>
-                                        NK constructions,Main road, Bagbahra
-                                        493449
-                                      </li>
-                                    </ul>{" "}
+
+                                  <strong
+                                    style={{
+                                      display: "block",
+                                      marginBottom: "10px",
+                                    }}
+                                  >
+                                    Visit The Office
+                                  </strong>
+
+                                  <ul
+                                    className="info"
+                                    style={{
+                                      listStyle: "none",
+                                      paddingLeft: "0",
+                                      marginTop: "0",
+                                      textAlign: "left", // left-align address text
+                                      width: "100%", // ensures full width for alignment
+                                      maxWidth: "250px", // optional: keeps text tidy under title
+                                    }}
+                                  >
+                                    <li style={{ marginBottom: "5px" }}>
+                                      - NK Constructions, Main Road, Bagbahra
+                                      493449
+                                    </li>
+                                    <li>
+                                      - Shop No 7, in front of Palash Height,
+                                      Mahadev Nagar, Raipur
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
+
+                              {/* Phone Inquiry */}
                               <div
                                 className="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated"
                                 data-wow-delay="0ms"
@@ -256,9 +311,21 @@ const Contact = () => {
                                   animationDuration: "2000ms",
                                   animationDelay: "0ms",
                                   animationName: "fadeInUp",
+                                  flex: "1 1 30%",
+                                  minHeight: "250px",
+                                  display: "flex",
                                 }}
                               >
-                                <div className="inner">
+                                <div
+                                  className="inner"
+                                  style={{
+                                    flex: 1,
+                                    background: "#fff",
+                                    borderRadius: "8px",
+                                    padding: "20px",
+                                    boxSizing: "border-box",
+                                  }}
+                                >
                                   <div className="icon">
                                     <img
                                       decoding="async"
@@ -270,17 +337,19 @@ const Contact = () => {
                                   <ul className="info">
                                     <li>
                                       <Link to="tel:+919111337351">
-                                        +919111337351
+                                        +91 91113 37351
                                       </Link>
                                     </li>
                                     <li>
                                       <Link to="tel:+919713311719">
-                                        +919713311719
+                                        +91 97133 11719
                                       </Link>
-                                    </li>{" "}
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
+
+                              {/* Email */}
                               <div
                                 className="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated"
                                 data-wow-delay="0ms"
@@ -290,9 +359,21 @@ const Contact = () => {
                                   animationDuration: "2000ms",
                                   animationDelay: "0ms",
                                   animationName: "fadeInUp",
+                                  flex: "1 1 30%",
+                                  minHeight: "250px",
+                                  display: "flex",
                                 }}
                               >
-                                <div className="inner">
+                                <div
+                                  className="inner"
+                                  style={{
+                                    flex: 1,
+                                    background: "#fff",
+                                    borderRadius: "8px",
+                                    padding: "20px",
+                                    boxSizing: "border-box",
+                                  }}
+                                >
                                   <div className="icon">
                                     <img
                                       decoding="async"
@@ -315,7 +396,7 @@ const Contact = () => {
                                           Email: support@bhartiyasolar.in
                                         </a>
                                       </div>
-                                    </li>{" "}
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
@@ -666,9 +747,9 @@ const Contact = () => {
                                       alt="contact"
                                     />
                                   </span>
-                                  <Link to="tel:+919713311719">
-                                    +919713311719
-                                  </Link>{" "}
+                                  <a href="tel:+917587704619">
+                                    +91 75877 04619
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -926,15 +1007,32 @@ const Contact = () => {
                                 <span className="icon">
                                   <img
                                     src="/wp-content/uploads/2020/06/location.svg"
-                                    alt="contact"
+                                    alt="Office Location"
                                   />
                                 </span>
                               </div>
                               <strong>Visit The Office</strong>
                               <div className="info-text">
-                                NK constructions,Main road, Bagbahra 493449
+                                NK Constructions, Main Road, Bagbahra 493449
                               </div>
                             </div>
+
+                            <div className="info-block">
+                              <div className="icon-box">
+                                <span className="icon">
+                                  <img
+                                    src="/wp-content/uploads/2020/06/location.svg"
+                                    alt="Branch Office"
+                                  />
+                                </span>
+                              </div>
+                              <strong>Branch Office</strong>
+                              <div className="info-text">
+                                Shop No 7, in front of Palash Height, Mahadev
+                                Nagar, Raipur
+                              </div>
+                            </div>
+
                             <div className="info-block">
                               <div className="icon-box">
                                 <span className="icon">
@@ -946,9 +1044,9 @@ const Contact = () => {
                               </div>
                               <strong>Phone Inquiry</strong>
                               <div className="info-text">
-                                <Link to="tel:+919713311719">
-                                  +919713311719
-                                </Link>
+                                <a href="tel:+919713311719">+91 97133 11719</a>
+                                <br />
+                                <a href="tel:+917587704619">+91 75877 04619</a>
                               </div>
                             </div>
                             <div className="info-block">
@@ -997,7 +1095,8 @@ const Contact = () => {
                   <span className="flaticon-arrows"></span>
                 </div>
                 <div className="copyright">
-                  © Copyright 2025 By <a href="/">Bhartiya Solar</a>
+                  © Copyright 2024 By{" "}
+                  <a href="https://www.techwithus.in/">TechWithUS</a>
                 </div>
                 <div className="footer-nav">
                   <ul className="list-unstyled">
