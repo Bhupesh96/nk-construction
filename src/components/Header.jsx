@@ -129,7 +129,9 @@ const Header = () => {
                         </span>
                       </div>
                       <strong> Mon to Sun: 8:00 AM - 9:00 PM </strong>
-                      <div className="info-text">+919713311719</div>
+                      <div className="info-text phone-inline">
+                        +919713311719 | +917587704619
+                      </div>
                     </div>
                     <div className="info-block">
                       <div className="icon-box">
@@ -141,7 +143,9 @@ const Header = () => {
                         </span>
                       </div>
                       <strong> Mon to Sun: 8:00 AM - 9:00 PM </strong>
-                      <div className="info-text">+919713311719</div>
+                      <div className="info-text phone-inline">
+                        +919713311719 | +917587704619
+                      </div>
                     </div>
                   </div>
                   <div className="link-box">

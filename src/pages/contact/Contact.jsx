@@ -747,8 +747,12 @@ const Contact = () => {
                                       alt="contact"
                                     />
                                   </span>
+                                  <a href="tel:+919713311719">
+                                    +919713311719
+                                  </a>
+                                  &nbsp;|&nbsp;
                                   <a href="tel:+917587704619">
-                                    +91 75877 04619
+                                    +917587704619
                                   </a>
                                 </div>
                               </div>
